@@ -1006,15 +1006,15 @@ input::placeholder {
       list-style-type: none;
     }
 
-      .footer-col ul li {
-    margin: 0.5em 0; 
-  }
+        .footer-col ul li {
+      margin: 0.5em 0; 
+    }
 
-  .footer-col ul li a {
-    text-decoration: none;
-    color: #1A1D9E; 
-    font-size: 1rem; 
-  }
+    .footer-col ul li a {
+      text-decoration: none;
+      color: #1A1D9E; 
+      font-size: 1rem; 
+    }
 
     .logo-container {
       max-width: 20vw;
@@ -1043,8 +1043,10 @@ input::placeholder {
     }
 
     .join-container {
-      padding: 1em; 
-      height: auto;
+      max-width: 90%;
+      padding: 2em 1em; 
+      margin: 0 auto; 
+      height: auto; 
     }
 
     nav {
@@ -1133,10 +1135,6 @@ input::placeholder {
 
     .join-text p {
       font-size: 1rem;
-    }
-
-    .join-container {
-      height: 30vh;
     }
 
     .thankyou {
