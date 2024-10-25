@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Sports Community Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/assets/styles.css">
+     <link rel="icon" href="/my_tube_blog/img/sports_community_logo.png" alt="Sports Tube" border="0">
+    <link href="https://fonts.cdnfonts.com/css/bentonsans-regular" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@400;700&family=Pacifico&family=Anton&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="blog-hero-section">
+          <div id="nav"></div>
+          <section>
+            <div class="hero-section">
+              <img src="/img/upload_banner.png">
+            </div>
+          </section>
+        </div>  
+    </header>
+    <main>
+      <div class="quote-grid">
+        <div class="quotation-l"><img src="/img/left-quote.png"></div>
+        <div>
+          <div class="quote">
+            <p>"It's not whether you get knocked down; it's whether you get up."</p>
+            <p> – Vince Lombardi</p>
+          </div>
+        </div>
+        <div class="quotation-r"><img src="/img/right-quote.png" 
+          id="baseball1">
+        </div>
+      </div>
+      <section class="article">
+        <div class="article-page article-color2 form-submission">
+          <div class="hero-btn back-btn">
+            <a class="btn5 button" href="/index.html">Back</a>
+          </div>
+          <h2>Submit Your Article</h2>
+          <form id="article-form" action="/submit-article" method="POST" enctype="multipart/form-data">
+              <label for="author">Author Name:</label>
+              <input type="text" id="author" name="author" required>
+
+              <label for="date">Submission Date:</label>
+              <input type="date" id="date" name="date" required>
+
+              <label for="title">Article Title:</label>
+              <input type="text" id="title" name="title" required>
+
+              <label for="category">Category:</label>
+              <select id="category" name="category" required>
+                  <option value="news">News</option>
+                  <option value="mlb">MLB Baseball</option>
+                  <option value="basketball">Basketball</option>
+                  <option value="nfl">NFL Football</option>
+                  <option value="nhl">NHL Hockey</option>
+                  <option value="mma">MMA</option>
+                  <option value="soccer">Soccer</option>
+                  <option value="community">Community Discussions</option>
+              </select>
+
+              <label for="contents">Article Content:</label>
+              <textarea id="contents" name="contents" rows="10" required></textarea>
+
+              <label for="image">Upload an Image:</label>
+              <input type="file" id="image" name="image" accept="image/*" required>
+
+              <button type="submit" class="btn5 button">Submit Article</button>
+          </form>
+        </div>  
+      </section>
+      <section class="join-section">
+        <div class="join-container">
+          <div class="join-text">
+            <div><h2>Join the Sports Tube Community</h2></div>
+            <div><p>Sign up now to start reading the best articles about your favorite sports or upload your own content!</p></div>
+          </div>
+          <div class="grid-btn">
+            <a class="btn3 button" href="/pages/account.html">Sign Up</a>
+            <a class="btn4 button" href="https://sports-tube.netlify.app/">Visit Sports Tube</a>
+          </div> 
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
