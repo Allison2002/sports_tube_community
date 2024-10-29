@@ -1384,6 +1384,8 @@ button.btn5:hover {
     }
     .logo-container {
       max-width: 20vw;
+      padding: 0;
+      margin-left: 0;
     }
 
     .join-container {
@@ -1393,10 +1395,19 @@ button.btn5:hover {
       height: auto; 
     }
 
+    .join-section {
+      max-width: 100vw;
+      height: auto;
+    }
+
     .join-bottom {
       padding: 0;
       width: auto;
     }
+    
+    .join-text p {
+      font-size: 1rem;
+    }    
 
     .sct-btn {
       padding-top: 1em;
@@ -1412,24 +1423,6 @@ button.btn5:hover {
 
     .icon img{
       max-width: 15vw;
-    }
-
-    .logo-container {
-      padding: 0;
-      margin-left: 0;
-    }
-
-    .join-container {
-      margin: 0 auto;
-    }
-    
-    .join-section {
-      max-width: 100vw;
-      height: auto;
-    }
-
-    .join-text p {
-      font-size: 1rem;
     }
 
     .thankyou {
