@@ -58,7 +58,6 @@ p {
   z-index: 3; 
 }
 
-.button a,
 .button {
     display: inline-block; 
     padding: 0.75em 1.5em; 
