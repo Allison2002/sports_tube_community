@@ -1194,12 +1194,30 @@ button.btn5:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    html, body {
+      max-width: 100vw;
+    }
 
   /* nav, footer, hamburger, join responsive styling*/
+    h1  {
+      font-size: 2rem;
+    }
+     
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
 
     .hamburger {
         display: flex; 
     }
+    
+    .menu-toggle {
+      display: flex;
+    } 
     
     .nav-menu {
         display: none; 
@@ -1215,16 +1233,55 @@ button.btn5:hover {
         display: flex; 
     }
     
-    h1  {
-      font-size: 2rem;
-    }
-     
-    h2 {
-      font-size: 1.5rem;
+    .nav-menu li a {
+      color: #F2F7FA ;
+      font-size: 1rem;
+      padding: 0;
     }
 
-    h3 {
-      font-size: 1rem;
+    .nav-menu li {
+      padding: 0.5em;
+    }
+
+    .nav-menu.active {
+       display: flex;
+    }
+
+    nav {
+      flex-direction: row; 
+      align-items: flex-start; 
+      padding: .5em; 
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+      nav ul li {
+      padding: 0;
+    }
+
+    .nav-links {
+      display: none; 
+      flex-direction: column;
+      background-color: #1A1D9E; 
+      position: absolute; 
+      top: 60px;
+      right: 0; 
+      width: 100%; 
+      z-index: 9999; 
+      align-items: center;
+    }
+
+    .nav-links.active {
+      display: flex; 
+    }
+
+    .search-container {
+      justify-content: flex-start;
+      padding-right: 1em; 
+    }
+
+    .search-container input {
+      width: 60%; 
     }
    
     .link a {
@@ -1329,75 +1386,11 @@ button.btn5:hover {
       max-width: 20vw;
     }
 
-    .menu-toggle {
-      display: flex;
-    } 
-    
-    .nav-menu {
-      display: none; 
-      flex-direction: column; 
-      background-color: #1A1D9E ; 
-      position: absolute; 
-      top: 60px;
-      right: 0;
-      width: 100%; 
-    }
-
-    .nav-menu li a {
-      color: #F2F7FA  ;
-    }
-
-    .nav-menu.active {
-       display: flex;
-    }
-
     .join-container {
       max-width: 90%;
       padding: 2em 1em; 
       margin: 0 auto; 
       height: auto; 
-    }
-
-    nav {
-      flex-direction: row; 
-      align-items: flex-start; 
-      padding: .5em; 
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-      nav ul li {
-      padding: 0;
-    }
-    
-    .nav-links li a {
-      font-size: 1rem;
-      padding: 0;
-    }
-
-    .nav-links {
-      display: none; 
-      flex-direction: column;
-      background-color: #1A1D9E; 
-      position: absolute; 
-      top: 60px;
-      right: 0; 
-      width: 100%; 
-      z-index: 9999; 
-      align-items: center;
-    }
-
-    .nav-links.active {
-      display: flex; 
-    }
-
-    .search-container {
-      justify-content: flex-start;
-      padding-right: 1em; 
-    }
-
-    .search-container input {
-      width: 60%; 
     }
 
     .join-bottom {
@@ -1426,6 +1419,10 @@ button.btn5:hover {
       margin-left: 0;
     }
 
+    .join-container {
+      margin: 0 auto;
+    }
+    
     .join-section {
       max-width: 100vw;
       height: auto;
@@ -1458,9 +1455,6 @@ button.btn5:hover {
     }
 
   /* hero section responsive styling*/
-    html, body {
-      max-width: 100vw;
-    }
 
     .hero-section {
       height: 30vh;
@@ -1493,10 +1487,6 @@ button.btn5:hover {
 
     .grid2-section2 {
       padding-top: 2em;
-    }
-
-    .join-container {
-      margin: 0 auto;
     }
     
     .button {
