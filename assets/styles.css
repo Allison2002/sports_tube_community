@@ -669,11 +669,8 @@ nav img {
 
 .suggested-reading p,
 .suggested-reading ul li {
+  list-style-type: none;
   padding: .4em;
-}
-
-.suggested-reading ul li::marker {
-  width: 50px;
 }
 
 /* join section */
@@ -782,16 +779,20 @@ margin: 0;
   text-align: center;
 }
 
+#upload-page,
 #article-form {
     border-radius: 1.5em;
     width: 100%;
 }
 
+#upload-page label,
 #article-form  label {
   font-size: 1rem;
   color: black;
 }
 
+#upload-page input,
+#upload-page label,
 #article-form input,
 #article-form  label {
   padding: .5em 0;  
@@ -991,6 +992,7 @@ footer {
     gap: 1em;
 }
 
+
 .contact-form-container input,
 .contact-form-container textarea {
     width: 100%;
@@ -1126,6 +1128,7 @@ input::placeholder {
   color: #1A1D9E;
 }
 
+#upload-page,
 #account-form {
   padding: 2em;
   display: flex;
@@ -1138,6 +1141,8 @@ input::placeholder {
   border-radius: 8px; /* Rounded corners */
   color: #1A1D9E; /* Consistent text color */
 }
+
+#upload-page,
 #account-form h2 {
   font-size: 2rem;
   text-align: center;
@@ -1608,7 +1613,7 @@ button.btn5:hover {
 
     .article-page {
       width: 100%;   
-      padding: 1em; 
+      padding: 2em; 
     }
 
     .article-list-grid {
@@ -1657,8 +1662,19 @@ button.btn5:hover {
     }
 
     form {
-      width: 90%;
+      width: 100%;
       border-radius: 1em;
+      padding: 1em;
+    }
+
+    #account-form {
+      width: 100%;
+    }
+    #account-form h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1em;
+      color: #1A1D9E;
     }
 }
 

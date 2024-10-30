@@ -17,7 +17,7 @@
           <div id="nav"></div>
           <section>
             <div class="hero-section">
-              <img src="/img/upload_banner.png">
+              <img src="/img/upload_banner.png" alt="">
             </div>
           </section>
         </div>  
@@ -42,15 +42,19 @@
           </div>
           <h2>Submit Your Article</h2>
           <form id="article-form" action="/submit-article" method="POST" enctype="multipart/form-data">
+            <div class="form-inputs">
               <label for="author">Author Name:</label>
               <input type="text" id="author" name="author" required>
-
+            </div>
+            <div class="form-inputs">
               <label for="date">Submission Date:</label>
               <input type="date" id="date" name="date" required>
-
+            </div>
+            <div class="form-inputs">
               <label for="title">Article Title:</label>
               <input type="text" id="title" name="title" required>
-
+            </div>
+            <div class="form-inputs">
               <label for="category">Category:</label>
               <select id="category" name="category" required>
                   <option value="news">News</option>
@@ -62,13 +66,15 @@
                   <option value="soccer">Soccer</option>
                   <option value="community">Community Discussions</option>
               </select>
-
+            </div>
+            <div class="form-inputs">
               <label for="contents">Article Content:</label>
               <textarea id="contents" name="contents" rows="10" required></textarea>
-
+            </div>
+            <div class="form-inputs">
               <label for="image">Upload an Image:</label>
               <input type="file" id="image" name="image" accept="image/*" required>
-
+            </div>
               <button type="submit" class="btn5 button">Submit Article</button>
           </form>
         </div>  
