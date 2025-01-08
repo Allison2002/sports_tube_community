@@ -17,7 +17,27 @@
           <div id="nav"></div>
           <section>
             <div class="hero-section">
-              <img src="/img/account_banner.png" alt="">
+              <picture>
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736291605/account_banner_d9jivp.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1280/v1736291605/account_banner_d9jivp.png
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736291605/account_banner_d9jivp.png"
+                  alt="Join the Sports Tube Community – Get in the game with live sports updates, highlights, and fan engagement for soccer, basketball, and football."
+                  style="width: 100vw; height: auto"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+              </picture>
             </div>
           </section>
         </div>  

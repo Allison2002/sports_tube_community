@@ -716,7 +716,7 @@ nav img {
 
 .join-section {
   width: 100vw;
-  background-image: url(/img/join-img.png);
+  background-image: url(https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736226778/join-img_vhu2bg.png);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken; 
   background-repeat: no-repeat;
