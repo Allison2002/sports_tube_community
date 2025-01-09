@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error('Error loading component:', error));
     };
 
-    // Load the navbar and footer
+    // Load the navbar and footer<script src="/assets/script.js" defer></script>
+
     loadComponent('/assets/nav.html', 'nav');
     loadComponent('/assets/footer.html', 'footer');
 
