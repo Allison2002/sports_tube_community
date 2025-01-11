@@ -282,8 +282,10 @@ nav img {
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 80%;
   margin: 0 auto;
+  padding: 5em 0;
+  max-width: 80%; /* Ensure consistent width */
+  gap: 1.5em; /* Match spacing */ 
 }
 
 .grid2 {
@@ -1475,20 +1477,20 @@ button.btn5:hover {
     .grid2 {
       display: flex;
       flex-direction: column;
-      max-width: 90%;
-    }
-
-    .grid2 {
-      padding: 2em 0;
+      gap: 1rem; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 2rem;
+      width: 100%;
     }
 
     .grid2 img {
-      display: block;
-      width: 100%;
+      aspect-ratio: 16 / 9; /* For widescreen images */
+      width: 100%; /* Ensure responsiveness */
       height: auto;
-      aspect-ratio: 16/9; /* Adjust to match the image's ratio */
+      object-fit: cover; /* Prevent distortion */
     }
-
+    
     .grid2-section1 {
       max-width: 90%;
     }
