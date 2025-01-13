@@ -104,15 +104,40 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleBio(bioId);
         });
     });                                                                                     
-    document.getElementById('article-form').addEventListener('submit', function(e) {
-        // Here you can add any client-side validation if necessary
-        const title = document.getElementById('title').value;
-        const author = document.getElementById('author').value;
-        const content = document.getElementById('content').value;
+    document.addEventListener("DOMContentLoaded", function () {
+    // Handle Login Form
+    const loginForm = document.getElementById("account-form");
+    if (loginForm) {
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            console.log("Login Form Submitted:");
+            console.log("Username:", username);
+            console.log("Password:", password);
+            // Add any form processing logic here
+        });
+    }
 
-        // For demonstration purposes, you can log the values to the console
-        console.log("Title:", title);
-        console.log("Author:", author);
-        console.log("Content:", content);
+    // Handle Account Creation Form
+        const accountForm = document.getElementById("account-create-form");
+        if (accountForm) {
+            accountForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const fullName = document.getElementById("full-name").value;
+                const dob = document.getElementById("dob").value;
+                const email = document.getElementById("email").value;
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+                console.log("Account Creation Form Submitted:");
+                console.log("Full Name:", fullName);
+                console.log("DOB:", dob);
+                console.log("Email:", email);
+                console.log("Username:", username);
+                console.log("Password:", password);
+                // Add any form processing logic here
+            });
+        }
     });
+
 });
