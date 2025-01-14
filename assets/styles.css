@@ -260,40 +260,53 @@ nav img {
   height: auto;
 }
 
-/* hero-section */
-.blog-hero-section {
-  max-width: 100%;
+/* General Reset for Consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Hero Section Styling */
+.blog-hero-section,
 .hero-section {
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Ensure it takes the full viewport width */
+  max-width: 100%; /* Prevent any overflow restriction */
   height: auto;
-  width: 100%;
+  display: block;
+  overflow: hidden; /* Prevent unwanted scrolling */
 }
 
 .hero-section {
-  padding-top: 3%;
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Maintain aspect ratio */
+  padding: 0; /* Remove unnecessary padding */
+  margin: 0; /* Remove default margins */
   display: flex;
+  align-items: center; /* Vertically center content if needed */
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
+.hero-section picture,
 .hero-section img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center top;
+  width: 100vw; /* Full viewport width */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the container */
+  display: block; /* Eliminate inline space */
+  margin: 0; /* Reset margins */
+  padding: 0; /* Reset padding */
 }
 
+/* Grid Section (Welcome Section) */
 .grid2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 5em auto 0;
-  padding: 5em 0;
-  min-height: 400px;
-  max-width: 80%; /* Ensure consistent width */
-  gap: 1.5em; /* Match spacing */
-}
-
-.grid2 {
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 1.5em; /* Consistent spacing */
+  max-width: 80%; /* Limit width for alignment */
+  margin: 5em auto; /* Center and space the grid */
   padding: 5em 0;
 }
 
@@ -303,7 +316,7 @@ nav img {
 
 .grid2-section1 h1 {
   color: black;
-  font-size: 4rem;
+  font-size: 4rem; /* Scalable font size */
 }
 
 .hero-intro p {
@@ -311,11 +324,12 @@ nav img {
   padding: 0.5em 0 0;
 }
 
-.hero-join p {
-  font-size: 1.2rem;
-}
 .hero-join {
   padding: 1em 0 0.5em;
+}
+
+.hero-join p {
+  font-size: 1.2rem;
 }
 
 .grid2-section2 {
@@ -324,7 +338,9 @@ nav img {
 
 .grid2-section2 img {
   max-width: 100%;
-  border-radius: 1em;
+  border-radius: 1em; /* Rounded corners for visual interest */
+  aspect-ratio: 16 / 9; /* Enforce aspect ratio */
+  object-fit: cover; /* Ensure the image fills the container */
 }
 
 .categories,
