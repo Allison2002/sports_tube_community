@@ -733,7 +733,8 @@ nav img {
 
 .join-section {
   width: 100vw;
-  background-image: url(https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736226778/join-img_vhu2bg.png);
+  height: auto; /* Ensure the height adjusts dynamically */
+  background-image: url("https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1280/v1736226778/join-img_vhu2bg.webp");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -1212,6 +1213,13 @@ button.btn5:hover {
 .yes-newsletter input[type="checkbox"] {
   width: 1.2em;
   height: 1.2em;
+}
+
+/* Add a media query for larger screens */
+@media (min-width: 1200px) {
+  .join-section {
+    background-image: url("https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736226778/join-img_vhu2bg.webp");
+  }
 }
 
 /* Responsive Styles */
