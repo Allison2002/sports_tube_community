@@ -71,7 +71,7 @@ p {
   padding: 0.75em 1.5em;
   font-size: 1rem;
   color: white;
-  background-color: #fe0000;
+  background-color: #C30000;
   border: 1px solid white;
   border-radius: 5px;
   text-decoration: none;
@@ -82,7 +82,7 @@ p {
 }
 
 .button:hover {
-  background-color: #1a1d9e;
+  background-color: #950000;
   transform: translateY(-2px);
 }
 
@@ -106,7 +106,7 @@ p {
 }
 
 .sct-btn .link a:hover {
-  color: #fe0000;
+  color: #C30000;
 }
 
 .sct-btn .link a::after {
@@ -116,7 +116,7 @@ p {
   bottom: -5px;
   height: 3px;
   width: 100%;
-  background: #fe0000;
+  background: #C30000;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -149,7 +149,7 @@ p {
   bottom: -5px;
   height: 3px;
   width: 100%;
-  background: #fe0000;
+  background: #C30000;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -613,7 +613,7 @@ nav img {
 .privacy-page li a:focus,
 .link a:hover,
 .link a:focus {
-  color: #fe0000;
+  color: #C30000;
 }
 
 .privacy-page li {
@@ -858,7 +858,7 @@ nav img {
 .bottom-nav ul li a:focus,
 .footer-col ul li a:hover,
 .footer-col ul li a:focus {
-  color: #fe0000;
+  color: #C30000;
 }
 
 .bottom-nav ul li a:hover,
