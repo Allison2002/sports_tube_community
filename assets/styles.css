@@ -71,7 +71,7 @@ p {
   padding: 0.75em 1.5em;
   font-size: 1rem;
   color: white;
-  background-color: #C30000;
+  background-color: #fe0000;
   border: 1px solid white;
   border-radius: 5px;
   text-decoration: none;
@@ -82,7 +82,7 @@ p {
 }
 
 .button:hover {
-  background-color: #950000;
+  background-color: #fe0000;
   transform: translateY(-2px);
 }
 
