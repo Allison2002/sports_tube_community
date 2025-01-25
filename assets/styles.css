@@ -494,7 +494,7 @@ nav img {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   width: 70%;
-  padding: 2.5em;
+  padding: 4.54em 2.5em 1.5em;
   margin: 0 auto;
 }
 
