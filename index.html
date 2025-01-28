@@ -27,34 +27,31 @@
         <section>
           <div class="hero-section">
             <picture>
+              <!-- AVIF Format -->
               <source
                 srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,q_75,w_1600/v1736220812/sports_community_hero_1_arl86w.webp
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,q_75,w_1600/v1736220812/sports_community_hero_1_arl86w.avif 1600w,
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,q_75,w_960/v1736220812/sports_community_hero_1_arl86w.avif   960w,
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,q_75,w_640/v1736220812/sports_community_hero_1_arl86w.avif   640w
                 "
+                sizes="(min-width: 1200px) 1600px, (min-width: 768px) 960px, 640px"
+                type="image/avif"
+              />
+
+              <!-- WebP Format -->
+              <source
+                srcset="
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_webp,q_auto,q_75,w_1600/v1736220812/sports_community_hero_1_arl86w.webp 1600w,
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_webp,q_auto,q_75,w_960/v1736220812/sports_community_hero_1_arl86w.webp   960w,
+                  https://res.cloudinary.com/dnptzisuf/image/upload/f_webp,q_auto,q_75,w_640/v1736220812/sports_community_hero_1_arl86w.webp   640w
+                "
+                sizes="(min-width: 1200px) 1600px, (min-width: 768px) 960px, 640px"
                 type="image/webp"
-                media="(min-width: 1200px)"
               />
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,q_75,w_1600/v1736220812/sports_community_hero_1_arl86w.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,q_75,w_960/v1736220812/sports_community_hero_1_arl86w.webp
-                "
-                type="image/webp"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,q_75,w_960/v1736220812/sports_community_hero_1_arl86w.png
-                "
-                media="(min-width: 768px)"
-              />
+
+              <!-- Fallback PNG -->
               <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,q_75,w_640/v1736220812/sports_community_hero_1_arl86w.webp"
+                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,q_75,w_640/v1736220812/sports_community_hero_1_arl86w.png"
                 alt="Sports Community Hub – Connect with Fans, Share Highlights, and Stay Updated on Local and National Games"
                 width="1600"
                 height="586"
