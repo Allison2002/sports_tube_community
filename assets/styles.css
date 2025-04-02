@@ -75,13 +75,17 @@ p {
   gap: 3em;
 }
 
+.hero-btn a {
+  font-weight: 700;
+}
+
 .button {
   display: inline-block;
   padding: 0.75em 1.5em;
   font-size: 1vw;
   color: white;
   background-color: #fe0000;
-  border: 1.5em solid black;
+  border: .1em solid black;
   border-radius: 0.3125em;
   text-decoration: none;
   transition:
