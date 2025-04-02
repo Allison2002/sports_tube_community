@@ -1690,6 +1690,10 @@ button.btn5:hover {
     padding: 0 0 5em;
   }
 
+  .category-box-text {
+    padding: 0.5em 0.5em 1em;
+  }
+
   footer {
     padding-top: 2em;
   }
@@ -1848,7 +1852,7 @@ button.btn5:hover {
 
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    gap: 1em;
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -1863,10 +1867,15 @@ button.btn5:hover {
     margin: 0 auto;
   }
 
-  .categories-box {
-    margin: 0 auto;
+  .categories-title h2 {
+    font-size: 7vw;
   }
 
+  .categories-box {
+    margin: 1em auto;
+    width: auto;
+    padding: 0;
+  }
 
   .categories-box img {
     margin: 0 auto;
