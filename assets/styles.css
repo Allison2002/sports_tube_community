@@ -229,7 +229,7 @@ nav ul li :hover {
 }
 
 .logo-container {
-  height: 5.8vh;
+  height: 100%;
   width: auto;
 }
 
@@ -1775,12 +1775,6 @@ button.btn5:hover {
 
   .blog-hero-section img {
     margin-top: 0;
-  }
-
-  .logo-container {
-    height: 5.9vh;
-    width: auto;
-    padding-left: 10em;
   }
 
   .search-container {
