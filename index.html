@@ -24,40 +24,30 @@
     <header>
       <div class="blog-hero-section">
         <div id="nav"></div>
-        <section>
-          <div class="hero-section">
+        <section class="hero-img">
             <picture>
-              <!-- AVIF Format -->
               <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_320/v1736220812/sports_community_hero_1_arl86w.avif 320w,
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_640/v1736220812/sports_community_hero_1_arl86w.avif 640w,
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_960/v1736220812/sports_community_hero_1_arl86w.avif 960w
-                "
-                sizes="(max-width: 480px) 320px, (max-width: 768px) 640px, 960px"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1743556560/sports_community_hero_pkrwki.avif"
                 type="image/avif"
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 1200px, 100vw"
+                fetchpriority="high"
               />
-
-              <!-- WebP Fallback -->
               <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_320/v1736220812/sports_community_hero_1_arl86w.webp 320w,
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_640/v1736220812/sports_community_hero_1_arl86w.webp 640w,
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto:low,w_960/v1736220812/sports_community_hero_1_arl86w.webp 960w
-                "
-                sizes="(max-width: 480px) 320px, (max-width: 768px) 640px, 960px"
-                type="image/webp"
-              />
-
-              <!-- Default PNG/JPEG Fallback -->
+                srcset="/img/sports_community_hero_tablet.avif"
+                type="image/avif"
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 1200px, 100vw"
+                fetchpriority="high"
+              />                 
               <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736220812/sports_community_hero_1_arl86w.png"
+                src="/img/sports_community_hero_mobile.avif"
                 alt="Sports Community Hub – Connect with Fans, Share Highlights, and Stay Updated"
-                width="1600"
-                height="586"
-                style="width: 100%; height: auto; display: block"
-                loading="lazy"
-                fetchpriority="low"
+                width="100%"
+                height="auto"
+                loading="eager"
+                fetchpriority="high"
+                object-fit="cover"
               />
             </picture>
           </div>
@@ -90,38 +80,24 @@
           <picture>
             <source
               srcset="
-                https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1600/v1736220812/sports_community_hero_1_arl86w.webp
-              "
-              type="image/webp"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1600/v1736220812/sports_community_hero_1_arl86w.png
+                https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1512,c_fill,fl_lossy/v1743550553/intro-sports-tube_jtdcpm.avif
               "
               media="(min-width: 1200px)"
+              type="image/avif"
             />
             <source
-              srcset="
-                https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_960/v1736220812/sports_community_hero_1_arl86w.webp
-              "
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_960/v1736220812/sports_community_hero_1_arl86w.png
-              "
+              srcset="/img/intro-sports-tube-tablet.avif"
               media="(min-width: 768px)"
             />
             <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736220812/sports_community_hero_1_arl86w.webp"
+              src="/img/intro-sports-tube-mobile.avif"
               alt="Sports Community Hub – Connect with Fans, Share Highlights, and Stay Updated on Local and National Games"
-              width="1600"
-              height="586"
-              style="width: 100%; height: auto; display: block"
-              loading="eager"
-              fetchpriority="high"
+              width="480"
+              height="auto"
+              loading="lazy"
+              fetchpriority="low"
+              object-fit="cover"
+              aspect-ratio="16 / 9"
             />
           </picture>
         </div>
@@ -139,7 +115,6 @@
       </section>
 
       <section class="categories" id="categories">
-        <div class="categories-buttons"><h2>Sports Categories</h2></div>
         <div class="category-buttons1">
           <a class="button" href="/pages/categories/football.html">Football</a>
           <a class="button" href="/pages/categories/basketball.html"
