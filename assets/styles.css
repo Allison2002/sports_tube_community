@@ -81,7 +81,7 @@ p {
   font-size: 1vw;
   color: white;
   background-color: #fe0000;
-  border: 0.0625em solid white;
+  border: 1.5em solid black;
   border-radius: 0.3125em;
   text-decoration: none;
   transition:
@@ -490,6 +490,8 @@ nav ul li :hover {
 .category-buttons2 a,
 .category-buttons1 a {
   margin: 0 auto;
+  font-weight: 700;
+  border: 1px solid black;
 }
 
 .category-buttons2 {
