@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update hamburger visibility based on screen size and navbar state
     const updateHamburgerVisibility = () => {
       hamburgerIcon.style.display =
-        window.innerWidth > 768 || navMenu.classList.contains("active")
+        window.innerWidth > 1024 || navMenu.classList.contains("active")
           ? "none"
           : "flex";
     };
