@@ -338,13 +338,12 @@ nav ul li :hover {
   max-width: 80vw;
   max-width: 80%;
   height: auto;
-  /* Limit width for alignment */
-  margin: 20vh auto 20vh;
-  /* Center and space the grid */
+  margin: 8em auto;
 }
 
 .grid2-section1 {
   width: 100%;
+  height: auto;
 }
 
 .grid2-section1 h1 {
@@ -797,7 +796,7 @@ nav ul li :hover {
   width: 32vw;
   height: auto;
   margin: 0 auto;
-  padding: 1em 0;
+
 }
 
 .input-text input {
@@ -806,11 +805,12 @@ nav ul li :hover {
   width: 100%;
   border-radius: 0.25em;
   border: 1px solid #b0b0b0;
-  font-size: 1vw;
+  font-size: 2.5vw;
 }
 
-.input-text ::placeholder {
+.input-text input::placeholder {
   font-size: 1vw;
+  padding: 0 1em;
 }
 
 .input-text-join p {
@@ -1037,7 +1037,7 @@ footer {
 .bottom-logo {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 30vw;
   height: auto;
   margin: 0 auto;
 }
@@ -1045,7 +1045,6 @@ footer {
 .bottom-logo img {
   width: 100%;
   height: auto;
-  aspect-ratio: 2.73;
   margin: 0 auto;
 }
 
@@ -1919,6 +1918,27 @@ button.btn5:hover {
 
   .grid2 {
     padding: 1.5em 0 0;
+  }
+
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 80vw;
+    max-width: 80%;
+    height: auto;
+    margin: 4em auto;
+  }
+
+  .grid2-section2 {
+    width: 80vw;
+    height: auto;
+  }
+
+  .grid2-section2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .category-buttons1,
