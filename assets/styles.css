@@ -400,7 +400,7 @@ nav ul li :hover {
 
 .categories-grid {
   grid-template-columns: repeat(4, 1fr);
-  gap: 2em 2em;
+  gap: 2em;
   width: 80vw;
   max-width: 90vw;
   height: auto;
@@ -423,7 +423,7 @@ nav ul li :hover {
 .feature-box {
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 100;
   height: auto;
   text-align: left;
   margin: 0 auto;
@@ -432,6 +432,7 @@ nav ul li :hover {
 .categories-box img,
 .feature-box img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center bottom;
@@ -1997,12 +1998,16 @@ button.btn5:hover {
 
   .categories-box {
     margin: 1em auto;
-    width: auto;
+    width: 100%;
+    height: auto;
     padding: 0;
   }
 
   .categories-box img {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    object-fit: cover;
   }
 
   .home-btn {
