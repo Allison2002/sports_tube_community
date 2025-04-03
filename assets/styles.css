@@ -1034,9 +1034,10 @@ footer {
 .bottom-logo {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   width: 28.6vw;
   height: auto;
+  margin: 0 auto;
 }
 
 .bottom-logo img {
@@ -2050,7 +2051,7 @@ button.btn5:hover {
   }
 
   .footer-logo {
-    width: 50vw;
+    width: 34.8vw;
   }
 
   .bottom-logo img {
