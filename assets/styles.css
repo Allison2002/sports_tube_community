@@ -811,7 +811,7 @@ nav ul li :hover {
   font-size: 1vw;
 }
 
-.input-texth5 {
+.input-texth4 {
   font-size: 1.2vw;
   padding: 1em 0 1em;
   width: 32vw;
@@ -1616,7 +1616,7 @@ button.btn5:hover {
     padding: 0;
   }
 
-  .input-texth5 h5 {
+  .input-texth4 h4 {
     font-size: 1.2vw;
     padding: 0;
   }
@@ -1641,11 +1641,11 @@ button.btn5:hover {
     flex-wrap: nowrap;
   }
 
-  .bottom-nav h4 {
+  .bottom-nav h5 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: end;
     width: 11vw;
     font-size: 1.2vw;
     padding: 0;
@@ -2165,7 +2165,7 @@ button.btn5:hover {
   }
 
   /* Fix input size */
-  .input-texth5 h5 {
+  .h4 h4 {
     font-size: 4vw;
     text-align: center;
     width: 80%;
@@ -2180,7 +2180,7 @@ button.btn5:hover {
     border-radius: 0.5em;
   }
 
-  .input-texth5 {
+  .input-texth4 {
     width: 100vw;
   }
 
