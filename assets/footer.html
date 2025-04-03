@@ -21,15 +21,32 @@
       <div class="footer-content">
         <div class="footer-logo footer-col">
           <div class="bottom-logo">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_880/v1743515920/official_sports_tube_logo_vr8hey.avif"
-              type="image/avif"
-              alt="Sports Tube Logo"
-              width="28.6vw"
-              height="10.48vh"
-              aspect-ratio="2.73"
-              object-fit="cover"
-            />
+            <picture>
+              <source
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1098,fl_lossy/v1743515920/official_sports_tube_logo_vr8hey.avif"
+                type="image/avif"
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 1200px, 100vw"
+                fetchpriority="high"
+              />
+              <source
+                srcset="/img/official_sports_tube_logo.avif"
+                type="image/avif"
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 1200px, 100vw"
+                fetchpriority="high"
+              />                 
+              <img
+                src="/img/official_sports_tube_logo.avif"
+                alt="Sports Tube Logo"
+                width="28.6vw"
+                height="10.48vh"
+                aspect-ratio="2.73"
+                object-fit="cover"
+                loading="lazy"
+                fetchpriority="low"
+              />
+            </picture>
           </div>
           <div class="join-bottom">
             <div class="join-text-bottom">
