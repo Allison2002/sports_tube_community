@@ -976,7 +976,7 @@ nav ul li :hover {
   /* Adds spacing between the icon and the text */
 }
 
-.footer-col ul li h5 {
+.footer-col ul li p {
   font-size: 1.5vw;
   color: #1a1d9e;
   /* Text color */
@@ -1100,7 +1100,7 @@ footer {
 /* Links in Footer */
 .join h5,
 .join h4,
-.footer-col h3,
+.footer-col h4,
 .bottom-nav ul li a,
 .footer-col ul li a {
   display: inline-block;
@@ -1111,12 +1111,12 @@ footer {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.footer-col h3 {
+.footer-col h4 {
   font-size: 1.3vw;
   text-decoration: underline;
 }
 
-.footer-col ul li a h5 {
+.footer-col ul li a p {
   font-size: 1vw;
 }
 
@@ -1681,11 +1681,11 @@ button.btn5:hover {
     /* Center the subscription area */
   }
 
-  .footer-col h3 {
+  .footer-col h4 {
     font-size: 1.7vw;
   }
 
-  .footer-col ul li a h4 {
+  .footer-col ul li a p {
     font-size: 1.5vw;
     width: 100%;
     height: auto;
@@ -2131,7 +2131,7 @@ button.btn5:hover {
     padding: 1em;
   }
 
-  .footer-col h3 {
+  .footer-col h4 {
     font-size: 3.2vw;
     /* Increase font size for accessibility */
     margin-bottom: 0.5em;
@@ -2157,7 +2157,7 @@ button.btn5:hover {
     margin-bottom: 0.5em;
   }
 
-  .footer-col .social-media h4 {
+  .footer-col .social-media p {
     font-size: 4vw;
     /* Increase text size for labels */
     text-align: center;
@@ -2206,7 +2206,7 @@ button.btn5:hover {
     margin: 0.5em 0;
   }
 
-  .footer-col ul li a h4 {
+  .footer-col ul li a p {
     font-size: 3vw;
     width: 100%;
     height: auto;
