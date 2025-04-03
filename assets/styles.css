@@ -835,7 +835,7 @@ nav ul li :hover {
   width: 100%;
   height: auto;
   /* Ensure the height adjusts dynamically */
-  background-image: url("https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1280/v1736226778/join-img_vhu2bg.webp");
+  background-image: url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1280/v1736226778/join-img_vhu2bg.avif");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-repeat: no-repeat;
