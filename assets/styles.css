@@ -401,6 +401,7 @@ nav ul li :hover {
 .categories-grid {
   grid-template-columns: repeat(4, 1fr);
   gap: 2em;
+  min-width: 10vw;
   width: 80vw;
   max-width: 90vw;
   height: auto;
@@ -423,7 +424,8 @@ nav ul li :hover {
 .feature-box {
   display: flex;
   flex-direction: column;
-  width: 100;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   text-align: left;
   margin: 0 auto;
@@ -434,6 +436,7 @@ nav ul li :hover {
   width: 100%;
   max-width: 100%;
   height: auto;
+  aspect-ratio: 1.80;
   object-fit: cover;
   object-position: center bottom;
   box-shadow: 0 0.3125em 0.9375rem rgba(0, 0, 0, 0.2);
@@ -2019,7 +2022,7 @@ button.btn5:hover {
     height: auto;
     margin: 0 auto;
     object-fit: cover;
-    aspect-ratio: 1.79;
+    aspect-ratio: 1.80;
   }
 
   .home-btn {
