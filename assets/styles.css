@@ -1100,7 +1100,6 @@ footer {
 /* Links in Footer */
 .join h5,
 .join h4,
-.footer-col h4,
 .footer-col h3,
 .bottom-nav ul li a,
 .footer-col ul li a {
@@ -1112,7 +1111,7 @@ footer {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 1.3vw;
   text-decoration: underline;
 }
@@ -1642,7 +1641,7 @@ button.btn5:hover {
     flex-wrap: nowrap;
   }
 
-  .bottom-nav h5 {
+  .bottom-nav h4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1682,11 +1681,11 @@ button.btn5:hover {
     /* Center the subscription area */
   }
 
-  .footer-col h4 {
+  .footer-col h3 {
     font-size: 1.7vw;
   }
 
-  .footer-col ul li a h5 {
+  .footer-col ul li a h4 {
     font-size: 1.5vw;
     width: 100%;
     height: auto;
@@ -2132,8 +2131,8 @@ button.btn5:hover {
     padding: 1em;
   }
 
-  .footer-col h4 {
-    font-size: 4vw;
+  .footer-col h3 {
+    font-size: 3.2vw;
     /* Increase font size for accessibility */
     margin-bottom: 0.5em;
     color: #1a1d9e;
@@ -2158,7 +2157,7 @@ button.btn5:hover {
     margin-bottom: 0.5em;
   }
 
-  .footer-col .social-media h5 {
+  .footer-col .social-media h4 {
     font-size: 4vw;
     /* Increase text size for labels */
     text-align: center;
@@ -2203,14 +2202,12 @@ button.btn5:hover {
 
   .footer-col ul li {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin: 0.5em 0;
   }
 
-  .footer-col ul li a h5 {
-    font-size: 3.5vw;
+  .footer-col ul li a h4 {
+    font-size: 3vw;
     width: 100%;
     height: auto;
     padding: 0.5em;
