@@ -497,6 +497,8 @@ nav ul li :hover {
   flex-direction: row;
   margin: 0 auto;
   gap: 1.5em;
+  width: 35vw;
+  height: auto;
 }
 
 .category-buttons2 a,
@@ -847,7 +849,6 @@ nav ul li :hover {
   height: auto;
   padding: 6vw;
   margin: 0 auto;
-  max-width: 80%;
   background-color: translucent;
 }
 
@@ -866,11 +867,11 @@ nav ul li :hover {
 }
 
 .join-text h3 {
-  font-size: 7vw;
+  font-size: 3.5vw;
 }
 
 .join-text p {
-  font-size: 4vw;
+  font-size: 2.5vw;
   padding: 0.5em 0 1em;
 }
 
@@ -1586,6 +1587,7 @@ button.btn5:hover {
     object-fit: cover;
     display: block;
   }
+
 
   .categories-title,
   .feature-title {
