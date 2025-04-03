@@ -858,12 +858,12 @@ nav ul li :hover {
 }
 
 .join-text p,
-.join-text h2 {
+.join-text h3 {
   color: white;
   margin: 0;
 }
 
-.join-text h2 {
+.join-text h3 {
   font-size: 7vw;
 }
 
