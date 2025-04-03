@@ -1035,7 +1035,6 @@ footer {
 .bottom-logo {
   display: flex;
   justify-content: center;
-  align-content: center;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -1592,17 +1591,15 @@ button.btn5:hover {
   }
 
   .bottom-logo {
-    width: 100%;
-    /* Make the logo take up full width */
+    width: 35vw;
+    height: auto;
+    aspect-ratio: 2.73;
     justify-content: center;
-    /* Center the logo */
     margin-bottom: 1em;
-    /* Add space below the logo */
   }
 
   .bottom-logo img {
-    width: 80%;
-    /* Make the logo smaller */
+    width: 100%;
     height: auto;
     object-fit: contain;
     /* Ensure it scales correctly */
