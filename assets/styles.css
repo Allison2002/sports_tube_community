@@ -1576,24 +1576,19 @@ button.btn5:hover {
 
   footer {
     padding-top: 3em;
-    /* Reduce space at the top */
     height: auto;
     width: 100vw;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
-    /* Stacking the columns */
     padding: 2em 0.5em;
-    /* Reduce padding for smaller screens */
     gap: 1em;
-    /* Reduce gap between elements */
   }
 
   .bottom-logo {
     width: 35vw;
     height: auto;
-    aspect-ratio: 2.73;
     justify-content: center;
     margin-bottom: 1em;
   }
@@ -1602,7 +1597,6 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     object-fit: contain;
-    /* Ensure it scales correctly */
   }
 
   .join-text-bottom p {
@@ -2055,13 +2049,14 @@ button.btn5:hover {
 
   .bottom-logo {
     width: 65vw;
+    max-width: 70vw;
     height: auto;
   }
 
   .bottom-logo img {
     width: 100%;
+    max-width: 70vw;
     height: auto;
-    aspect-ratio: 2.73;
   }
 
   .input-text {
