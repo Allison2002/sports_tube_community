@@ -1470,7 +1470,7 @@ button.btn5:hover {
   .logo-container {
     height: 5.9vh;
     width: auto;
-    padding-left: 1;
+    padding-left: 1em;
     justify-content: flex-start;
     padding: 0.5em 0.5em 0.5em 10em;
 
@@ -1811,6 +1811,26 @@ button.btn5:hover {
 }
 
 @media (max-width: 480px) {
+  nav {
+    width: 100vw;
+    max-width: 100vw;
+    height: 8.89vh;
+  }
+
+  .logo-container {
+    width: auto;
+    height: 90%;
+    max-height: 95%;
+  }
+
+  .logo-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2.73 / 1;
+    margin-left: -11.3em;
+  }
+
   .bottom-hr {
     display: flex;
     width: 80%;
