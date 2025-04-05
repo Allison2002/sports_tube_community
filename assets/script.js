@@ -107,39 +107,54 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleBio(bioId);
     });
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    // Handle Login Form
-    const loginForm = document.getElementById("account-form");
-    if (loginForm) {
-      loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        console.log("Login Form Submitted:");
-        console.log("Username:", username);
-        console.log("Password:", password);
-        // Add any form processing logic here
-      });
-    }
 
-    // Handle Account Creation Form
-    const accountForm = document.getElementById("account-create-form");
-    if (accountForm) {
-      accountForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const fullName = document.getElementById("full-name").value;
-        const dob = document.getElementById("dob").value;
-        const email = document.getElementById("email").value;
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        console.log("Account Creation Form Submitted:");
-        console.log("Full Name:", fullName);
-        console.log("DOB:", dob);
-        console.log("Email:", email);
-        console.log("Username:", username);
-        console.log("Password:", password);
-        // Add any form processing logic here
-      });
-    }
+  // Handle Login Form
+  const loginForm = document.getElementById("account-form");
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      console.log("Login Form Submitted:");
+      console.log("Username:", username);
+      console.log("Password:", password);
+      // Add any form processing logic here
+    });
+  }
+
+  // Handle Account Creation Form
+  const accountForm = document.getElementById("account-create-form");
+  if (accountForm) {
+    accountForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const fullName = document.getElementById("full-name").value;
+      const dob = document.getElementById("dob").value;
+      const email = document.getElementById("email").value;
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      console.log("Account Creation Form Submitted:");
+      console.log("Full Name:", fullName);
+      console.log("DOB:", dob);
+      console.log("Email:", email);
+      console.log("Username:", username);
+      console.log("Password:", password);
+      // Add any form processing logic here
+    });
+  }
+
+  // Lazy load the join-section background image
+  const lazySections = document.querySelectorAll('.join-section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.backgroundImage = 'url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1280/v1736226778/join-img_vhu2bg.avif")';
+        observer.unobserve(entry.target); // Stop observing once it's loaded
+      }
+    });
+  }, { threshold: 0.1 }); // Trigger when 10% of the section is in view
+
+  lazySections.forEach(section => {
+    observer.observe(section);
   });
 });
