@@ -148,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        // Defer the actual image load when it's about to come into view
         entry.target.style.backgroundImage = 'url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1280/v1736226778/join-img_vhu2bg.avif")';
         observer.unobserve(entry.target); // Stop observing once it's loaded
       }
@@ -155,6 +156,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.1 }); // Trigger when 10% of the section is in view
 
   lazySections.forEach(section => {
-    observer.observe(section);
+    observer.observe(section); // Observe the join section
   });
 });
