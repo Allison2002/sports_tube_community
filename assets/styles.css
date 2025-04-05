@@ -179,8 +179,8 @@ nav {
   position: fixed;
   width: 100%;
   max-width: 100vw;
-  height: 9vh;
-  padding: 0.5em 2em;
+  height: 10vh;
+  padding: 0.5em 1em;
   display: flex;
   align-items: center;
   color: #fff;
@@ -268,9 +268,7 @@ nav ul li :hover {
   margin-left: 3em;
 }
 
-.search-container input::placeholder {
-  font-size: 1vw;
-}
+
 
 .menu-toggle {
   cursor: pointer;
@@ -1352,7 +1350,7 @@ input {
 .comments textarea,
 input::placeholder {
   color: #6b6b6b;
-  font-size: 1rem;
+  font-size: 2vw;
   padding: 0.5em 0.5em;
   color: #1a1d9e;
 }
@@ -1443,15 +1441,6 @@ button.btn5:hover {
     overflow-x: hidden;
   }
 
-  nav {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    padding: 0.5em 0.5em 0.5em 0;
-  }
 
   .hero-img {
     width: 100%;
@@ -1465,38 +1454,6 @@ button.btn5:hover {
     height: 100%;
     object-position: bottom;
     aspect-ratio: 3 / 2;
-  }
-
-  .logo-container {
-    height: 5.9vh;
-    width: auto;
-    padding-left: 1em;
-    justify-content: flex-start;
-    padding: 0.5em 0.5em 0.5em 10em;
-
-  }
-
-  .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 0.7em;
-    flex: 1;
-    height: 5.9vh;
-    width: 100%;
-    max-width: 25vw;
-    /* Reduced max-width to avoid taking too much space */
-  }
-
-  .search-container input {
-    width: 100%;
-    max-width: 100%;
-    /* Ensure it takes up full width but doesn't exceed container size */
-  }
-
-  .search-container input::placeholder {
-    font-size: 3vw;
-    /* Ensure readability on small screens */
   }
 
   .menu-toggle {
@@ -1534,10 +1491,6 @@ button.btn5:hover {
     display: flex;
   }
 
-  .logo-container img {
-    margin-left: -8em;
-  }
-
   /* Initially hide the hamburger menu */
   .nav-menu {
     display: none;
@@ -1547,21 +1500,15 @@ button.btn5:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Align items to the left */
     justify-content: flex-start;
-    /* Align items at the top */
     background-color: #1a1d9e;
-    /* Background color for mobile menu */
     position: fixed;
     top: 0;
     right: 0;
     width: 60%;
-    /* Set width to take less space (60% of the screen width) */
     height: 100%;
-    /* Full height */
     z-index: 9999;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Add a subtle shadow */
     animation: slideIn 0.5s ease-in-out;
   }
 
@@ -1806,8 +1753,6 @@ button.btn5:hover {
   .article {
     padding: 2em 0.5em;
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -1823,20 +1768,6 @@ button.btn5:hover {
     height: auto;
     object-position: top;
     aspect-ratio: 1.45;
-  }
-
-  .logo-container {
-    width: auto;
-    height: 80%;
-    max-height: 85%;
-  }
-
-  .logo-container img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 2.73 / 1;
-    margin-left: -11.3em;
   }
 
   .bottom-hr {
@@ -1872,39 +1803,8 @@ button.btn5:hover {
     font-size: 4vw;
   }
 
-  nav {
-    position: fixed;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    padding: 0;
-  }
-
   .blog-hero-section img {
     margin-top: 0;
-  }
-
-  .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 0.7em;
-    flex: 1;
-    height: 4.9vh;
-    width: 100%;
-    max-width: 40vw;
-    /* Reduced max-width to avoid taking too much space */
-  }
-
-  .search-container input {
-    width: 100%;
-    max-width: 100%;
-    /* Ensure it takes up full width but doesn't exceed container size */
-  }
-
-  .search-container input::placeholder {
-    font-size: 4vw;
-    /* Ensure readability on small screens */
   }
 
   .menu-toggle {
@@ -1996,8 +1896,8 @@ button.btn5:hover {
   .categories-grid,
   .feature-article-grid {
     display: grid;
-    width: 80%;
-    max-width: 80vw;
+    width: 90%;
+    max-width: 100vw;
     height: auto;
     margin: 0 auto;
   }
@@ -2006,9 +1906,13 @@ button.btn5:hover {
     font-size: 7vw;
   }
 
+  .search-container input::placeholder {
+    font-size: 3vw;
+  }
+
   .categories-box {
     margin: 1em auto;
-    max-width: 25vw;
+    max-width: 40vw;
     width: 100%;
     height: auto;
     padding: 0;
