@@ -324,6 +324,7 @@ nav ul li :hover {
   display: block;
   padding: 0;
   object-position: bottom center;
+  aspect-ratio: 2.74;
 }
 
 /* Grid Section (Welcome Section) */
@@ -1454,7 +1455,7 @@ button.btn5:hover {
     width: 100%;
     height: 100%;
     object-position: bottom;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 1.71 / 1;
   }
 
   .menu-toggle {
@@ -1768,7 +1769,7 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     object-position: top;
-    aspect-ratio: 1.45;
+    aspect-ratio: 1.45 / 1;
   }
 
   .bottom-hr {
@@ -1924,7 +1925,7 @@ button.btn5:hover {
     height: auto;
     margin: 0 auto;
     object-fit: cover;
-    aspect-ratio: 1.80;
+    aspect-ratio: 1.80 / 1;
   }
 
   .home-btn {
