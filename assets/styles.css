@@ -268,6 +268,9 @@ nav ul li :hover {
   margin-left: 3em;
 }
 
+.search-container input::placeholder {
+  font-size: 1vw;
+}
 
 
 .menu-toggle {
@@ -419,19 +422,17 @@ nav ul li :hover {
   margin: 0 auto;
 }
 
-.categories-box,
-.feature-box {
+.categories-box {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 18.75vw;
   max-width: 100%;
   height: auto;
   text-align: left;
   margin: 0 auto;
 }
 
-.categories-box img,
-.feature-box img {
+.categories-box img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -441,18 +442,6 @@ nav ul li :hover {
   box-shadow: 0 0.3125em 0.9375rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
   margin: 0 auto;
-}
-
-.feature-box-text a h3 {
-  padding: 1em 0.5em 0;
-  font-size: 1vw;
-  font-weight: 700;
-  color: #1a1d9e;
-}
-
-.feature-box-text p {
-  font-size: 0.9rem;
-  padding: 0.5em 0.5em 5em;
 }
 
 .categories {
@@ -542,8 +531,7 @@ nav ul li :hover {
   font-size: 1rem;
 }
 
-.category-box-text p,
-.feature-box-text p {
+.category-box-text p {
   text-align: left;
   padding-top: 1em;
 }
@@ -799,24 +787,23 @@ nav ul li :hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
   width: 32vw;
-  height: auto;
-  margin: 0 auto;
+  height: 3.5vh;
+  margin: 0.5em auto 0;
 
 }
 
 .input-text input {
   flex: 1;
-  height: 3vh;
+  height: 100%;
   width: 100%;
-  border-radius: 0.25em;
-  border: 1px solid #b0b0b0;
-  font-size: 2.5vw;
+  border-radius: 0.3125em;
+  padding: 0.5em;
 }
 
 .input-text input::placeholder {
   font-size: 1vw;
-  padding: 0 1em;
 }
 
 .input-text-join p {
