@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // Defer the actual image load when it's about to come into view
-        entry.target.style.backgroundImage = 'url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1280/v1736226778/join-img_vhu2bg.avif")';
+        entry.target.style.backgroundImage = 'url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy,c_fill,/v1736226778/join-img_vhu2bg.avif")';
         observer.unobserve(entry.target); // Stop observing once it's loaded
       }
     });
