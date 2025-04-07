@@ -421,6 +421,7 @@ nav ul li :hover {
   width: 80vw;
   max-width: 90vw;
   height: auto;
+  min-height: 20vh;
 }
 
 .categories-title,
