@@ -384,6 +384,7 @@ nav ul li :hover {
   height: auto;
   object-fit: cover;
   display: block;
+  aspect-ratio: 7 / 4;
 }
 
 .categories,
