@@ -435,7 +435,7 @@ nav ul li :hover {
   font-size: 2.5vw;
   text-align: center;
   width: 80vw;
-  height: 8vh;
+  height: auto;
   margin: 1em auto;
   text-decoration: underline;
 }
@@ -1949,6 +1949,12 @@ button.btn5:hover {
     font-size: 5vw;
   }
 
+  .categories h3 {
+    font-size: 5vw;
+    width: 80vw;
+
+  }
+
   .categories {
     width: 100%;
     height: auto;
@@ -1972,11 +1978,19 @@ button.btn5:hover {
   .feature-article-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+    width: 80%;
+    max-width: 80vw;
+    height: auto;
+    min-height: 20vh;
   }
 
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+    width: 80%;
+    max-width: 80vw;
+    height: auto;
+    min-height: 20vh;
   }
 
   .feature-box {
