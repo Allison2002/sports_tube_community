@@ -557,6 +557,8 @@ nav ul li :hover {
 .quotation-r img,
 .quotation-l img {
   width: 3vw;
+  height: auto;
+  aspect-ratio: 1 / 1;
 }
 
 .quotation-r {
