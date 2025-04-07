@@ -393,6 +393,7 @@ nav ul li :hover {
   margin: auto 0;
   width: 100%;
   max-width: 100vw;
+  height: auto;
 }
 
 .feature-article-grid {
@@ -1760,6 +1761,11 @@ button.btn5:hover {
 }
 
 @media (max-width: 480px) {
+  main {
+    width: 100%;
+    max-width: 100vw;
+  }
+
   .hero-img {
     width: 100%;
     max-width: 100vw;
@@ -1819,6 +1825,7 @@ button.btn5:hover {
     border-radius: 0.3125em;
     background-color: transparent;
     width: 5vh;
+    max-width: 5vh;
     height: auto;
   }
 
@@ -1862,6 +1869,10 @@ button.btn5:hover {
   .category-buttons1,
   .category-buttons2 {
     gap: 0.5em;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    min-width: 10vw;
   }
 
   .feature-title {
@@ -1876,6 +1887,10 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     padding-bottom: 2.5em;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    min-width: 10vw;
   }
 
   .categories,
@@ -1885,6 +1900,7 @@ button.btn5:hover {
     margin: auto 0;
     width: 100%;
     max-width: 100vw;
+    height: auto;
   }
 
   .feature-article-grid {
