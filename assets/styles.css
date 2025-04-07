@@ -1501,6 +1501,15 @@ button.btn5:hover {
     animation: slideIn 0.5s ease-in-out;
   }
 
+  .categories-grid {
+    min-width: 5vw;
+  }
+
+  .categories-box {
+    width: 17vw;
+    margin: 1em auto 2em;
+  }
+
   .grid2-section2 {
     display: flex;
     justify-content: center;
