@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e1e5e8;
-
 }
 
 body {
@@ -357,8 +356,8 @@ nav ul li :hover {
 .hero-intro p {
   font-size: 1.8vw;
   padding: 0.5em 0 0;
-  min-height: 10vh;
-  width: 100%:
+  min-height: 1.8vw;
+  width: 100%;
 }
 
 .hero-join {
@@ -404,46 +403,67 @@ nav ul li :hover {
 
 .feature-article-grid {
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.5em;
+
 }
 
 .categories-grid {
   grid-template-columns: repeat(4, 1fr);
-  gap: 2em;
-  min-width: 10vw;
-  width: 80vw;
-  max-width: 90vw;
-  height: auto;
+
 }
 
 .categories-grid,
 .feature-article-grid {
   display: grid;
-  max-width: 80vw;
-  margin: 0 auto;
+  margin: 2em auto;
+  gap: 2em;
+  min-width: 60vw;
+  width: 80vw;
+  max-width: 90vw;
+  height: auto;
 }
 
 .categories-title,
 .feature-title {
   padding: 6em 0 3em;
   margin: 0 auto;
+  text-decoration: underline;
 }
 
+.categories h3 {
+  font-size: 2.5vw;
+  text-align: center;
+  width: 80vw;
+  height: 8vh;
+  margin: 1em auto;
+  text-decoration: underline;
+}
+
+.feature-box {
+  width: 100%;
+  height: auto;
+}
+
+.feature-box,
 .categories-box {
   display: flex;
   flex-direction: column;
-  width: 18.75vw;
   max-width: 100%;
   height: auto;
   text-align: left;
   margin: 0 auto;
 }
 
-.categories-box img {
+.categories-box {
+  width: 18.75vw;
+  max-width: 25vw;
+  height: auto;
+}
+
+.feature-box img {
   width: 100%;
   max-width: 100%;
+  aspect-ratio: 5 / 4;
   height: auto;
-  aspect-ratio: 1.80;
   object-fit: cover;
   object-position: center bottom;
   box-shadow: 0 0.3125em 0.9375rem rgba(0, 0, 0, 0.2);
@@ -451,10 +471,41 @@ nav ul li :hover {
   margin: 0 auto;
 }
 
+.categories-box img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1.80 / 1;
+  object-fit: cover;
+  object-position: center bottom;
+  box-shadow: 0 0.3125em 0.9375rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  margin: 0 auto;
+}
+
+.feature-box-text a h3 {
+  padding: 1em 0.5em 0;
+  font-size: 1vw;
+  font-weight: 700;
+  color: #1a1d9e;
+}
+
+.feature-box-text a p {
+  font-size: 1.2vw;
+  height: 6vh;
+  padding: 0.5em;
+}
+
+.feature-box-text p {
+  font-size: 1vw;
+  height: 10vh;
+  padding: 0.5em;
+}
+
 .categories {
   border-bottom: 1px solid black;
   padding: 1em 0 10em;
-  margin: 0 auto;
+  margin: 5em auto 1em;
   width: 80%;
   max-width: 80vw;
 }
@@ -529,15 +580,20 @@ nav ul li :hover {
 }
 
 .category-box-text h3 {
+  width: 80vw;
+  height: auto;
   font-weight: 700;
   color: #1a1d9e;
   text-align: center;
 }
 
 .category-box-text h3 {
-  font-size: 1rem;
+  font-size: 1.2vw;
+  width: 100%;
+  height: 5vh;
 }
 
+.feature-box-text p,
 .category-box-text p {
   text-align: left;
   padding-top: 1em;
@@ -1771,7 +1827,9 @@ button.btn5:hover {
   main {
     width: 100%;
     max-width: 100vw;
+    min-height: 30vh;
     height: auto;
+    box-sizing: border-box;
   }
 
   .hero-img {
@@ -1800,7 +1858,7 @@ button.btn5:hover {
 
   .grid2-section1 h1 {
     font-size: 5.5vw;
-    height: 505vw;
+    height: 6vh;
   }
 
   .hero-join {
@@ -1915,7 +1973,7 @@ button.btn5:hover {
 
   .feature-article-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
+    gap: 1em;
   }
 
   .categories-grid {
@@ -1923,13 +1981,29 @@ button.btn5:hover {
     gap: 1em;
   }
 
+  .feature-box {
+    padding: 1em 0;
+  }
+
   .categories-grid,
   .feature-article-grid {
     display: grid;
-    width: 90%;
-    max-width: 100vw;
+    width: 80%;
+    max-width: 80vw;
     height: auto;
-    margin: 0 auto;
+    min-height: 5vh;
+    margin: 1em auto 2em;
+  }
+
+  .feature-box-text a p {
+    font-size: 3.2vw;
+    height: 6vh;
+    padding: 0.5em;
+  }
+
+  .feature-box-text p {
+    font-size: 3vw;
+    height: 3vh;
   }
 
   .categories-title h2 {
