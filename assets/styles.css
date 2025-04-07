@@ -281,6 +281,7 @@ nav ul li :hover {
   background-color: transparent;
   width: 8vh;
   height: 8vh;
+  justify-content: flex-end;
 }
 
 .menu-toggle img {
@@ -1518,6 +1519,7 @@ button.btn5:hover {
     background-color: transparent;
     width: 8vh;
     height: 5.9vh;
+    justify-content: flex-end;
   }
 
   .menu-toggle img {
@@ -1529,12 +1531,10 @@ button.btn5:hover {
     aspect-ratio: 1 / 1;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
   .menu-toggle {
     display: flex;
+    width: 8vw;
+    height: auto;
   }
 
   .nav-menu {
@@ -1591,6 +1591,28 @@ button.btn5:hover {
     height: auto;
     object-fit: cover;
     display: block;
+  }
+
+  .feature-article-grid {
+    display: grid;
+    margin: 1em auto;
+    gap: 1em;
+    min-width: 60vw;
+    width: 80vw;
+    max-width: 80vw;
+    height: auto;
+  }
+
+  .feature-box-text a p {
+    font-size: 1.7vw;
+    height: auto;
+    padding: 1vw 0.5vw 0.5vw;
+  }
+
+  .feature-box-text p {
+    font-size: 1.5vw;
+    height: auto;
+    padding: 0.5vw;
   }
 
 
@@ -1782,7 +1804,8 @@ button.btn5:hover {
   }
 
   .category-box-text {
-    padding: 0.5em 0.5em 1em;
+    padding: 0.5em;
+    height: 5vh;
   }
 
   footer {
@@ -1879,27 +1902,6 @@ button.btn5:hover {
     margin-top: 0;
   }
 
-  .menu-toggle {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
-    border-radius: 0.3125em;
-    background-color: transparent;
-    width: 5vh;
-    max-width: 5vh;
-    height: auto;
-    transition: all 0.3s ease;
-  }
-
-  .menu-toggle img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-  }
-
   .grid2-section2 img {
     object-position: left center;
   }
@@ -1992,17 +1994,29 @@ button.btn5:hover {
 
   .feature-box-text a p {
     font-size: 3.2vw;
-    height: 6vh;
-    padding: 0.5em;
+    height: auto;
+    padding: 1vw 0.5vw 0.5vw;
   }
 
   .feature-box-text p {
     font-size: 3vw;
-    height: 3vh;
+    height: auto;
+    padding: 0.5vw;
   }
 
   .categories-title h2 {
     font-size: 7vw;
+  }
+
+  .search-container {
+    width: 20vw;
+    height: 4vh;
+  }
+
+  .search-container input {
+    width: 100%;
+    height: auto;
+    margin-left: 1em;
   }
 
   .search-container input::placeholder {
