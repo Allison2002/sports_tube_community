@@ -492,14 +492,15 @@ nav ul li :hover {
 
 .feature-box-text a p {
   font-size: 1.2vw;
-  height: 6vh;
+  height: 10vh;
   padding: 0.5em;
 }
 
 .feature-box-text p {
   font-size: 1vw;
   height: 10vh;
-  padding: 0.5em;
+  padding: 1em 0.5em;
+  text-align: left;
 }
 
 .categories {
@@ -591,12 +592,6 @@ nav ul li :hover {
   font-size: 1.2vw;
   width: 100%;
   height: 5vh;
-}
-
-.feature-box-text p,
-.category-box-text p {
-  text-align: left;
-  padding-top: 1em;
 }
 
 /* article list*/
