@@ -1846,7 +1846,7 @@ button.btn5:hover {
   main {
     width: 100%;
     max-width: 100vw;
-    min-height: 30vh;
+    min-height: 10vh;
     height: auto;
     box-sizing: border-box;
   }
@@ -1861,8 +1861,8 @@ button.btn5:hover {
   .hero-img img {
     width: 100%;
     height: auto;
-    object-position: top;
-    aspect-ratio: 1.45/1;
+    object-position: bottom;
+    aspect-ratio: 7/4;
   }
 
   .bottom-hr {
