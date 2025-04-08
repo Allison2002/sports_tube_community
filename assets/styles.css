@@ -19,6 +19,14 @@ body {
   max-width: 100vw;
 }
 
+main {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 50vh;
+  height: auto;
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.1em;
@@ -177,7 +185,8 @@ nav {
   position: fixed;
   width: 100%;
   max-width: 100vw;
-  height: 10vh;
+  height: auto;
+  min-height: 5vh;
   padding: 0.5em 1em;
   display: flex;
   align-items: center;
@@ -234,8 +243,10 @@ nav ul li :hover {
 }
 
 .logo-container {
-  height: 100%;
-  width: auto;
+  height: auto;
+  max-height: 5vh;
+  width: 35vw;
+  max-width: 45vw;
 }
 
 .logo-container img {
@@ -248,8 +259,10 @@ nav ul li :hover {
 .nav-icon-container {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   height: auto;
+  min-height: 2vh;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -1995,15 +2008,6 @@ button.btn5:hover {
   /* Initially hide the hamburger menu */
   .nav-menu {
     display: none;
-  }
-
-
-  main {
-    width: 100%;
-    max-width: 100vw;
-    min-height: 20vh;
-    height: auto;
-    box-sizing: border-box;
   }
 
   .hero-img {
