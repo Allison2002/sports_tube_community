@@ -1585,6 +1585,7 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 
   .categories-grid {
@@ -1954,9 +1955,8 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
-
-
 
   .hero-img {
     width: 100%;
