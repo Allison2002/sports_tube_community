@@ -6,22 +6,14 @@
 
 html,
 body {
-
   margin: 0;
   padding: 0;
   background-color: #e1e5e8;
-}
-
-body {
-  overflow-x: hidden;
-  height: auto;
-  min-height: 5vh;
-  width: 100%;
-  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 main {
-  margin: auto 0;
+  margin: 0 auto;
   width: 60%;
   max-width: 60vw;
   height: auto;
@@ -219,12 +211,14 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
-  margin-left: 0;
+  margin: 0 auto;
+
 }
 
 nav ul li {
   list-style-type: none;
   padding: 0 1em;
+
 }
 
 nav ul li a {
@@ -232,6 +226,7 @@ nav ul li a {
   color: white;
   font-weight: bold;
   font-size: 1.2vw;
+
 }
 
 nav ul li :hover {
@@ -244,8 +239,8 @@ nav ul li :hover {
   display: flex;
   height: auto;
   min-height: 2vh;
-  width: 15vw;
-  max-width: 30vw;
+  width: 10vw;
+  max-width: 15vw;
 }
 
 .logo-container img {
@@ -263,7 +258,7 @@ nav ul li :hover {
   height: auto;
   min-height: 2vh;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   padding: 0;
 }
 
@@ -271,14 +266,15 @@ nav ul li :hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 2em;
+  margin-right: 0;
   flex: 1;
   height: auto;
-  width: 22vw;
+  width: 15vw;
+  max-width: 15vw;
 }
 
 .search-container input {
-  width: 22vw;
+  width: 15vw;
   height: auto;
   max-height: auto;
   max-width: 40vw;
@@ -355,19 +351,22 @@ nav ul li :hover {
 
 .grid2-section1 {
   width: 100%;
+  max-width: 100vw;
   height: auto;
 }
 
 .grid2-section1 h1 {
   color: black;
   font-size: 3.5vw;
-  /* Scalable font size */
+  height: auto;
+  min-height: 1vh;
 }
 
 .hero-intro p {
   font-size: 1.8vw;
+  height: auto;
   padding: 0.5em 0 0;
-  min-height: 1.8vw;
+  min-height: 1vw;
   width: 100%;
 }
 
@@ -403,7 +402,7 @@ nav ul li :hover {
 .feature-article {
   display: flex;
   flex-direction: column;
-  margin: auto 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 100vw;
   height: auto;
@@ -1529,14 +1528,6 @@ button.btn5:hover {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  main {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 80vw;
-    height: auto;
-    min-height: 5vh;
-    box-sizing: border-box;
-  }
 
   .bottom-hr {
     display: none;
@@ -1595,15 +1586,16 @@ button.btn5:hover {
     max-width: 100vw;
     height: auto;
     min-height: 2vh;
-    justify-content: center;
+    justify-content: right;
   }
 
   .menu-toggle {
     display: flex;
     width: auto;
     max-height: 8vw;
-    height: 6vh;
+    height: 5vh;
     min-height: 1vh;
+    margin-right: 2em;
   }
 
   .menu-toggle img {
@@ -1611,6 +1603,21 @@ button.btn5:hover {
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+  }
+
+  .logo-container {
+    display: flex;
+    height: auto;
+    min-height: 2vh;
+    width: 15vw;
+    max-width: 20vw;
+  }
+
+  .logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 2.73;
   }
 
   .join-section {
@@ -1699,7 +1706,7 @@ button.btn5:hover {
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -1990,28 +1997,6 @@ button.btn5:hover {
 }
 
 @media (max-width: 768px) {
-  main {
-    width: 80%;
-    height: auto;
-    min-height: 5vh;
-    max-width: 80vw;
-    margin: 0 auto;
-  }
-
-  .hero-img {
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    min-height: 2vh;
-  }
-
-  .hero-img img {
-    width: 100%;
-    height: auto;
-    object-position: bottom;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
 
   .categories {
     margin: 0 auto;
@@ -2024,13 +2009,6 @@ button.btn5:hover {
     margin: 1em auto;
   }
 
-  .grid2 {
-    width: 80%;
-    max-width: 180vw;
-    height: auto;
-    min-height: 2vh;
-  }
-
   .join-section {
     max-width: 100vw;
     min-width: 30vw;
@@ -2041,29 +2019,14 @@ button.btn5:hover {
 }
 
 @media (max-width: 480px) {
-  main {
-    margin: auto 0;
-    width: 90%;
-    max-width: 90vw;
-    height: auto;
-    min-height: 5vh;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
 
   nav {
     position: fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: auto;
     max-width: 100vw;
-    color: #fff;
-    background-color: #fe0000;
-    border-bottom: 0.08em solid black;
-    transition:
-      background-color 0.3s ease,
-      border-bottom 0.3s ease;
   }
 
   .nav-icon-container {
@@ -2074,10 +2037,9 @@ button.btn5:hover {
     height: auto;
     min-height: 1vh;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     flex: 1;
     padding: 0;
-    margin: 0 auto;
     gap: 1em;
   }
 
@@ -2088,8 +2050,8 @@ button.btn5:hover {
     flex: 1;
     height: auto;
     min-height: 1vh;
-    width: 40vw;
-    max-width: 45vw;
+    width: 25vw;
+    max-width: 30vw;
   }
 
   .search-container input {
@@ -2139,6 +2101,7 @@ button.btn5:hover {
     max-height: 6vw;
     height: 4vh;
     min-height: 1vh;
+    margin-right: 0;
   }
 
   .menu-toggle img {
@@ -2156,8 +2119,6 @@ button.btn5:hover {
   }
 
   .hero-img img {
-    width: 100%;
-    height: auto;
     object-position: bottom;
     aspect-ratio: 3/2;
     object-fit: cover;
@@ -2171,15 +2132,33 @@ button.btn5:hover {
 
   .hero-intro p {
     font-size: 4vw;
+    height: auto;
+    min-height: 1vh;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .grid2-section1 {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 3vh;
   }
 
   .grid2-section1 h1 {
+    width: 100%;
+    max-width: 100vw;
     font-size: 5.5vw;
     height: auto;
+    min-height: 1vh;
   }
 
   .hero-join {
-    padding: 0.5em;
+    width: 100%;
+    max-width: 100vh;
+    height: auto;
+    min-height: 1vh;
+    padding: 0.5em 0;
   }
 
   .hero-btn {
@@ -2211,18 +2190,28 @@ button.btn5:hover {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    max-width: 80vw;
-    max-width: 80%;
+    width: 100vw;
+    max-width: 100%;
     height: auto;
     min-height: 2vh;
     margin: 4em auto;
+  }
+
+  .grid2-section1 {
+    width: 80%;
+    max-width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    min-height: 2vh;
   }
 
   .grid2-section2 {
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 3vh;
+    min-height: 2vh;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .grid2-section2 img {
@@ -2246,10 +2235,11 @@ button.btn5:hover {
 
   .categories-title,
   .feature-title {
-    padding: 2em 0 0.5em;
+    padding: 1em 0 0.5em;
     width: 100%;
     max-width: 100vw;
     height: auto;
+    min-height: 2vh;
     margin: 0 auto;
   }
 
@@ -2260,6 +2250,14 @@ button.btn5:hover {
     height: auto;
     text-align: center;
     align-items: center;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 1vh;
+    margin: 0 auto
   }
 
   .categories {
@@ -2280,6 +2278,7 @@ button.btn5:hover {
     gap: 1em;
     width: 80%;
     max-width: 80vw;
+    margin: 0 auto;
   }
 
 
@@ -2291,9 +2290,8 @@ button.btn5:hover {
 
   .feature-box {
     padding: 1em 0;
-    width: 38.5vw;
-    max-width: 40vw;
-    min-height: 10vh;
+    width: 100%;
+    max-width: 100vw;
     height: auto;
   }
 
@@ -2318,7 +2316,6 @@ button.btn5:hover {
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 1vh;
   }
 
   .category-box-text a h3,
@@ -2331,6 +2328,8 @@ button.btn5:hover {
 
   .category-box-text a h3,
   .feature-box-text p {
+    width: 100%;
+    max-width: 100vw;
     font-size: 3.2vw;
     height: auto;
     padding: 0.5vw;
