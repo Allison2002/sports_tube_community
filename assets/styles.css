@@ -1683,10 +1683,14 @@ button.btn5:hover {
   .grid2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    width: 80%;
+    /* Two equal columns */
+    gap: 1.5em;
+    /* Consistent spacing */
     max-width: 80vw;
+    max-width: 80%;
     height: auto;
-    margin: 3em auto;
+    min-height: 5vh;
+    margin: 5em auto;
   }
 
   .grid2-section2 {
@@ -1987,6 +1991,8 @@ button.btn5:hover {
 @media (max-width: 768px) {
   main {
     width: 80%;
+    height: auto;
+    min-height: 5vh;
     max-width: 80vw;
     margin: 0 auto;
   }
@@ -2009,7 +2015,7 @@ button.btn5:hover {
     width: 90%;
     max-width: 90vw;
     height: auto;
-    min-height: 20vh;
+    min-height: 5vh;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -2174,9 +2180,10 @@ button.btn5:hover {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    max-width: 100vw;
-    max-width: 100%;
+    max-width: 80vw;
+    max-width: 80%;
     height: auto;
+    min-height: 2vh;
     margin: 4em auto;
   }
 
