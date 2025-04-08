@@ -348,10 +348,10 @@ nav ul li :hover {
   /* Two equal columns */
   gap: 1.5em;
   /* Consistent spacing */
-  max-width: 80vw;
-  max-width: 80%;
+  max-width: 60vw;
+  max-width: 60%;
   height: auto;
-  margin: 8em auto;
+  margin: 5em auto;
 }
 
 .grid2-section1 {
@@ -361,7 +361,7 @@ nav ul li :hover {
 
 .grid2-section1 h1 {
   color: black;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   /* Scalable font size */
 }
 
@@ -389,9 +389,16 @@ nav ul li :hover {
   justify-content: center;
   align-items: center;
   max-width: 65vw;
-  width: 45vw;
+  width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.grid2-section2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .grid2-section2 img {
@@ -427,11 +434,11 @@ nav ul li :hover {
   display: grid;
   margin: 2em auto;
   gap: 2em;
-  min-width: 60vw;
-  width: 80vw;
-  max-width: 90vw;
+  min-width: 40vw;
+  width: 60vw;
+  max-width: 700vw;
   height: auto;
-  min-height: 20vh;
+  min-height: 10vh;
 }
 
 .categories-title,
@@ -925,7 +932,7 @@ nav ul li :hover {
 .join-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   max-width: 100vw;
   min-height: 10vw;
   height: auto;
@@ -937,13 +944,13 @@ nav ul li :hover {
 .join-text {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  max-width: 90vw;
-  width: 90%;
+  justify-content: center;
+  max-width: 80vw;
+  width: 80%;
   min-height: 2vh;
   height: auto;
   text-align: left;
-  margin: auto 0;
+  margin: 0 auto;
 }
 
 .join-text p,
@@ -1158,7 +1165,8 @@ footer {
 
 .bottom-nav h5 {
   font-size: 1vw;
-  padding-left: 11.5em;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer-col-grid {
@@ -1172,8 +1180,11 @@ footer {
 
 .bottom-nav {
   display: flex;
+  flex-direction: column;
   padding: 2em 0;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .bottom-nav ul {
@@ -1186,7 +1197,9 @@ footer {
 .bottom-nav ul li {
   list-style: none;
   padding: 0 1em;
+  padding: 0 2em;
 }
+
 
 .footer-col-text {
   padding: 0;
@@ -1867,6 +1880,24 @@ button.btn5:hover {
     height: 5vh;
   }
 
+  .input-text input {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3125em;
+    padding: 0.5em;
+  }
+
+  .input-text input::placeholder {
+    font-size: 1.2vw;
+  }
+
+  .input-text-join p {
+    font-size: 1.3vw;
+    padding: 1em 0 1em;
+    width: 32vw;
+  }
+
   footer {
     padding-top: 2em;
   }
@@ -2458,13 +2489,16 @@ button.btn5:hover {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 80%;
-    width: 80vw;
+    width: 95%;
+    width: 95vw;
     margin: 0 auto;
   }
 
   .bottom-nav {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
   }
 
   .bottom-nav h5 {
@@ -2474,9 +2508,12 @@ button.btn5:hover {
 
   .bottom-nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1em;
     width: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   .category-buttons1,
