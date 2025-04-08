@@ -1609,6 +1609,28 @@ button.btn5:hover {
     margin: 1em auto 2em;
   }
 
+  .category-buttons2,
+  .category-buttons1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 1em;
+    width: 50vw;
+    height: auto;
+  }
+
+  .category-buttons2 .button,
+  .category-buttons1 .button {
+    margin: 0 auto;
+    font-weight: 700;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+  }
+
+  .button {
+    font-size: 2vw;
+  }
+
   .grid2-section2 {
     display: flex;
     justify-content: center;
