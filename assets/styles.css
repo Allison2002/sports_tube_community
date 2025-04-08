@@ -20,11 +20,14 @@ body {
 }
 
 main {
-  width: 100%;
-  max-width: 100vw;
+  margin: auto 0;
+  width: 60%;
+  max-width: 60vw;
+  height: auto;
   min-height: 15vh;
   height: auto;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 h1 {
@@ -190,6 +193,7 @@ nav {
   transition:
     background-color 0.3s ease,
     border-bottom 0.3s ease;
+  z-index: 10;
 }
 
 .nav-links {
@@ -240,7 +244,7 @@ nav ul li :hover {
   display: flex;
   height: auto;
   min-height: 2vh;
-  width: 25vw;
+  width: 15vw;
   max-width: 30vw;
 }
 
@@ -439,8 +443,10 @@ nav ul li :hover {
 .feature-title {
   padding: 6em 0 3em;
   margin: 0 auto;
-  width: 80vw;
+  width: 100%;
+  max-width: 100vw;
   height: auto;
+  min-height: 2vh;
   text-decoration: underline;
 }
 
@@ -523,11 +529,10 @@ nav ul li :hover {
 }
 
 .categories {
-  border-bottom: 1px solid black;
   padding: 1em 0 10em;
   margin: 5em auto 1em;
-  width: 80%;
-  max-width: 80vw;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .categories-box {
@@ -921,8 +926,8 @@ nav ul li :hover {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  max-width: 40vw;
-  width: 40%;
+  max-width: 80vw;
+  width: 80%;
   min-height: 2vh;
   height: auto;
   text-align: left;
@@ -1532,6 +1537,7 @@ button.btn5:hover {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+
   .bottom-hr {
     display: none;
   }
@@ -1615,6 +1621,13 @@ button.btn5:hover {
     min-width: 5vw;
   }
 
+  .categories {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 5em;
+  }
+
   .categories-box {
     width: 17vw;
     margin: 1em auto 2em;
@@ -1626,7 +1639,8 @@ button.btn5:hover {
     flex-direction: row;
     margin: 0 auto;
     gap: 1em;
-    width: 50vw;
+    width: 100%;
+    max-width: 100vw;
     height: auto;
   }
 
@@ -1673,9 +1687,9 @@ button.btn5:hover {
     display: grid;
     margin: 1em auto;
     gap: 1em;
-    min-width: 60vw;
-    width: 80vw;
-    max-width: 80vw;
+    min-width: 40vw;
+    width: 60vw;
+    max-width: 60vw;
     height: auto;
   }
 
@@ -1696,6 +1710,8 @@ button.btn5:hover {
   .feature-title {
     padding: 2em 0 1em;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100vw;
   }
 
   footer {
@@ -1875,12 +1891,6 @@ button.btn5:hover {
     padding: 3em 0 1.5em;
   }
 
-  .categories {
-    width: 80vw;
-    max-width: 80vw;
-    padding: 0 0 5em;
-  }
-
   .categories-grid {
     width: 100%;
     max-width: 100vw;
@@ -1951,6 +1961,12 @@ button.btn5:hover {
 }
 
 @media (max-width: 480px) {
+  main {
+    margin: auto 0;
+    width: 90%;
+    max-width: 90vw;
+  }
+
   nav {
     position: fixed;
     display: flex;
@@ -2103,14 +2119,6 @@ button.btn5:hover {
     height: auto;
   }
 
-  .grid2-section2 img {
-    object-position: left center;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
-
   .grid2 {
     padding: 1.5em 0 0;
   }
@@ -2119,8 +2127,8 @@ button.btn5:hover {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    max-width: 80vw;
-    max-width: 80%;
+    max-width: 100vw;
+    max-width: 100%;
     height: auto;
     margin: 4em auto;
   }
@@ -2132,20 +2140,30 @@ button.btn5:hover {
     min-height: 3vh;
   }
 
+  .grid2-section2 img {
+    width: 100%;
+    max-width: 100vw;
+    object-fit: cover;
+    aspect-ratio: 16 /9;
+    margin: 0 auto;
+  }
+
   .category-buttons1,
   .category-buttons2 {
+    display: flex;
     gap: 0.5em;
     width: 100%;
     height: auto;
     max-width: 100vw;
     min-width: 10vw;
+    margin: 0 auto;
   }
 
   .categories-title,
   .feature-title {
     padding: 2em 0 0.5em;
-    width: 80%;
-    max-width: 80vw;
+    width: 100%;
+    max-width: 100vw;
     height: auto;
     margin: 0 auto;
   }
@@ -2160,22 +2178,23 @@ button.btn5:hover {
   }
 
   .categories {
-    padding-bottom: 2.5em;
-  }
-
-  .categories {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 5vh;
+    min-height: 2vh;
+    padding-bottom: 2.5em;
   }
 
   .feature-article-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+    width: 80%;
+    max-width: 80vw;
   }
 
 
