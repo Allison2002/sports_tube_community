@@ -75,12 +75,6 @@ p {
   z-index: 3;
 }
 
-.grid-btn {
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
-}
-
 .hero-btn a {
   font-weight: 700;
 }
@@ -434,9 +428,9 @@ nav ul li :hover {
   display: grid;
   margin: 2em auto;
   gap: 2em;
-  min-width: 40vw;
+  min-width: 50vw;
   width: 60vw;
-  max-width: 700vw;
+  max-width: 80vw;
   height: auto;
   min-height: 10vh;
 }
@@ -457,15 +451,6 @@ nav ul li :hover {
   text-align: center;
 }
 
-.categories h3 {
-  font-size: 2.5vw;
-  text-align: center;
-  width: 80vw;
-  height: auto;
-  margin: 1em auto;
-  text-decoration: underline;
-}
-
 .feature-box {
   width: 100%;
   height: auto;
@@ -483,8 +468,8 @@ nav ul li :hover {
 }
 
 .categories-box {
-  width: 18.75vw;
-  max-width: 25vw;
+  width: 100%;
+  max-width: 100vw;
   height: auto;
 }
 
@@ -508,6 +493,13 @@ nav ul li :hover {
   box-shadow: 0 0.3125em 0.9375rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
   margin: 0 auto;
+}
+
+.category-box-text a h3 {
+  font-size: 1vw;
+  font-weight: 700;
+  color: #1a1d9e;
+  text-align: center;
 }
 
 .feature-box-text a h3 {
@@ -546,13 +538,6 @@ nav ul li :hover {
 .categories-box:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
-}
-
-.categories-box h3 {
-  font-weight: 700;
-  /* Bold */
-  font-size: 1.25rem;
-  /* Larger size */
 }
 
 .article-color1,
@@ -606,21 +591,11 @@ nav ul li :hover {
 
 .category-box-text {
   padding: 1em 1em 2em;
-}
-
-.category-box-text h3 {
-  width: 80vw;
   height: auto;
-  font-weight: 700;
-  color: #1a1d9e;
-  text-align: center;
+  width: 100%;
+  max-width: 100vw;
 }
 
-.category-box-text h3 {
-  font-size: 1.2vw;
-  width: 100%;
-  height: 5vh;
-}
 
 /* article list*/
 
@@ -916,6 +891,7 @@ nav ul li :hover {
   font-size: 1vw;
 }
 
+
 .join-section {
   max-width: 100vw;
   min-width: 30vw;
@@ -933,12 +909,25 @@ nav ul li :hover {
   display: flex;
   flex-direction: column;
   width: 80%;
-  max-width: 100vw;
+  max-width: 80vw;
   min-height: 10vw;
   height: auto;
   padding: 6vw;
   margin: 0 auto;
   background-color: translucent;
+}
+
+.grid-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  max-width: 40vw;
+  width: 40%;
+  min-height: 2vh;
+  height: auto;
+  text-align: left;
+  margin: 0 auto;
+  gap: 2vw;
 }
 
 .join-text {
@@ -1562,7 +1551,8 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     object-position: bottom;
-    aspect-ratio: 1.71 / 1;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .nav-menu {
@@ -1617,6 +1607,10 @@ button.btn5:hover {
     object-fit: cover;
   }
 
+  .search-container input::placeholder {
+    font-size: 2vw;
+  }
+
   .categories-grid {
     min-width: 5vw;
   }
@@ -1648,12 +1642,21 @@ button.btn5:hover {
     font-size: 2vw;
   }
 
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 80%;
+    max-width: 80vw;
+    height: auto;
+    margin: 3em auto;
+  }
+
   .grid2-section2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 65vw;
-    width: 52.5vw;
+    max-width: 100vw;
+    width: 80%;
     height: auto;
     margin: 0 auto;
   }
@@ -1663,6 +1666,7 @@ button.btn5:hover {
     height: auto;
     object-fit: cover;
     display: block;
+    aspect-ratio: 16 / 9;
   }
 
   .feature-article-grid {
@@ -1728,9 +1732,9 @@ button.btn5:hover {
     padding: 0;
   }
 
-  .input-text-join p {
-    font-size: 1.2vw;
-    padding: 0;
+  .join-bottom .input-text-join p {
+    font-size: 1.5vw;
+    padding: 1em;
   }
 
   .social-media {
@@ -1872,24 +1876,39 @@ button.btn5:hover {
   }
 
   .categories {
+    width: 80vw;
+    max-width: 80vw;
     padding: 0 0 5em;
+  }
+
+  .categories-grid {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
   }
 
   .category-box-text {
     padding: 0.5em;
-    height: 5vh;
+    height: auto;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .category-box-text a h3 {
+    font-size: 1.2vw;
   }
 
   .input-text input {
     flex: 1;
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 0.3125em;
-    padding: 0.5em;
+    padding: 0.4em;
   }
 
   .input-text input::placeholder {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
+
   }
 
   .input-text-join p {
@@ -2041,6 +2060,7 @@ button.btn5:hover {
     height: auto;
     object-position: bottom;
     aspect-ratio: 5/4;
+    object-fit: cover;
   }
 
   .bottom-hr {
@@ -2249,10 +2269,19 @@ button.btn5:hover {
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
     height: auto;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     width: 100%;
+  }
+
+  .grid-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 80vw;
   }
 
   .article-list-grid {
