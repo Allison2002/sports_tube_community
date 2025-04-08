@@ -2002,6 +2002,8 @@ button.btn5:hover {
     margin: 0 auto;
     width: 100%;
     max-width: 100vw;
+    height: auto;
+    min-height: 2vh;
 
   }
 
@@ -2165,6 +2167,10 @@ button.btn5:hover {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 1vw;
   }
 
 
@@ -2173,6 +2179,10 @@ button.btn5:hover {
   }
 
   .hero-join p {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 1vh;
     font-size: 4vw;
   }
 
@@ -2197,14 +2207,6 @@ button.btn5:hover {
     margin: 4em auto;
   }
 
-  .grid2-section1 {
-    width: 100%;
-    max-width: 100vw;
-    margin: 0 auto;
-    height: auto;
-    min-height: 2vh;
-  }
-
   .grid2-section2 {
     width: 100%;
     max-width: 100vw;
@@ -2216,7 +2218,6 @@ button.btn5:hover {
 
   .grid2-section2 img {
     width: 80vw;
-    max-width: 80vw;
     object-fit: cover;
     aspect-ratio: 16 /9;
     margin: 0 auto;
@@ -2230,7 +2231,6 @@ button.btn5:hover {
     height: auto;
     max-width: 100vw;
     min-width: 10vw;
-    margin: 0 auto;
   }
 
   .categories-title,
@@ -2260,6 +2260,7 @@ button.btn5:hover {
     margin: 0 auto
   }
 
+  .feature-article,
   .categories {
     display: flex;
     flex-direction: column;
@@ -2273,12 +2274,12 @@ button.btn5:hover {
     padding-bottom: 2.5em;
   }
 
+  .categories-grid,
   .feature-article-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    width: 80%;
-    max-width: 80vw;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100vw;
   }
 
 
@@ -2299,16 +2300,6 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     aspect-ratio: 5 / 4;
-  }
-
-  .categories-grid,
-  .feature-article-grid {
-    display: grid;
-    width: 80%;
-    max-width: 80vw;
-    height: auto;
-    min-height: 5vh;
-    margin: 1em auto 2em;
   }
 
   .category-box-text,
@@ -2649,17 +2640,5 @@ button.btn5:hover {
     text-align: center;
     margin: 0 auto;
     padding-left: 0;
-  }
-
-  .category-buttons1,
-  .category-buttons2 {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 80vw;
-    height: auto;
-    min-height: 2vh;
-    margin: 0 auto;
-    padding: 0.5em;
   }
 }
