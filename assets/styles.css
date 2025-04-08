@@ -1626,11 +1626,6 @@ button.btn5:hover {
     width: 100%;
     height: auto;
     min-height: 5vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
   }
 
   .join-container {
@@ -2223,6 +2218,14 @@ button.btn5:hover {
     margin: 0 auto;
   }
 
+  .categories {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 2vh;
+    margin: 0 auto;
+  }
+
   .category-buttons1,
   .category-buttons2 {
     display: flex;
@@ -2260,8 +2263,7 @@ button.btn5:hover {
     margin: 0 auto
   }
 
-  .feature-article,
-  .categories {
+  .feature-article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2274,7 +2276,6 @@ button.btn5:hover {
     padding-bottom: 2.5em;
   }
 
-  .categories-grid,
   .feature-article-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
@@ -2287,6 +2288,10 @@ button.btn5:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     margin: 0 auto;
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+    min-height: 2vh;
   }
 
   .feature-box {
@@ -2394,6 +2399,14 @@ button.btn5:hover {
   .article-page {
     width: 95%;
     padding: 2em;
+  }
+
+  .join-section {
+    max-width: 100vw;
+    min-width: 20vw;
+    width: 100%;
+    height: auto;
+    min-height: 2vh;
   }
 
   #account-form {
