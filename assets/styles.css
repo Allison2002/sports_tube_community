@@ -1676,7 +1676,10 @@ button.btn5:hover {
   }
 
   .categories-box {
-    width: 17vw;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 2vh;
     margin: 1em auto 2em;
   }
 
@@ -2035,8 +2038,8 @@ button.btn5:hover {
 
   .categories {
     margin: 0 auto;
-    width: 80%;
-    max-width: 80vw;
+    width: 90%;
+    max-width: 90vw;
     height: auto;
     min-height: 2vh;
 
