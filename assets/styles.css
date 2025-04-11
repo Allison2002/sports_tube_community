@@ -97,8 +97,8 @@ p {
 }
 
 .button {
-  padding: 0.2em 1em;
-  font-size: 1vw;
+  padding: 0.5em 1em;
+  font-size: 1.2vw;
 }
 
 .button:hover {
@@ -331,17 +331,17 @@ nav ul li :hover {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 5vh;
+  min-height: 2vh;
+  padding-top: 7vh;
 }
 
 .hero-img img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  display: block;
   padding: 0;
-  object-position: bottom center;
-  aspect-ratio: 2.80 / 1;
+  object-position: bottom;
+  object-fit: cover;
+  aspect-ratio: 2.73 / 1;
 }
 
 /* Grid Section (Welcome Section) */
@@ -710,23 +710,23 @@ nav ul li :hover {
   padding: 3em;
 }
 
-.article-page {
-  padding: 2em 2em 4em;
-}
-
 .article-title h1 {
   padding: 1.5em 0 0.5em;
   font-size: 4rem;
 }
 
 .article-text {
-  padding: 4em 0 2em;
+  padding: 3em 0 2em;
   line-height: 1.4;
 }
 
 .article-text p {
   padding: 0.5em 0;
   line-height: 1.6;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  min-height: 1vh;
 }
 
 .article-text u {
@@ -942,7 +942,6 @@ nav ul li :hover {
   min-height: 2vh;
   height: auto;
   text-align: left;
-  margin: 0 auto;
   gap: 2vw;
 }
 
@@ -1572,8 +1571,8 @@ button.btn5:hover {
   .hero-img img {
     width: 100%;
     height: auto;
-    object-position: bottom;
-    aspect-ratio: 16 / 9;
+    object-position: center center;
+    aspect-ratio: 2.28 / 1;
     object-fit: cover;
   }
 
@@ -1634,8 +1633,8 @@ button.btn5:hover {
     display: flex;
     height: auto;
     min-height: 2vh;
-    width: 15vw;
-    max-width: 20vw;
+    width: 25vw;
+    max-width: 30vw;
   }
 
   .logo-container img {
@@ -1786,6 +1785,14 @@ button.btn5:hover {
     width: 80%;
     max-width: 80vw;
     margin: 0 auto;
+  }
+
+  .article-page {
+    padding: 1em 2em;
+  }
+
+  .article-text {
+    padding-top: 2em;
   }
 
   footer {
@@ -2024,14 +2031,6 @@ button.btn5:hover {
 
   .quote p {
     font-size: 3vw;
-  }
-
-  .article-page {
-    padding: 1em 0.5em 1em;
-  }
-
-  .article {
-    padding: 2em 0.5em;
   }
 }
 
@@ -2273,7 +2272,7 @@ button.btn5:hover {
 
   .hero-img img {
     object-position: bottom;
-    aspect-ratio: 3/2;
+    aspect-ratio: 1.25 / 1;
     object-fit: cover;
   }
 
@@ -2491,6 +2490,10 @@ button.btn5:hover {
     padding: 0.5vw;
   }
 
+  .article-title p {
+    font-size: 3vw;
+  }
+
   .search-container {
     width: 20vw;
     height: 4vh;
@@ -2546,6 +2549,10 @@ button.btn5:hover {
     max-width: 100vw;
   }
 
+  .article {
+    padding: 2em;
+  }
+
   .article-list-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -2559,6 +2566,14 @@ button.btn5:hover {
   .article-page {
     width: 95%;
     padding: 2em;
+  }
+
+  .article-title h2 {
+    font-size: 4.5vw;
+  }
+
+  .article-text {
+    padding: 1em 0 2em;
   }
 
   .join-section {
@@ -2604,6 +2619,10 @@ button.btn5:hover {
 
   .box1 p {
     font-size: .8vw;
+  }
+
+  .suggested-reading {
+    padding: 1em;
   }
 
   .footer-content {

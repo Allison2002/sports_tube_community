@@ -7,11 +7,19 @@
       name="description"
       content="Explore the vibrant fan culture in sports, from tailgating traditions and local sports bars to regional expressions of support that foster community pride and connection."
     />
-    <title>Sports Community Blog</title>
+    <title>Fan Culture in Sports: Tailgating, Local Sports Bars, and Regional Traditions That Foster Community Pride</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/assets/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="icon" href="/my_tube_blog/img/sports_community_logo.png" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744286529/community-fan-culture-desktop_tkoktv.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744286530/community-fan-culture-tablet_liwa2o.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+
+    <link rel="preload" href="/img/community-diversity-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      type="image/webp"
+    />
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,11 +27,13 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Fan Culture: How Communities Rally Around Their Teams",
+        "headline": "Fan Culture in Sports: Tailgating, Local Sports Bars, and Regional Traditions That Foster Community Pride",
         "description": "Explore the vibrant fan culture in sports, from tailgating traditions and local sports bars to regional expressions of support that foster community pride and connection.",
         "author": {
           "@type": "Person",
@@ -57,29 +67,32 @@
       <div class="blog-hero-section">
         <div id="nav"></div>
         <section class="hero-img">
-            <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736306182/community_banner2_y9ja2i.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1280/v1736306182/community_banner2_y9ja2i.png
-                "
-                media="(min-width: 768px)"
-              />
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736306182/community_banner2_y9ja2i.png"
-                alt="Fan culture in sports – How communities rally around their teams through traditions, tailgating, and local support at Sports Tube Community."
-                width="100%"
-                height="auto"
-                loading="eager"
-                fetchpriority="high"
-                object-fit="cover"
-              />
-            </picture>
+          <picture>
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744286529/community-fan-culture-desktop_tkoktv.avif 100w"
+              type="image/avif"
+              media="(min-width: 1200px) and (max-width: 100vw)"
+              sizes="(min-width: 1200px) 1200px, 100vw"
+              fetchpriority="high"
+            />
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744286530/community-fan-culture-tablet_liwa2o.avif 100w"
+              type="image/avif"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              sizes="100vw"
+              fetchpriority="high"
+            />
+            <img
+              src="/img/community-fan-culture-mobile.avif"
+              alt="Fan culture in sports – How communities rally around their teams through traditions, tailgating, and local support at Sports Tube Community."
+              width="480"
+              height="auto"
+              aspect-ratio="1.25 / 1"
+              loading="eager"
+              fetchpriority="high"
+              object-fit="cover"
+            />
+          </picture>
         </section>
       </div>
     </header>
@@ -235,8 +248,8 @@
           </div>
         </article>
       </section>
-
-      <section class="join-section">
+    </main>
+    <section class="join-section">
         <div class="join-container">
           <div class="join-text">
             <h3>Join the Sports Tube Community</h3>
@@ -244,16 +257,15 @@
               Sign up now to start reading the best articles about your favorite
               sports or upload your own content!
             </p>
-          </div>
-          <div class="grid-btn">
+            <div class="grid-btn">
             <a class="button" href="/pages/account.html">Sign Up</a>
             <a class="button" href="https://sports-tube.netlify.app"
               >Visit Sports Tube</a
             >
           </div>
+          </div>
         </div>
       </section>
-    </main>
     <div id="footer"></div>
     <script src="/assets/script.js" defer></script>
   </body>

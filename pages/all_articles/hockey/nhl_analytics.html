@@ -7,11 +7,21 @@
       name="description"
       content="Explore the transformative role of analytics in hockey. Learn how data-driven strategies, player evaluations, and advanced metrics are shaping the future of the NHL."
     />
-    <title>Sports Community Blog</title>
+    <title>The Impact of Analytics in Hockey: How Data-Driven Strategies Are Shaping the NHL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/assets/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="icon" href="/my_tube_blog/img/sports_community_logo.png" />
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744307605/nhl-analytics-desktop_dsnccw.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+
+
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744307607/nhl-analytics-tablet_y8mfnb.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+
+    <link rel="preload" href="/img/nhl-analytics-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      type="image/webp"
+    />
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,11 +29,13 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "The Impact of Analytics in Hockey: A New Era of Strategy",
+        "headline": "The Impact of Analytics in Hockey: How Data-Driven Strategies Are Shaping the NHL",
         "description": "Explore the transformative role of analytics in hockey. Learn how data-driven strategies, player evaluations, and advanced metrics are shaping the future of the NHL.",
         "author": {
           "@type": "Person",
@@ -45,10 +57,10 @@
         },
         "datePublished": "2024-12-05",
         "dateModified": "2024-12-05",
-        "url": "https://sports-tube-community.netlify.app/the-impact-of-analytics-in-hockey-a-new-era-of-strategy",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736319036/hockey_banner3_w7bbdw.png",
-        "keywords": "hockey analytics, NHL, advanced metrics, player evaluation, Expected Goals, Corsi, Fenwick, data-driven strategy, player health, real-time analysis",
-        "mainEntityOfPage": "https://sports-tube-community.netlify.app/the-impact-of-analytics-in-hockey-a-new-era-of-strategy"
+        "url": "https://sports-tube-community.netlify.app/impact-of-analytics-in-hockey-strategy",
+        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1744307605/nhl-analytics-desktop_dsnccw.avif",
+        "keywords": "hockey analytics, NHL data analysis, player evaluations, advanced hockey metrics, sports analytics, hockey strategy",
+        "mainEntityOfPage": "https://sports-tube-community.netlify.app/impact-of-analytics-in-hockey-strategy"
       }
     </script>
   </head>
@@ -57,29 +69,32 @@
       <div class="blog-hero-section">
         <div id="nav"></div>
         <section class="hero-img">
-            <picture>
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736319036/hockey_banner3_w7bbdw.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1280/v1736319036/hockey_banner3_w7bbdw.png
-                "
-                media="(min-width: 768px)"
-              />
-              <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736319036/hockey_banner3_w7bbdw.png"
-                alt="Community Engagement in Sports – Building Stronger Bonds and Positive Impact Through Outreach and Events"
-                width="100%"
-                height="auto"
-                loading="eager"
-                fetchpriority="high"
-                object-fit="cover"
-              />
-            </picture>
+          <picture>
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744307605/nhl-analytics-desktop_dsnccw.avif 100w"
+              type="image/avif"
+              media="(min-width: 1200px) and (max-width: 100vw)"
+              sizes="(min-width: 1200px) 1200px, 100vw"
+              fetchpriority="high"
+            />
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744307607/nhl-analytics-tablet_y8mfnb.avif 2400w"
+              type="image/avif"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              sizes="100vw"
+              fetchpriority="high"
+            />
+            <img
+              src="/img/nhl-analytics-mobile.avif"
+              alt="Community Engagement in Sports – Building Stronger Bonds and Positive Impact Through Outreach and Events"
+              width="480"
+              height="auto"
+              aspect-ratio="1.25 / 1"
+              loading="eager"
+              fetchpriority="high"
+              object-fit="cover"
+            />
+          </picture>
         </section>
       </div>
     </header>
@@ -268,7 +283,8 @@
           </div>
         </article>
       </section>
-      <section class="join-section">
+    </main>
+    <section class="join-section">
         <div class="join-container">
           <div class="join-text">
             <h3>Join the Sports Tube Community</h3>
@@ -276,16 +292,15 @@
               Sign up now to start reading the best articles about your favorite
               sports or upload your own content!
             </p>
-          </div>
-          <div class="grid-btn">
+            <div class="grid-btn">
             <a class="button" href="/pages/account.html">Sign Up</a>
             <a class="button" href="https://sports-tube.netlify.app"
               >Visit Sports Tube</a
             >
           </div>
+          </div>
         </div>
       </section>
-    </main>
     <div id="footer"></div>
     <script src="/assets/script.js" defer></script>
   </body>

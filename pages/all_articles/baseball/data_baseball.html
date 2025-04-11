@@ -9,9 +9,17 @@
     />
     <title>Sports Community Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/assets/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="icon" href="/my_tube_blog/img/sports_community_logo.png" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy/v1744296002/baseball-data-desktop_m0aa6f.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744296001/baseball-data-tablet_biow4v.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+
+    <link rel="preload" href="/img/baseball-data-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      type="image/webp"
+    />
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,14 +27,17 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sports Community Blog",
-        "description": "Discover how data and technology are revolutionizing baseball. Explore the rise of analytics, its impact on player performance, strategic decision-making, and the fan experience in the Sports Tube Community.",
-        "url": "https://sports-tube-community.netlify.app/",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736294548/baseball_banner3_hb1wcm.png",
+        "name": "The Rise of Analytics: How Data is Transforming Baseball - Sports Tube Community",
+        "description": "Explore the transformative power of analytics in baseball. Discover how data and technology have revolutionized player performance, strategic decisions, fan engagement, and the future of the game. Learn about the role of analytics in player development, injury prevention, and more.",
+        "url": "https://sports-tube-community.netlify.app/the-rise-of-analytics-how-data-is-transforming-baseball",
+        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1744296002/baseball-data-desktop_m0aa6f.avif",
         "mainEntityOfPage": "https://sports-tube-community.netlify.app/the-rise-of-analytics-how-data-is-transforming-baseball",
         "publisher": {
           "@type": "Organization",
@@ -45,8 +56,8 @@
         "article": {
           "@type": "Article",
           "headline": "The Rise of Analytics: How Data is Transforming Baseball",
-          "description": "Explore how the rise of analytics in baseball is transforming strategic decision-making, player performance, and fan engagement.",
-          "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736294548/baseball_banner3_hb1wcm.png",
+          "description": "Baseball has evolved with the rise of analytics, shaping everything from player evaluation to fan engagement. Learn how data-driven strategies are changing the game from the inside out.",
+          "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1744296002/baseball-data-desktop_m0aa6f.avif",
           "author": {
             "@type": "Person",
             "name": "Allison Stock"
@@ -62,34 +73,38 @@
           "datePublished": "2024-04-16",
           "dateModified": "2024-04-16",
           "url": "https://sports-tube-community.netlify.app/the-rise-of-analytics-how-data-is-transforming-baseball",
-          "keywords": "baseball analytics, Statcast, baseball technology, data-driven decisions, player development, baseball revolution"
+          "keywords": "baseball analytics, player performance, data analytics, Statcast, baseball statistics, sports technology, strategic decision-making, baseball revolution"
         }
       }
     </script>
+
   </head>
   <body>
     <header>
       <div class="blog-hero-section">
         <div id="nav"></div>
         <section class="hero-img">
-            <picture>
+          <picture>
               <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1920/v1736294548/baseball_banner3_hb1wcm.png
-                "
-                media="(min-width: 1200px)"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy/v1744296002/baseball-data-desktop_m0aa6f.avif 100w"
+                type="image/avif"
+                media="(min-width: 1200px) and (max-width: 100vw)"
+                sizes="(min-width: 1200px) 1200px, 100vw"
+                fetchpriority="high"
               />
               <source
-                srcset="
-                  https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1280/v1736294548/baseball_banner3_hb1wcm.png
-                "
-                media="(min-width: 768px)"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744296001/baseball-data-tablet_biow4v.avif 100w"
+                type="image/avif"
+                media="(min-width: 481px) and (max-width: 1199px)"
+                sizes="100vw"
+                fetchpriority="high"
               />
               <img
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736294548/baseball_banner3_hb1wcm.png"
+                src="/img/baseball-data-mobile.avif"
                 alt="Baseball analytics revolution – Explore how data and technology are transforming the game in the Sports Tube Community."
-                width="100%"
+                width="480"
                 height="auto"
+                aspect-ratio="1.25 / 1"
                 loading="eager"
                 fetchpriority="high"
                 object-fit="cover"
@@ -252,6 +267,7 @@
           </div>
         </article>
       </section>
+    </main>
       <section class="join-section">
         <div class="join-container">
           <div class="join-text">
@@ -260,16 +276,15 @@
               Sign up now to start reading the best articles about your favorite
               sports or upload your own content!
             </p>
-          </div>
-          <div class="grid-btn">
+            <div class="grid-btn">
             <a class="button" href="/pages/account.html">Sign Up</a>
             <a class="button" href="https://sports-tube.netlify.app"
               >Visit Sports Tube</a
             >
           </div>
+          </div>
         </div>
       </section>
-    </main>
     <div id="footer"></div>
     <script src="/assets/script.js" defer></script>
   </body>
