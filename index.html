@@ -30,8 +30,11 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+
     <link rel="preload" href="/assets/styles.css" as="style" />
+
     <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -83,30 +86,30 @@
       <div class="blog-hero-section">
         <div id="nav"></div>
         <section class="hero-img">
-            <picture>
-              <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744731118/hero-sports-tube-desktop_j2rz09.avif 100w"
+          <picture>
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744731118/hero-sports-tube-desktop_j2rz09.avif 100w"
+              type="image/avif"
+              media="(min-width: 1200px)"
+              sizes="100vw"
+              fetchpriority="high"
+            />
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744731118/hero-sports-tube-tablet_fbhtej.avif 100w"
                 type="image/avif"
-                media="(min-width: 1200px)"
+                media="(min-width: 481px)"
                 sizes="100vw"
-                fetchpriority="high"
-              />
-              <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744731118/hero-sports-tube-tablet_fbhtej.avif 100w"
-                  type="image/avif"
-                  media="(min-width: 481px)"
-                  sizes="100vw"
-              />
-              <img
-                src="/img/hero-sports-tube-mobile.avif"
-                alt="Sports Community Hub - Connect with Fans, Share Highlights, and Stay Updated"
-                width="480"
-                height="auto"
-                loading="eager"
-                fetchpriority="high"
-                object-fit="cover"
-              />
-            </picture>
+            />
+            <img
+              src="/img/hero-sports-tube-mobile.avif"
+              alt="Sports Community Hub - Connect with Fans, Share Highlights, and Stay Updated"
+              width="480"
+              height="auto"
+              loading="eager"
+              fetchpriority="high"
+              object-fit="cover"
+            />
+          </picture>
         </section>
       </div>
       <section class="grid2">
