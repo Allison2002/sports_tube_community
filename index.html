@@ -95,7 +95,7 @@
                 srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1743803005/sports-tube-hero-desktop_rkvwgn.avif 100w"
                 type="image/avif"
                 media="(min-width: 481px) and (max-width: 1199px)"
-                sizes="100vw"
+                sizes="(min-width: 481px) 1200px, 100vw"
                 fetchpriority="high"
               />
               <img
@@ -104,6 +104,7 @@
                 style="width: 100%; height: auto; aspect-ratio: 1.25 / 1; object-fit: cover;"
                 loading="eager"
                 fetchpriority="high"
+                decoding="async"
               />
             </picture>
         </section>

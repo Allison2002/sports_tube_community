@@ -354,7 +354,7 @@ nav ul li :hover {
   max-width: 60vw;
   max-width: 60%;
   height: auto;
-  min-height: 5vh;
+  min-height: 2vh;
   margin: 5em auto;
 }
 
@@ -1805,13 +1805,11 @@ figcaption {
   .grid2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* Two equal columns */
     gap: 1.5em;
-    /* Consistent spacing */
     max-width: 80vw;
-    max-width: 80%;
+    width: 80%;
     height: auto;
-    min-height: 5vh;
+    min-height: 2vh;
     margin: 5em auto;
   }
 
