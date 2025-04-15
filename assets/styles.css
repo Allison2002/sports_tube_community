@@ -1644,7 +1644,6 @@ figcaption {
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 5vh;
   }
 
   .hero-img img {
@@ -2290,6 +2289,21 @@ figcaption {
   #account-form {
     width: 100%;
   }
+
+  .hero-img {
+    aspect-ratio: 1.25 / 1;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -2386,18 +2400,17 @@ figcaption {
   }
 
   .hero-img {
+    aspect-ratio: 1.25 / 1;
     width: 100%;
     max-width: 100vw;
-    height: auto;
-    min-height: 2vh;
+    overflow: hidden;
   }
 
   .hero-img img {
     width: 100%;
-    height: auto;
-    object-position: bottom;
-    aspect-ratio: 1.25 / 1;
+    height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .bottom-hr {
