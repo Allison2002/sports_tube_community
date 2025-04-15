@@ -2688,6 +2688,7 @@ figcaption {
     width: 100%;
     height: auto;
     aspect-ratio: 5 / 4;
+    object-fit: cover;
   }
 
   .category-box-text,
