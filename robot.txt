@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sports-tube-community.netlify.app/sitemap.xml
