@@ -332,7 +332,6 @@ nav ul li :hover {
   max-width: 100vw;
   height: auto;
   min-height: 2vh;
-  padding-top: 7vh;
 }
 
 .hero-img img {
@@ -1649,8 +1648,8 @@ figcaption {
   .hero-img img {
     width: 100%;
     height: auto;
+    aspect-ratio: 2.40 / 1;
     object-position: center center;
-    aspect-ratio: 2.28 / 1;
     object-fit: cover;
   }
 
@@ -1841,8 +1840,8 @@ figcaption {
     display: grid;
     margin: 1em auto;
     gap: 1em;
-    width: 60%;
-    max-width: 60vw;
+    width: 80%;
+    max-width: 80vw;
     height: auto;
     min-height: 2vh;
   }
@@ -2151,18 +2150,34 @@ figcaption {
     min-height: 5vh;
   }
 
+  .hero-img {
+    width: 40vw;
+    max-width: 100vw;
+    height: auto;
+    min-height: 2vh;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    object-position: bottom;
+    object-fit: cover;
+    aspect-ratio: 2.278 / 1;
+  }
+
   .logo-container {
     display: flex;
     height: auto;
-    width: 20vw;
-    max-width: 35vw;
+    width: 25vw;
+    max-width: 30vw;
   }
 
   .logo-container img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 2.73;
+    aspect-ratio: 2.73 / 1;
   }
 
   .categories {
@@ -2249,7 +2264,7 @@ figcaption {
 
   .feature-article-grid {
     display: grid;
-    margin: 1em auto;
+    margin: 0 auto;
     gap: 1em;
     min-width: 40vw;
     width: 90%;
@@ -2320,8 +2335,8 @@ figcaption {
   }
 
   .hero-img {
-    aspect-ratio: 1.25 / 1;
     width: 100%;
+    height: auto;
     max-width: 100vw;
     overflow: hidden;
   }
@@ -2332,6 +2347,19 @@ figcaption {
     min-height: 2vh;
     object-fit: cover;
     display: block;
+    aspect-ratio: 2.2 / 1;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: auto;
+  }
+
+  .menu-toggle img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-right: 2em;
   }
 
 }
@@ -2431,7 +2459,6 @@ figcaption {
   }
 
   .hero-img {
-    aspect-ratio: 1.25 / 1;
     width: 100%;
     max-width: 100vw;
     height: auto;
@@ -2444,6 +2471,7 @@ figcaption {
     min-height: 2vh;
     object-fit: cover;
     display: block;
+    aspect-ratio: 1.40 / 1;
   }
 
   .bottom-hr {
@@ -2524,7 +2552,7 @@ figcaption {
     max-width: 80vw;
     height: auto;
     min-height: 2vh;
-    margin: 4em auto;
+    margin: 0 auto 4em;
   }
 
   .grid2-section2 {
@@ -2578,7 +2606,7 @@ figcaption {
 
   .categories-title h1,
   .feature-title h2 {
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     width: 100%;
     height: auto;
     text-align: center;
@@ -2675,13 +2703,13 @@ figcaption {
 
   .search-container {
     width: 20vw;
-    height: 4vh;
+    height: 6vh;
   }
 
   .search-container input {
     width: 100%;
     height: auto;
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
 
   .search-container input::placeholder {
