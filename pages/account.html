@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content="Create an account with Sports Tube to access the latest sports news, highlights, and engage with passionate fans. Enjoy exclusive content on soccer, basketball, football, and more. Sign up today!" />
+    <meta name="description" content="Create your free Sports Tube account to unlock exclusive sports articles, highlights, and community features. Stay updated on football, soccer, basketball, and more. Join passionate fans today!" />
 
     <title>Join the Sports Tube Community: Sign Up for Sports News, Highlights, and Exclusive Content</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744286564/mma-women-desktop_zrzyub.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744670660/account-desktop_fpzor0.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744286565/mma-women-tablet_cagqtq.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
 
-    <link rel="preload" href="/img/mma-women-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744670658/account-tablet_dzm1dm.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+
+    <link rel="preload" href="/img/account-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
 
     <link
       rel="icon"
@@ -27,28 +28,35 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+
     <link rel="preload" href="/assets/styles.css" as="style" />
+
     <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "url": "https://sports-tube.netlify.app/pages/account.html",
-        "name": "Create Your Account - Sports Tube Community",
-        "description": "Sign up to join the Sports Tube community. Access the latest sports news, highlights, and exclusive content on soccer, basketball, football, and more.",
-        "mainEntityOfPage": "https://sports-tube.netlify.app/pages/account.html",
+        "name": "Create Your Sports Tube Account",
+        "description": "Create your free Sports Tube account to unlock exclusive content, sports highlights, and join a passionate community of fans across football, soccer, basketball, and more.",
+        "url": "https://sports-tube-community.netlify.app/pages/account.html",
         "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744670660/account-desktop_fpzor0.avif",
         "publisher": {
           "@type": "Organization",
-          "name": "Sports Tube",
+          "name": "Sports Tube Community",
           "logo": {
             "@type": "ImageObject",
             "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
           }
         },
-        "author": {
-          "@type": "Person",
-          "name": "Genny Allison"
+        "mainEntity": {
+          "@type": "RegisterAction",
+          "name": "Sign Up Form",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://sports-tube-community.netlify.app/create-account",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+          }
         }
       }
     </script>
@@ -59,31 +67,29 @@
         <div id="nav"></div>
           <section class="hero-img">
             <picture>
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744670660/account-desktop_fpzor0.avif 100w"
-              type="image/avif"
-              media="(min-width: 1200px) and (max-width: 100vw)"
-              sizes="(min-width: 1200px) 1200px, 100vw"
-              fetchpriority="high"
-            />
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744670658/account-tablet_dzm1dm.avif 100w"
-              type="image/avif"
-              media="(min-width: 481px) and (max-width: 1199px)"
-              sizes="100vw"
-              fetchpriority="high"
-            />
-            <img
-              src="/img/account-mobile.avif"
-              alt="Join the Sports Tube Community – Get in the game with live sports updates, highlights, and fan engagement for soccer, basketball, and football."
-              width="480"
-              height="auto"
-              aspect-ratio="1.25 / 1"
-              loading="eager"
-              fetchpriority="high"
-              object-fit="cover"
-            />
-          </picture>
+              <source
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744670660/account-desktop_fpzor0.avif 100w"
+                type="image/avif"
+                media="(min-width: 1200px)"
+                sizes="100vw"
+                fetchpriority="high"
+              />
+              <source
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744670658/account-tablet_dzm1dm.avif 100w"
+                  type="image/avif"
+                  media="(min-width: 481px)"
+                  sizes="100vw"
+              />
+              <img
+                src="/img/account-mobile.avif"
+                alt="Join the Sports Tube Community – Get in the game with live sports updates, highlights, and fan engagement for soccer, basketball, and football."
+                width="480"
+                height="auto"
+                loading="eager"
+                fetchpriority="high"
+                object-fit="cover"
+              />
+            </picture>
           </section>
         </div>  
     </header>

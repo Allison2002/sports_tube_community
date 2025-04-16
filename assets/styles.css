@@ -2133,6 +2133,9 @@ figcaption {
   .quote p,
   .quote h1 {
     font-size: 2vw;
+    height: auto;
+    width: 100%;
+    min-height: 1vh;
   }
 }
 
