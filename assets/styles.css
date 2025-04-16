@@ -662,6 +662,8 @@ nav ul li :hover {
 
 .article-list {
   width: 100%;
+  height: auto;
+  min-height: 2vh;
   margin: 0 auto;
   border-radius: 3em;
   padding: 2em 4em;
@@ -696,8 +698,17 @@ nav ul li :hover {
   width: 100%;
   max-width: 100%;
   height: auto;
+  min-height: 2vh;
   margin: 2.5em auto;
   border-radius: 2em;
+}
+
+.box1,
+.box2 {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  min-height: 1vh;
 }
 
 .box1 {
@@ -712,6 +723,10 @@ nav ul li :hover {
 .box1 h2,
 .box2 h3 {
   padding: 0.75em 0 0.75em;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  min-height: 1vh;
 }
 
 /* Article Text */
@@ -1187,7 +1202,8 @@ footer {
 .bottom-logo {
   display: flex;
   justify-content: center;
-  width: 30vw;
+  width: 100%;
+  max-width: 100vw;
   height: auto;
   margin: 0 auto;
 }
@@ -1197,6 +1213,7 @@ footer {
   height: auto;
   margin: 0 auto;
   aspect-ratio: 2.72 / 1;
+  object-fit: cover;
 }
 
 .bottom-footer-content {
@@ -1759,8 +1776,8 @@ figcaption {
   }
 
   .categories {
-    width: 80%;
-    max-width: 80vw;
+    width: 90%;
+    max-width: 90vw;
     margin: 0 auto;
     padding: 0 0 5em;
   }
@@ -2113,6 +2130,10 @@ figcaption {
   .article-list {
     margin: 0 auto;
     padding: 0;
+    width: 80%;
+    height: auto;
+    min-height: 2vh;
+    max-width: 80vw;
   }
 
   .article-title p {
@@ -2800,6 +2821,7 @@ figcaption {
     width: 100%;
     max-width: 100vw;
     height: auto;
+    min-height: 2vh;
     margin: 2.5em auto;
     border-radius: 1.5em;
   }
@@ -2862,6 +2884,13 @@ figcaption {
     padding: 0;
   }
 
+  .box2,
+  .box1 {
+    width: 100%;
+    height: auto;
+    min-height: 1vh;
+  }
+
   .box1 h2 {
     font-size: 7vw;
   }
@@ -2872,6 +2901,14 @@ figcaption {
 
   .box1 p {
     font-size: .8vw;
+  }
+
+  .quote-text h3 {
+    font-size: 4vw;
+  }
+
+  .quote-text p {
+    font-size: 3vw;
   }
 
   .suggested-reading {
