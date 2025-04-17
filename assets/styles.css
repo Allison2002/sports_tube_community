@@ -2415,6 +2415,12 @@ figcaption {
 }
 
 @media (max-width: 480px) {
+  main {
+    width: 90%;
+    max-width: 90vw;
+    height: auto;
+    min-height: 5vh;
+  }
 
   nav {
     position: fixed;
