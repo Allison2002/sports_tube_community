@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Explore NBA evolution, iconic rivalries, three-point strategies, and future stars in basketball. Discover deep insights and engaging stories at the Sports Tube Community." />
+    <meta name="description" content="Explore the evolution of basketball and the NBA, from legendary rivalries and three-point strategy to future stars and coaching influence. Stay informed with expert insights at Sports Tube Community." />
 
     <title>Basketball Articles & NBA Insights | Evolution, Rivalries, and Rising Stars - Sports Tube Community</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/assets/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/styles.css" />
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779771/category-basketball-desktop_rjlfil.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+
+
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744779771/category-basketball-tablet_atoqx1.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+
+    <link rel="preload" href="/img/category-basketball-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+
     <link
       rel="icon"
       href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
@@ -22,6 +28,60 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+
+    <link rel="preload" href="/assets/styles.css" as="style" />
+
+    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Basketball Articles & NBA Insights | Sports Tube Community",
+        "description": "Explore the evolution of basketball and the NBA, including rivalries, game strategy, and rising stars. Discover in-depth articles and expert insights at the Sports Tube Community.",
+        "url": "https://sports-tube-community.netlify.app/pages/categories/basketball.html",
+        "mainEntity": [
+          {
+            "@type": "Article",
+            "headline": "The Evolution of the NBA: From Its Inception to Today",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/basketball/evolution_nba.html"
+          },
+          {
+            "@type": "Article",
+            "headline": "Top 10 NBA Players of All Time: Who Makes the Cut?",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/basketball/top10_nba.html"
+          },
+          {
+            "@type": "Article",
+            "headline": "The Art of the Three-Pointer: How It Transformed Basketball",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/basketball/three-pointer.html"
+          },
+          {
+            "@type": "Article",
+            "headline": "Behind the Scenes: The Role of Coaches in the NBA",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/basketball/coaches_nba.html"
+          },
+          {
+            "@type": "Article",
+            "headline": "Rivalries that Shook the Court: Iconic NBA Matchups",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/basketball/rivalries_nba.html"
+          },
+          {
+            "@type": "Article",
+            "headline": "The Future of the NBA: Rising Stars to Watch",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/basketball/rising_star_nba.html"
+          }
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sports Tube Community",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+          }
+        }
+      }
+    </script>
+
   </head>
   <body>
     <header>
@@ -29,33 +89,30 @@
         <div id="nav"></div>
         <section class="hero-img">
           <picture>
-              <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1744055241/feature-basketball-thumbnail-desktop_udrhpa.avif"
-                media="(min-width: 1200px)"
-                sizes="30vw"
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779771/category-basketball-desktop_rjlfil.avif 100w"
+              type="image/avif"
+              media="(min-width: 1200px)"
+              sizes="100vw"
+              fetchpriority="high"
+            />
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744779771/category-basketball-tablet_atoqx1.avif 100w"
                 type="image/avif"
-              />
-              <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_800/v1744779771/category-basketball-desktop_rjlfil.avif"
-                media="(min-width: 992px) and (max-width: 1199px)"
-                sizes="17vw"
-              />
-              <source
-                srcset="/img/feature-basketball-thumbnail-tablet.avif"
-                media="(max-width: 991px)"
-                sizes="15vw"
-                type="image/avif"
-              />
-              <img
-                src="/img/categories-basketball-mobile.aviffeature-basketball-thumbnail-mobile.avif"
-                alt="Explore sports categories – Football, Basketball, Baseball, and more in the Sports Tube Community"
-                width="184"
-                height="auto"
-                aspect-ratio="5 / 4"
-                loading="lazy"
-              style="object-fit: cover;" 
-              />
-            </picture>
+                media="(min-width: 481px)"
+                sizes="100vw"
+            />
+            <img
+              src="/img/category-basketball-mobile.avif"
+              alt="Explore NBA evolution, legendary rivalries, three-point strategy, rising stars, and coaching insights at Sports Tube Community"
+
+              width="480"
+              height="auto"
+              loading="eager"
+              fetchpriority="high"
+              object-fit="cover"
+            />
+          </picture>  
         </section>
       </div>
     </header>
