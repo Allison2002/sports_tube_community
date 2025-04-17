@@ -2674,6 +2674,13 @@ figcaption {
     align-items: center;
   }
 
+  .quote {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 1vh;
+  }
+
   .quote p,
   .quote h1 {
     font-size: 3vw;
