@@ -1,10 +1,13 @@
 [build]
-  publish = "dist" # change if your folder is named differently
+  publish = "." # Change to "dist" if you're using a build step
+  command = ""  # Add your build command if needed, or leave empty
 
+# Edge Function routing
 [[edge_functions]]
   function = "hello"
   path = "/*"
 
+# Security and performance headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -16,14 +19,12 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-[edge_functions.hello]
-  generator = "@netlify/edge-functions"
-  included_files = ["*.html", "*.js", "*.css", "img/**/*", "fonts/**/*"]
-
+# Redirects for SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+# Enable Netlify prerendering (for bots)
 [prerender]
   enabled = true
