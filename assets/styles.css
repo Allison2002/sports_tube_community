@@ -163,7 +163,9 @@ p {
   position: relative;
   color: #1a1d9e;
   text-decoration: none;
-  transition: color 0.3s ease;
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
 }
 
 .link a::after {
@@ -802,10 +804,15 @@ figcaption {
 figcaption a {
   text-decoration: none;
   color: #1a1d9e;
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
 }
 
 figcaption a:hover {
   color: #C30000;
+  transform: scale(1.05);
+  opacity: 0.85;
 }
 
 
@@ -816,6 +823,8 @@ figcaption a:hover {
 .link a:hover,
 .link a:focus {
   color: #C30000;
+  transform: scale(1.05);
+  opacity: 0.85;
 }
 
 .privacy-page li {
