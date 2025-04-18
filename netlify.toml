@@ -1,13 +1,8 @@
 [build]
-  publish = "." # Change to "dist" if using a build step
-  command = ""  # Add your build command if needed, or leave blank
+  publish = "." # or "dist" if you're building
+  command = ""
 
-# Edge Function routing
-[[edge_functions]]
-  function = "hello"
-  path = "/*"
-
-# Security and performance headers
+# Security Headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -19,24 +14,23 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Prerendering for SEO bots
-[prerender]
-  enabled = true
-
-# Prevent robots.txt from being overridden by SPA redirect
-[[redirects]]
-  from = "/robots.txt"
-  to = "/robots.txt"
-  status = 200
-
-# ✅ Exclude assets from SPA fallback
+# Allow direct access to assets (DO THIS!)
 [[redirects]]
   from = "/assets/*"
   to = "/assets/:splat"
   status = 200
 
-# Main SPA fallback
+# Prevent robots.txt from being redirected
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[prerender]
+  enabled = true
