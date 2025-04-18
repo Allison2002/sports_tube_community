@@ -29,7 +29,13 @@
   to = "/robots.txt"
   status = 200
 
-# SPA fallback redirect
+# ✅ Exclude assets from SPA fallback
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+# Main SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
