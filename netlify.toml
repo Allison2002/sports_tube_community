@@ -1,6 +1,6 @@
 [build]
-  publish = "." # Change to "dist" if you're using a build step
-  command = ""  # Add your build command if needed, or leave empty
+  publish = "." # Change to "dist" if using a build step
+  command = ""  # Add your build command if needed, or leave blank
 
 # Edge Function routing
 [[edge_functions]]
@@ -19,12 +19,18 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Redirects for SPA fallback
+# Prerendering for SEO bots
+[prerender]
+  enabled = true
+
+# Prevent robots.txt from being overridden by SPA redirect
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+# SPA fallback redirect
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Enable Netlify prerendering (for bots)
-[prerender]
-  enabled = true
