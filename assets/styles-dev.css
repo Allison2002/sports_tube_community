@@ -265,6 +265,7 @@ nav ul li :hover {
   height: auto;
   object-fit: cover;
   aspect-ratio: 2.618 / 1;
+  display: block;
 }
 
 .nav-icon-container {
@@ -273,7 +274,7 @@ nav ul li :hover {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 2vh;
+  min-height: 1vh;
   align-items: center;
   justify-content: right;
   padding: 0;
