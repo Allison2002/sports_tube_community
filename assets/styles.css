@@ -1,16 +1,15 @@
 *,
 body,
-html {
-  margin: 0;
-  padding: 0;
+html,
+main {
   box-sizing: border-box
 }
 
 *,
 body,
-html,
-main {
-  box-sizing: border-box
+html {
+  margin: 0;
+  padding: 0
 }
 
 h1,
@@ -298,7 +297,8 @@ nav ul li :hover {
 }
 
 .grid2,
-.hero-img {
+.hero-img,
+.join-text-bottom {
   min-height: 2vh
 }
 
@@ -385,6 +385,15 @@ nav ul li :hover {
   margin: 5em auto
 }
 
+.categories,
+.feature-article,
+.grid2-section2 {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  height: auto
+}
+
 .grid2-section1 h1 {
   color: #000;
   font-size: 3.5vw;
@@ -414,12 +423,8 @@ nav ul li :hover {
 }
 
 .grid2-section2 {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 100vw;
-  width: 100%;
-  height: auto
+  align-items: center
 }
 
 .grid2-section2 img {
@@ -431,12 +436,8 @@ nav ul li :hover {
 
 .categories,
 .feature-article {
-  display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100vw;
-  height: auto
+  margin: 0 auto
 }
 
 .categories-grid,
@@ -632,7 +633,6 @@ nav ul li :hover {
 .article-list-grid,
 .quote {
   height: auto;
-  min-height: 2vh
 }
 
 .quotation-l img,
@@ -662,7 +662,9 @@ nav ul li :hover {
   background-color: #d8d9c7;
   border-radius: 1.5em;
   width: 100%;
-  max-width: 100vw
+  max-width: 100vw;
+  height: auto;
+  min-height: 2vh;
 }
 
 .quote h1,
@@ -670,11 +672,17 @@ nav ul li :hover {
   font-size: 1.5vw;
   padding: 1em 2em;
   width: 100%;
-  height: auto
+  height: auto;
+  max-width: 100vw;
+  min-height: 2vh;
+
 }
 
 .article-list {
   width: 100%;
+  max-width: 100vw;
+  height: auto;
+  min-height: 2vh;
   margin: 0 auto;
   border-radius: 3em;
   padding: 2em 4em
@@ -683,6 +691,8 @@ nav ul li :hover {
 .article-page,
 .privacy-page {
   width: 100%;
+  height: auto;
+  min-height: 2vh;
   margin: 4em auto;
   border-radius: 3em;
   padding: 5em
@@ -719,6 +729,8 @@ nav ul li :hover {
   grid-template-columns: 1fr 3fr;
   width: 100%;
   max-width: 100%;
+  height: auto;
+  min-height: 2vh;
   margin: 2.5em auto;
   border-radius: 2em
 }
@@ -852,6 +864,7 @@ figcaption a:hover {
 #article-form label,
 #upload-page input,
 #upload-page label,
+.form-inputs,
 .privacy ol li,
 .privacy-ul h3,
 .works ol li {
@@ -919,6 +932,14 @@ footer {
   padding: .5em
 }
 
+.form-buttons,
+.form-inputs,
+.join-container,
+.join-text {
+  flex-direction: column;
+  display: flex
+}
+
 .input-text input::placeholder {
   font-size: 1vw
 }
@@ -938,8 +959,6 @@ footer {
 
 .join-container,
 .join-text {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto
 }
 
@@ -974,6 +993,16 @@ footer {
   height: auto
 }
 
+#article-form,
+#upload-page,
+.footer-content,
+.join-text h3,
+.join-text p,
+footer {
+  width: 100%;
+  max-width: 100vw
+}
+
 .join-container {
   min-height: 10vw;
   padding: 6vw;
@@ -995,18 +1024,10 @@ footer {
   text-align: left
 }
 
-.form-buttons,
-.form-inputs {
-  flex-direction: column;
-  display: flex
-}
-
 .join-text h3,
 .join-text p {
   color: #fff;
   margin: 0;
-  width: 100%;
-  max-width: 100vw;
   height: auto
 }
 
@@ -1019,18 +1040,6 @@ footer {
   padding: .5em 0 1em
 }
 
-.join-text-bottom {
-  min-height: 2vh
-}
-
-#article-form,
-#upload-page,
-.footer-content,
-footer {
-  width: 100%;
-  max-width: 100vw
-}
-
 .bottom-nav h5,
 .join-text-bottom p {
   color: #1a1d9e;
@@ -1041,10 +1050,6 @@ footer {
 
 .join-text-bottom p {
   font-size: 1.3vw
-}
-
-.form-inputs {
-  padding: .5em 0
 }
 
 .form-submission h2 {
@@ -1659,7 +1664,9 @@ input::placeholder {
   }
 
   .article-title p,
-  .button {
+  .button,
+  .quote h1,
+  .quote p {
     font-size: 2vw
   }
 
@@ -1958,15 +1965,18 @@ input::placeholder {
     padding: 0;
     margin: 2em auto
   }
-
-  .quote h1,
-  .quote p {
-    font-size: 2vw
-  }
 }
 
 @media (max-width:768px) {
 
+  .category-box-text a h3,
+  .feature-box-text a p {
+    font-size: 2.5vw;
+    padding: 1vw .5vw .5vw;
+    height: auto
+  }
+
+  .category-box-text,
   main,
   nav {
     height: auto
@@ -1996,6 +2006,8 @@ input::placeholder {
     min-height: 2vh
   }
 
+  .categories-title h2,
+  .feature-title h2,
   .logo-container img,
   .nav-icon-container {
     width: 100%;
@@ -2065,16 +2077,9 @@ input::placeholder {
     padding: 0
   }
 
-  .category-box-text {
-    height: auto
-  }
-
   .category-box-text a h3 {
-    font-size: 2.5vw;
     width: 100%;
-    height: auto;
-    min-height: 2vh;
-    padding: 1vw .5vw .5vw
+    min-height: 2vh
   }
 
   .categories-box img {
@@ -2122,12 +2127,6 @@ input::placeholder {
     min-height: 2vh
   }
 
-  .feature-box-text a p {
-    font-size: 2.5vw;
-    height: auto;
-    padding: 1vw .5vw .5vw
-  }
-
   .feature-box {
     padding: 1em 0;
     width: 100%;
@@ -2155,14 +2154,6 @@ input::placeholder {
     margin: 0 auto;
     width: 100%;
     max-width: 100vw;
-    height: auto
-  }
-
-  .categories-title h2,
-  .feature-title h2 {
-    width: 100%;
-    max-width: 100vw;
-    min-height: 1vh;
     height: auto
   }
 
@@ -2277,22 +2268,19 @@ input::placeholder {
     aspect-ratio: 2.73
   }
 
-  .nav-menu.active {
-    display: flex
-  }
-
-  .nav-menu {
-    display: none
-  }
-
   .bottom-hr,
   .button,
   .feature-article,
   .grid-btn,
   .grid2,
   .hero-btn,
-  .menu-toggle {
+  .menu-toggle,
+  .nav-menu.active {
     display: flex
+  }
+
+  .nav-menu {
+    display: none
   }
 
   .menu-toggle {
@@ -2302,10 +2290,13 @@ input::placeholder {
     margin-right: 0
   }
 
+  .category-box-text,
+  .feature-box-text,
   .grid2-section1,
   .hero-img,
   .hero-img img,
   .hero-intro p,
+  .join-text,
   .menu-toggle img {
     width: 100%;
     height: auto
@@ -2519,12 +2510,6 @@ input::placeholder {
     object-fit: cover
   }
 
-  .category-box-text,
-  .feature-box-text {
-    width: 100%;
-    height: auto
-  }
-
   .category-box-text a h3,
   .feature-box-text a p {
     font-size: 3.5vw;
@@ -2645,11 +2630,6 @@ input::placeholder {
 
   .join-section {
     min-width: 20vw;
-    width: 100%;
-    height: auto
-  }
-
-  .join-text {
     width: 100%;
     height: auto
   }
@@ -2843,7 +2823,8 @@ input::placeholder {
     margin-top: .5em
   }
 
-  .h4 h4 {
+  .h4 h4,
+  .join-bottom p {
     font-size: 4vw;
     width: 80%;
     margin: 0 auto
@@ -2856,14 +2837,9 @@ input::placeholder {
     border-radius: .5em
   }
 
+  .bottom-nav h5,
   .join-bottom .input-text-join p {
     font-size: 3.2vw
-  }
-
-  .join-bottom p {
-    font-size: 4vw;
-    width: 80%;
-    margin: 0 auto
   }
 
   .footer-col ul {
@@ -2902,7 +2878,6 @@ input::placeholder {
   }
 
   .bottom-nav h5 {
-    font-size: 3.2vw;
     width: auto
   }
 
