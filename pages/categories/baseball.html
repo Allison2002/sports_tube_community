@@ -29,8 +29,10 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="preload" href="/assets/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+
+    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
   </head>
   <body>
     <header>
