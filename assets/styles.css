@@ -95,7 +95,7 @@ main {
 
 .logo-container,
 nav {
-  min-height: 2rem;
+  min-height: 1rem;
   height: auto
 }
 
@@ -276,8 +276,9 @@ nav ul li :hover {
 }
 
 .logo-container {
-  width: 10vw;
-  max-width: 15vw
+  width: 17vw;
+  max-width: 17vw;
+  height: auto;
 }
 
 .logo-container img {
