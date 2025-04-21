@@ -650,7 +650,7 @@ nav ul li :hover {
   width: 25%;
   max-width: 20vw;
   height: auto;
-  aspect-ratio: 1/1
+  aspect-ratio: 1 / 1;
 }
 
 .quotation-l {
