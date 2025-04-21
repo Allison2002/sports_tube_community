@@ -371,10 +371,11 @@ nav ul li :hover {
 .hero-img img {
   width: 100%;
   height: auto;
+  min-height: 3rem;
   padding: 0;
   object-position: bottom;
   object-fit: cover;
-  aspect-ratio: 2.73/1;
+  aspect-ratio: 2.73 / 1;
 }
 
 .categories-box img,
