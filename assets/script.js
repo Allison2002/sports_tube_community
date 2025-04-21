@@ -158,4 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
   lazySections.forEach(section => {
     observer.observe(section); // Observe the join section
   });
+
+    document.fonts.ready.then(() => {
+    document.body.classList.add('fonts-loaded');
+  });
 });
