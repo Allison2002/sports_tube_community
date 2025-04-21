@@ -2304,7 +2304,7 @@ input::placeholder {
   }
 
   .menu-toggle img {
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     object-fit: cover
   }
 
@@ -2377,12 +2377,6 @@ input::placeholder {
     max-width: 100vw;
     height: auto;
     font-size: 4vw
-  }
-
-  .blog-hero-section img {
-    margin-top: 0;
-    width: 100%;
-    height: auto
   }
 
   .grid2 {
