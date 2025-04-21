@@ -14,6 +14,7 @@ html {
 
 html {
   font-size: 100%;
+  font-size-adjust: 0.5;
 }
 
 h1,
@@ -295,7 +296,7 @@ nav ul li :hover {
   flex-direction: row;
   width: 100%;
   max-width: 100vw;
-  height: auto;
+  height: 5rem;
   max-height: 6.25rem;
   min-height: 1rem;
   align-items: center;
@@ -1510,14 +1511,6 @@ input::placeholder {
 
 @media (max-width:1024px) {
 
-  .hero-img,
-  .hero-img img,
-  .menu-toggle img,
-  .nav-icon-container {
-    width: 100%;
-    height: auto
-  }
-
   main {
     width: 90%;
     max-width: 90vw;
@@ -1574,8 +1567,6 @@ input::placeholder {
   }
 
   .nav-icon-container {
-    max-width: 100vw;
-    min-height: 3.5rem;
     justify-content: right
   }
 
@@ -2021,7 +2012,7 @@ input::placeholder {
   .nav-icon-container {
     width: 100%;
     max-width: 100vw;
-    min-height: 2rem;
+    min-height: 1rem;
     height: auto
   }
 
@@ -2214,14 +2205,6 @@ input::placeholder {
     max-width: 90vw;
     height: auto;
     min-height: 5rem;
-  }
-
-  .nav-icon-container,
-  nav {
-    max-width: 100vw;
-    width: 100%;
-    height: auto;
-    display: flex
   }
 
   nav {
