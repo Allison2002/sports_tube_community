@@ -16,10 +16,6 @@
 
     <link rel="preload" href="/img/category-soccer-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
 
-    <link rel="preload" href="/img/left-quote.avif" as="image" type="image/avif" crossorigin="anonymous" />
-
-    <link rel="preload" href="/img/right-quote.avif" as="image" type="image/avif" crossorigin="anonymous" />
-
     <link
       rel="icon"
       href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
@@ -33,9 +29,7 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-
     <link rel="preload" href="/assets/styles.css" as="style" />
-
     <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
     <script type="application/ld+json">
       {
@@ -106,21 +100,23 @@
             <source
               srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779769/category-soccer-desktop_aarl2v.avif 100w"
               type="image/avif"
-              media="(min-width: 1200px)"
-              sizes="100vw"
+              media="(min-width: 1200px) and (max-width: 100vw)"
+              sizes="(min-width: 1200px) 1200px, 100vw"
               fetchpriority="high"
             />
             <source
               srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744779769/category-soccer-tablet_gtd14i.avif 100w"
-                type="image/avif"
-                media="(min-width: 481px)"
-                sizes="100vw"
+              type="image/avif"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              sizes="100vw"
+              fetchpriority="high"
             />
             <img
               src="/img/category-soccer-mobile.avif"
               alt="Explore soccer news, historic matches, tactical evolution, women's leagues, and fan culture at Sports Tube Community"
               width="480"
               height="auto"
+              aspect-ratio="1.25 / 1"
               loading="eager"
               fetchpriority="high"
               object-fit="cover"
@@ -130,24 +126,36 @@
       </div>
     </header>
     <main>
-      <section>
+      <section id="quotes">
         <div class="quote-grid">
           <div class="quotation-l">
-            <img src="/img/right-quote.avif" id="article1"
-              alt="" 
-              role="presentation" 
+            <img src="/img/left-quote.avif" 
+              id="baseball1" 
+              alt=""
+              width="32"
+              height="32"
+              decoding="async"
               loading="lazy"
-              style="object-fit: cover;" 
+              style="aspect-ratio: 1 / 1; object-fit: contain;"
             />
+
           </div>
           <div>
             <div class="quote">
-              <h1>Soccer is simple, but it is difficult to play simple.</h1>
-              <p>– Johan Cruyff</p>
+              <h1>It’s a great day for a ball game; let’s play two!</h1>
+              <p>– Ernie Banks</p>
             </div>
           </div>
           <div class="quotation-r">
-            <img src="/img/right-quote.avif" id="article1" />
+            <img src="/img/right-quote.avif" 
+              id="baseball1" 
+              alt=""
+              width="32"
+              height="32"
+              decoding="async"
+              loading="lazy"
+              style="aspect-ratio: 1 / 1; object-fit: contain;"
+            />
           </div>
         </div>
       </section>
