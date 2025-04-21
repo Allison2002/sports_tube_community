@@ -17,6 +17,10 @@
 
     <link rel="preload" href="/img/categories-baseball-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
+    <link rel="preload" href="/img/left-quote.avif" as="image" type="image/avif" crossorigin="anonymous" />
+
+    <link rel="preload" href="/img/right-quote.avif" as="image" type="image/avif" crossorigin="anonymous" />
+
     <link
       rel="icon"
       href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
@@ -74,11 +78,13 @@
             <img src="/img/left-quote.avif" 
               id="baseball1" 
               alt=""
-              width="32"
-              height="32"
+              role="presentation" 
+              loading="eager"
+              fetchpriority="high"
+              width="25" 
+              height="25" 
               decoding="async"
-              loading="lazy"
-              style="aspect-ratio: 1 / 1; object-fit: contain;"
+              style="width: 100%; max-width: 3rem; aspect-ratio: 1 / 1;object-fit: contain;"
             />
 
           </div>
@@ -92,11 +98,13 @@
             <img src="/img/right-quote.avif" 
               id="baseball1" 
               alt=""
-              width="32"
-              height="32"
+              role="presentation" 
+              loading="eager"
+              fetchpriority="high"
+              width="25" 
+              height="25" 
               decoding="async"
-              loading="lazy"
-              style="aspect-ratio: 1 / 1; object-fit: contain;"
+              style="width: 100%; max-width: 3rem; aspect-ratio: 1 / 1;object-fit: contain;"
             />
           </div>
         </div>
