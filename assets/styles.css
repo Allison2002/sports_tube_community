@@ -74,6 +74,10 @@ nav ul li :hover {
   font-size: clamp(1rem, 1.2vw, 1.25rem);
 }
 
+.quote-text strong {
+  font-weight: 600;
+}
+
 .link a,
 figcaption a {
   transition: transform .3s, opacity .3s
