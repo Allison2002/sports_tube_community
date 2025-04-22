@@ -11,7 +11,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
+    <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
       as="font"
@@ -22,16 +22,15 @@
     <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/bebas-font.css" />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744307605/nhl-analytics-desktop_dsnccw.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744345629/news-nhl-analytics-desktop_wlpglb.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744345629/news-nhl-analytics-tablet_zkad57.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
 
-    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744307607/nhl-analytics-tablet_y8mfnb.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
-
-    <link rel="preload" href="/img/nhl-analytics-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+    <link rel="preload" href="/img/news-nhl-analytics-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1738106888/sports_tube_tab_logo_oajgbj.webp"
       type="image/webp"
     />
 
@@ -70,28 +69,27 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744345629/news-nhl-analytics-desktop_wlpglb.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744345629/news-nhl-analytics-desktop_wlpglb.avif 100w"
               type="image/avif"
-              media="(min-width: 1200px) and (max-width: 100vw)"
-              sizes="(min-width: 1200px) 1200px, 100vw"
-              fetchpriority="high"
-            />
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744345629/news-nhl-analytics-tablet_zkad57.avif 2400w"
-              type="image/avif"
-              media="(min-width: 481px) and (max-width: 1199px)"
+              media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
+            <source
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744345629/news-nhl-analytics-tablet_zkad57.avif 100w"
+              type="image/avif"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              sizes="100vw"
+            />
             <img
               src="/img/news-nhl-analytics-mobile.avif"
-              alt="Community Engagement in Sports – Building Stronger Bonds and Positive Impact Through Outreach and Events"
+              alt="NHL player skating on ice as data visualizations illustrate analytics like Corsi, Fenwick, and Expected Goals"
               width="480"
-              height="auto"
-              aspect-ratio="1.25 / 1"
+              height="355"
               loading="eager"
               fetchpriority="high"
               object-fit="cover"
+              aspect-ratio="1.35 / 1"
             />
           </picture>
         </section>

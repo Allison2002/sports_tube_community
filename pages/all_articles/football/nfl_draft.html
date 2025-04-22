@@ -20,28 +20,22 @@
 
     <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/bebas-font.css" />
-    
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744286602/nfl-draft-desktop_i47deq.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
 
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286602/nfl-draft-desktop_i47deq.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744286543/football-draft-tablet_oaa0o9.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286543/football-draft-tablet_oaa0o9.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
 
-    <link rel="preload" href="/img/nfl-draft-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+    <link rel="preload" href="/img/nfl-draft-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1738106888/sports_tube_tab_logo_oajgbj.webp"
       type="image/webp"
     />
-    <link
-      rel="preload"
-      href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link rel="preload" href="/assets/styles.css" as="style" />
-    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+
+    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -82,28 +76,27 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744286602/nfl-draft-desktop_i47deq.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286602/nfl-draft-desktop_i47deq.avif 100w"
               type="image/avif"
-              media="(min-width: 1200px) and (max-width: 100vw)"
-              sizes="(min-width: 1200px) 1200px, 100vw"
+              media="(min-width: 1200px)"
+              sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744286543/football-draft-tablet_oaa0o9.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286543/football-draft-tablet_oaa0o9.avif 100w"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
-              fetchpriority="high"
             />
             <img
               src="/img/nfl-draft-mobile.avif"
               alt="NFL Draft Analysis 2025 – Insights into coaching strategies, player scouting, and team development."
               width="480"
-              height="auto"
-              aspect-ratio="1.25 / 1"
+              height="355"
               loading="eager"
               fetchpriority="high"
               object-fit="cover"
+              aspect-ratio="1.35 / 1"
             />
           </picture>
         </section>
