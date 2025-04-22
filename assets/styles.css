@@ -801,7 +801,7 @@ nav ul li :hover {
 .box2,
 .box2 h3 {
   width: 100%;
-  min-height: 1rem;
+  min-height: 2rem;
   height: auto;
   max-width: 100vw
 }
