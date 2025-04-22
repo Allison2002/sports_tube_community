@@ -68,7 +68,7 @@ nav ul li :hover {
   color: #1a1d9e
 }
 
-.article-text,
+category-box-text .article-text,
 .article-text p {
   line-height: 1.6;
   font-size: clamp(1rem, 1.2vw, 1.25rem);
@@ -540,7 +540,7 @@ nav ul li :hover {
   margin: 0 auto
 }
 
-.category-box-text a h3 {
+.category-box-text a h2 {
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 700;
   color: #1a1d9e;
@@ -1942,7 +1942,7 @@ input::placeholder {
     padding: .5em
   }
 
-  .category-box-text a h3 {
+  .category-box-text a h2 {
     font-size: 1.2vw
   }
 
@@ -1994,7 +1994,7 @@ input::placeholder {
 
 @media (max-width:768px) {
 
-  .category-box-text a h3,
+  .category-box-text a h2,
   .feature-box-text a p {
     font-size: 2.5vw;
     padding: 1vw .5vw .5vw;
@@ -2091,7 +2091,7 @@ input::placeholder {
     padding: 0
   }
 
-  .category-box-text a h3 {
+  .category-box-text a h2 {
     width: 100%;
     min-height: 2rem;
   }
@@ -2514,7 +2514,7 @@ input::placeholder {
     object-fit: cover
   }
 
-  .category-box-text a h3,
+  .category-box-text a h2,
   .feature-box-text a p {
     font-size: clamp(2rem, 3.5vw, 3rem);
     width: 100%;
@@ -2523,7 +2523,7 @@ input::placeholder {
     padding: 1vw .5vw .5vw
   }
 
-  .category-box-text a h3,
+  .category-box-text a h2,
   .feature-box-text p {
     width: 100%;
     max-width: 100vw;
