@@ -9,16 +9,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779770/category-football-desktop_uvlgxu.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+    <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/bebas-font.css" />
 
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-football-desktop_uvlgxu.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744779770/category-football-tablet_jzyefu.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-football-tablet_jzyefu.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
 
-    <link rel="preload" href="/img/category-football-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+    <link rel="preload" href="/img/category-football-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1738106888/sports_tube_tab_logo_oajgbj.webp"
       type="image/webp"
     />
     <link
@@ -29,69 +31,92 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+    <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Inside the NFL: History, Rivalries, Traditions & Strategy",
-        "description": "Explore the NFL's history, greatest rivalries, coaching strategies, game day traditions, and fantasy football tips. Join the Sports Tube Community to celebrate everything football.",
+        "@type": "WebPage",
+        "@id": "https://sports-tube-community.netlify.app/pages/categories/football.html",
+        "name": "Inside the NFL: History, Rivalries, Traditions & Strategy | Sports Tube Community",
         "url": "https://sports-tube-community.netlify.app/pages/categories/football.html",
+        "description": "Explore the NFL's history, greatest rivalries, coaching strategies, game day traditions, and fantasy football tips. Join the Sports Tube Community to celebrate everything football.",
         "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779770/category-football-desktop_uvlgxu.avif",
         "publisher": {
           "@type": "Organization",
-          "name": "Allison Stock Inc.",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
+          "name": "Sports Tube Community",
           "logo": {
             "@type": "ImageObject",
             "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
           }
         },
-        "mainEntity": {
-          "@type": "ItemList",
-          "itemListElement": [
-            {
-              "@type": "Article",
-              "position": 1,
-              "headline": "The Evolution of the NFL: From Leather Helmets to High-Tech Gear",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_evolution.html"
-            },
-            {
-              "@type": "Article",
-              "position": 2,
-              "headline": "Top 10 NFL Rivalries: A Look at Historic Matchups",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_rivalries.html"
-            },
-            {
-              "@type": "Article",
-              "position": 3,
-              "headline": "The Role of Coaches in the NFL: Strategies and Leadership",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_coaches.html"
-            },
-            {
-              "@type": "Article",
-              "position": 4,
-              "headline": "NFL Draft Day: The Future of the League",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_draft.html"
-            },
-            {
-              "@type": "Article",
-              "position": 5,
-              "headline": "Game Day Traditions: How Fans Celebrate Their Teams",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_traditions.html"
-            },
-            {
-              "@type": "Article",
-              "position": 6,
-              "headline": "Fantasy Football: Strategies for Success",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/fantasy_football.html"
+        "hasPart": [
+          {
+            "@type": "Article",
+            "headline": "The Evolution of the NFL: From Leather Helmets to High-Tech Gear",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_evolution.html",
+            "datePublished": "2024-10-01",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
             }
-          ]
-        }
+          },
+          {
+            "@type": "Article",
+            "headline": "Top 10 NFL Rivalries: A Look at Historic Matchups",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_rivalries.html",
+            "datePublished": "2024-10-02",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "The Role of Coaches in the NFL: Strategies and Leadership",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_coaches.html",
+            "datePublished": "2024-10-03",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "NFL Draft Day: The Future of the League",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_draft.html",
+            "datePublished": "2024-10-04",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Game Day Traditions: How Fans Celebrate Their Teams",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/nfl_traditions.html",
+            "datePublished": "2024-10-05",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Fantasy Football: Strategies for Success",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/football/fantasy_football.html",
+            "datePublished": "2024-10-06",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          }
+        ]
       }
     </script>
-
   </head>
   <body>
     <header>
@@ -100,28 +125,27 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779770/category-football-desktop_uvlgxu.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-football-desktop_uvlgxu.avif 100w"
               type="image/avif"
-              media="(min-width: 1200px) and (max-width: 100vw)"
-              sizes="(min-width: 1200px) 1200px, 100vw"
+              media="(min-width: 1200px)"
+              sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy//v1744779770/category-football-tablet_jzyefu.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-football-tablet_jzyefu.avif 100w"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
-              fetchpriority="high"
             />
             <img
               src="/img/category-football-mobile.avif"
               alt="NFL community engagement – Explore football history, rivalries, and fan traditions with the Sports Tube Community"
               width="480"
-              height="auto"
-              aspect-ratio="1.25 / 1"
+              height="355"
               loading="eager"
               fetchpriority="high"
               object-fit="cover"
+              aspect-ratio="1.35 / 1"
             />
           </picture>
         </section>
@@ -132,7 +156,6 @@
         <div class="quote-grid">
           <div class="quotation-l">
             <img src="/img/left-quote.avif" 
-              id="baseball1" 
               alt=""
               role="presentation"
               width="32"
@@ -151,7 +174,6 @@
           </div>
           <div class="quotation-r">
             <img src="/img/right-quote.avif" 
-              id="baseball1" 
               alt=""
               role="presentation"
               width="32"
@@ -167,7 +189,7 @@
         <div class="article-list-grid box-color1" id="article2">
           <div class="box1"><h2>#1</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/football/nfl_evolution.html"
                 ><h3>
                   The Evolution of the NFL: From Leather Helmets to High-Tech
@@ -175,7 +197,7 @@
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Explore the history of the NFL, highlighting how player safety
                 and equipment have evolved over the decades. Discuss the impact
@@ -187,12 +209,12 @@
         <div class="article-list-grid box-color2" id="article3">
           <div class="box1"><h2>#2</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/football/nfl_rivalries.html"
                 ><h3>Top 10 NFL Rivalries: A Look at Historic Matchups</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Dive into the most intense rivalries in NFL history, examining
                 key games, legendary players, and memorable moments that have
@@ -204,14 +226,14 @@
         <div class="article-list-grid box-color3" id="article4">
           <div class="box1"><h2>#3</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/football/nfl_coaches.html"
                 ><h3>
                   The Role of Coaches in the NFL: Strategies and Leadership
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Analyze the crucial role of coaches in shaping team strategies,
                 player development, and game outcomes. Highlight notable
@@ -223,12 +245,12 @@
         <div class="article-list-grid box-color2" id="article5">
           <div class="box1"><h2>#4</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all articles/football/nfl_draft.html"
                 ><h3>NFL Draft Day: The Future of the League</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Discuss the significance of the NFL Draft, focusing on how teams
                 evaluate talent, make strategic picks, and the impact of new
@@ -240,12 +262,12 @@
         <div class="article-list-grid box-color1" id="article6">
           <div class="box1"><h2>#5</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all articles/football/nfl_traditions.html"
                 ><h3>Game Day Traditions: How Fans Celebrate Their Teams</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Explore the various traditions fans partake in on game day, from
                 tailgating to in-stadium rituals, and how these practices foster
@@ -257,12 +279,12 @@
         <div class="article-list-grid box-color3" id="article7">
           <div class="box1"><h2>#6</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all articles/football/fantasy_football.html"
                 ><h3>Fantasy Football: Strategies for Success</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Provide insights into building a winning fantasy football team.
                 Discuss strategies for drafting players, managing rosters, and

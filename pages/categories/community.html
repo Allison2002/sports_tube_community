@@ -9,15 +9,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779770/category-discussions-desktop_onfwjy.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+    <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/bebas-font.css" />
 
-    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744779771/category-discussions-tablet_en5jqk.avif " as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-discussions-desktop_onfwjy.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <link rel="preload" href="/img/category-discussions-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779771/category-discussions-tablet_en5jqk.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+
+    <link rel="preload" href="/img/category-discussions-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1738106888/sports_tube_tab_logo_oajgbj.webp"
       type="image/webp"
     />
     <link
@@ -28,67 +31,90 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+    <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Sports & Community: Youth Development, Mental Health, and Fan Culture",
-        "description": "Discover how sports foster community connections through youth programs, fan culture, mental health initiatives, and diversity. Join the Sports Tube Community for inspiring stories and insights.",
+        "@type": "WebPage",
+        "@id": "https://sports-tube-community.netlify.app/pages/categories/discussions.html",
+        "name": "Sports & Community: Youth Development, Mental Health, and Fan Culture | Sports Tube Community",
         "url": "https://sports-tube-community.netlify.app/pages/categories/discussions.html",
+        "description": "Discover how sports foster community connections through youth programs, fan culture, mental health initiatives, and diversity. Join the Sports Tube Community for inspiring stories and insights.",
         "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779770/category-discussions-desktop_onfwjy.avif",
         "publisher": {
           "@type": "Organization",
-          "name": "Allison Stock Inc.",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
+          "name": "Sports Tube Community",
           "logo": {
             "@type": "ImageObject",
             "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
           }
         },
-        "mainEntity": {
-          "@type": "ItemList",
-          "itemListElement": [
-            {
-              "@type": "Article",
-              "position": 1,
-              "headline": "The Importance of Community Engagement in Sports",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/community_engagement.html"
-            },
-            {
-              "@type": "Article",
-              "position": 2,
-              "headline": "Fan Culture: How Communities Rally Around Their Teams",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/fan_culture.html"
-            },
-            {
-              "@type": "Article",
-              "position": 3,
-              "headline": "The Future of Sports: How Technology is Changing Fan Interactions",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/future_of_sports.html"
-            },
-            {
-              "@type": "Article",
-              "position": 4,
-              "headline": "Diversity and Inclusion in Sports: Building Stronger Communities",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/diversity.html"
-            },
-            {
-              "@type": "Article",
-              "position": 5,
-              "headline": "Mental Health in Sports: Creating Supportive Communities",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/mental_health.html"
-            },
-            {
-              "@type": "Article",
-              "position": 6,
-              "headline": "The Role of Youth Sports in Community Development",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/youth_sports.html"
+        "hasPart": [
+          {
+            "@type": "Article",
+            "headline": "The Importance of Community Engagement in Sports",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/community_engagement.html",
+            "datePublished": "2024-10-10",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
             }
-          ]
-        }
+          },
+          {
+            "@type": "Article",
+            "headline": "Fan Culture: How Communities Rally Around Their Teams",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/fan_culture.html",
+            "datePublished": "2024-10-11",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "The Future of Sports: How Technology is Changing Fan Interactions",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/future_of_sports.html",
+            "datePublished": "2024-10-12",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Diversity and Inclusion in Sports: Building Stronger Communities",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/diversity.html",
+            "datePublished": "2024-10-13",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Mental Health in Sports: Creating Supportive Communities",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/mental_health.html",
+            "datePublished": "2024-10-14",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "The Role of Youth Sports in Community Development",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/community/youth_sports.html",
+            "datePublished": "2024-10-15",
+            "author": {
+              "@type": "Person",
+              "name": "Genny Allison"
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -99,28 +125,27 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779770/category-discussions-desktop_onfwjy.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-discussions-desktop_onfwjy.avif 100w"
               type="image/avif"
-              media="(min-width: 1200px) and (max-width: 100vw)"
-              sizes="(min-width: 1200px) 1200px, 100vw"
+              media="(min-width: 1200px)"
+              sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744779771/category-discussions-tablet_en5jqk.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779771/category-discussions-tablet_en5jqk.avif 100w"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
-              fetchpriority="high"
             />
             <img
               src="/img/category-discussions-mobile.avif"
               alt="Community sports discussion – Building connections through engagement, outreach, and youth initiatives in local sports."
               width="480"
-              height="auto"
-              aspect-ratio="1.25 / 1"
+              height="355"
               loading="eager"
               fetchpriority="high"
               object-fit="cover"
+              aspect-ratio="1.35 / 1"
             />
           </picture>
         </section>
@@ -131,7 +156,6 @@
         <div class="quote-grid">
           <div class="quotation-l">
             <img src="/img/left-quote.avif" 
-              id="baseball1" 
               alt=""
               role="presentation"
               width="32"
@@ -150,7 +174,6 @@
           </div>
           <div class="quotation-r">
             <img src="/img/right-quote.avif" 
-              id="baseball1" 
               alt=""
               role="presentation"
               width="32"
@@ -166,12 +189,12 @@
         <div class="article-list-grid box-color1" id="article2">
           <div class="box1"><h2>#1</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/community/community_engagement.html"
                 ><h3>The Importance of Community Engagement in Sports</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 <strong>Description</strong>: Discuss how sports organizations
                 can foster community connections through outreach programs,
@@ -185,14 +208,14 @@
         <div class="article-list-grid box-color2" id="article3">
           <div class="box1"><h2>#2</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/community/fan_culture.html"
                 ><h3>
                   Fan Culture: How Communities Rally Around Their Teams
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 <strong>Description</strong>: Examine the role of fan culture in
                 sports communities. Highlight how different regions express
@@ -205,7 +228,7 @@
         <div class="article-list-grid box-color3" id="article4">
           <div class="box1"><h2>#3</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/community/future_of_sports.html"
                 ><h3>
                   The Future of Sports: How Technology is Changing Fan
@@ -213,7 +236,7 @@
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 <strong>Description</strong>: Investigate how advancements in
                 technology, such as virtual reality and augmented reality, are
@@ -226,7 +249,7 @@
         <div class="article-list-grid box-color2" id="article5">
           <div class="box1"><h2>#4</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/community/diversity.html"
                 ><h3>
                   Diversity and Inclusion in Sports: Building Stronger
@@ -234,7 +257,7 @@
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 <strong>Description</strong>: Explore the importance of
                 diversity and inclusion in sports, focusing on how teams and
@@ -248,14 +271,14 @@
         <div class="article-list-grid box-color1" id="article6">
           <div class="box1"><h2>#5</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/community/mental_health.html"
                 ><h3>
                   Mental Health in Sports: Creating Supportive Communities
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 <strong>Description</strong>: Delve into the conversation around
                 mental health in sports, examining the importance of support
@@ -268,12 +291,12 @@
         <div class="article-list-grid box-color3" id="article7">
           <div class="box1"><h2>#6</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/community/youth_sports.html"
                 ><h3>The Role of Youth Sports in Community Development</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 <strong>Description</strong>: Analyze how youth sports programs
                 contribute to community development, teaching valuable life

@@ -9,16 +9,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779769/category-mma-desktop_eeghab.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+    <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/bebas-font.css" />
 
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-mma-desktop_eeghab.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744815182/category-mma-tablet_ekwl6w.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744815182/category-mma-tablet_ekwl6w.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
 
-    <link rel="preload" href="/img/category-mma-mobile.avif" as="image" type="image/avif" media="(max-width: 768px)" />
+    <link rel="preload" href="/img/category-mma-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1738106888/sports_tube_tab_logo_oajgbj.webp"
       type="image/webp"
     />
     <link
@@ -29,70 +31,75 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <link rel="stylesheet" href="/assets/styles.css" media="(min-width: 768px)" />
+    <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "MMA Evolution, Iconic Bouts & Future of Mixed Martial Arts",
-        "description": "Explore MMA’s rise from Gracie Jiu-Jitsu to global status. Read about legendary fights, female trailblazers, elite training, coaching insights, and predictions for the future on Sports Tube Community.",
+        "@type": "WebPage",
+        "@id": "https://sports-tube-community.netlify.app/pages/categories/mma.html",
+        "name": "Evolution of MMA, Iconic Fights, Female Fighters & Training | Sports Tube Community",
         "url": "https://sports-tube-community.netlify.app/pages/categories/mma.html",
+        "description": "Discover the evolution of MMA, legendary fights, top female athletes, and elite training regimens. Join the Sports Tube Community for expert insights into coaching, trends, and the future of mixed martial arts.",
         "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779769/category-mma-desktop_eeghab.avif",
         "publisher": {
           "@type": "Organization",
           "name": "Allison Stock Inc.",
+          "url": "https://sports-tube-community.netlify.app",
           "logo": {
             "@type": "ImageObject",
             "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
           }
         },
-        "mainEntity": {
-          "@type": "ItemList",
-          "itemListElement": [
-            {
-              "@type": "Article",
-              "position": 1,
-              "headline": "The Evolution of MMA: From Gracie Jiu-Jitsu to Global Phenomenon",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_evolution.html"
-            },
-            {
-              "@type": "Article",
-              "position": 2,
-              "headline": "The Most Iconic Fights in MMA History",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_history.html"
-            },
-            {
-              "@type": "Article",
-              "position": 3,
-              "headline": "Women in MMA: Breaking Barriers and Making History",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_women.html"
-            },
-            {
-              "@type": "Article",
-              "position": 4,
-              "headline": "Training Regimens of Top MMA Fighters: What It Takes to Compete",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_training.html"
-            },
-            {
-              "@type": "Article",
-              "position": 5,
-              "headline": "The Role of Coaches and Cornermen in MMA",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_coaches.html"
-            },
-            {
-              "@type": "Article",
-              "position": 6,
-              "headline": "The Future of MMA: Trends and Predictions",
-              "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_future.html"
-            }
-          ]
-        }
+        "hasPart": [
+          {
+            "@type": "Article",
+            "headline": "The Evolution of MMA: From Gracie Jiu-Jitsu to Global Phenomenon",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_evolution.html",
+            "author": { "@type": "Person", "name": "Genny Allison" },
+            "datePublished": "2024-10-01"
+          },
+          {
+            "@type": "Article",
+            "headline": "The Most Iconic Fights in MMA History",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_history.html",
+            "author": { "@type": "Person", "name": "Genny Allison" },
+            "datePublished": "2024-10-02"
+          },
+          {
+            "@type": "Article",
+            "headline": "Women in MMA: Breaking Barriers and Making History",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_women.html",
+            "author": { "@type": "Person", "name": "Genny Allison" },
+            "datePublished": "2024-10-03"
+          },
+          {
+            "@type": "Article",
+            "headline": "Training Regimens of Top MMA Fighters: What It Takes to Compete",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_training.html",
+            "author": { "@type": "Person", "name": "Genny Allison" },
+            "datePublished": "2024-10-04"
+          },
+          {
+            "@type": "Article",
+            "headline": "The Role of Coaches and Cornermen in MMA",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_coaches.html",
+            "author": { "@type": "Person", "name": "Genny Allison" },
+            "datePublished": "2024-10-05"
+          },
+          {
+            "@type": "Article",
+            "headline": "The Future of MMA: Trends and Predictions",
+            "url": "https://sports-tube-community.netlify.app/pages/all_articles/mma/mma_future.html",
+            "author": { "@type": "Person", "name": "Genny Allison" },
+            "datePublished": "2024-10-06"
+          }
+        ]
       }
-    </script>
 
+    </script>
   </head>
   <body>
     <header>
@@ -101,28 +108,27 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779769/category-mma-desktop_eeghab.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-mma-desktop_eeghab.avif 100w"
               type="image/avif"
-              media="(min-width: 1200px) and (max-width: 100vw)"
-              sizes="(min-width: 1200px) 1200px, 100vw"
+              media="(min-width: 1200px)"
+              sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/uploadf_avif,q_auto,w_2400,fl_lossy/v1744815182/category-mma-tablet_ekwl6w.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744815182/category-mma-tablet_ekwl6w.avif 100w"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
-              fetchpriority="high"
             />
             <img
               src="/img/category-mma-mobile.avif"
               alt="Iconic MMA fights and legends – Explore the evolution of mixed martial arts, legendary bouts, and top fighters with the Sports Tube Community."
               width="480"
-              height="auto"
-              aspect-ratio="1.25 / 1"
+              height="355"
               loading="eager"
               fetchpriority="high"
               object-fit="cover"
+              aspect-ratio="1.35 / 1"
             />
           </picture>
         </section>
@@ -133,7 +139,6 @@
         <div class="quote-grid">
           <div class="quotation-l">
             <img src="/img/left-quote.avif" 
-              id="baseball1" 
               alt=""
               role="presentation"
               width="32"
@@ -152,7 +157,6 @@
           </div>
           <div class="quotation-r">
             <img src="/img/right-quote.avif" 
-              id="baseball1" 
               alt=""
               role="presentation"
               width="32"
@@ -168,7 +172,7 @@
         <div class="article-list-grid box-color1" id="article2">
           <div class="box1"><h2>#1</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/mma/mma_evolution.html"
                 ><h3>
                   The Evolution of MMA: From Gracie Jiu-Jitsu to Global
@@ -176,7 +180,7 @@
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Explore the history of mixed martial arts, highlighting its
                 growth from the early days of UFC and the influence of key
@@ -190,12 +194,12 @@
         <div class="article-list-grid box-color2" id="article3">
           <div class="box1"><h2>#2</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/mma/mma_history.html"
                 ><h3>The Most Iconic Fights in MMA History</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 A countdown of the most memorable fights in MMA history,
                 showcasing the athletes, techniques, and moments that have
@@ -208,12 +212,12 @@
         <div class="article-list-grid box-color3" id="article4">
           <div class="box1"><h2>#3</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/mma/mma_women.html"
                 ><h3>Women in MMA: Breaking Barriers and Making History</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Highlight the achievements of female fighters in MMA, focusing
                 on trailblazers like Ronda Rousey and Amanda Nunes. Discuss how
@@ -226,7 +230,7 @@
         <div class="article-list-grid box-color2" id="article5">
           <div class="box1"><h2>#4</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/mma/mma_training.html"
                 ><h3>
                   Training Regimens of Top MMA Fighters: What It Takes to
@@ -234,7 +238,7 @@
                 </h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Delve into the training routines and diets of elite MMA
                 fighters. Explore the physical and mental aspects of their
@@ -247,12 +251,12 @@
         <div class="article-list-grid box-color1" id="article6">
           <div class="box1"><h2>#5</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/mma/mma_coaches.html"
                 ><h3>The Role of Coaches and Cornermen in MMA</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Examine the crucial role that coaches and cornermen play in an
                 MMA fighter's success. Discuss their strategies, communication
@@ -264,12 +268,12 @@
         <div class="article-list-grid box-color3" id="article7">
           <div class="box1"><h2>#6</h2></div>
           <div class="box2 link">
-            <div>
+            <div class="quote-text">
               <a href="/pages/all_articles/mma/mma_future.html"
                 ><h3>The Future of MMA: Trends and Predictions</h3></a
               >
             </div>
-            <div>
+            <div class="quote-text">
               <p>
                 Investigate emerging trends in MMA, such as the rise of
                 analytics, changes in fighter training, and the growth of
