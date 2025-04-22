@@ -1118,14 +1118,14 @@ footer {
 }
 
 .bottom-nav h5,
-.join-text-bottom p {
+.join-text-bottom h3 {
   color: #1a1d9e;
   margin: 0;
   width: 100%;
   height: auto
 }
 
-.join-text-bottom p {
+.join-text-bottom h3 {
   font-size: 1.3vw
 }
 
@@ -1810,7 +1810,7 @@ input::placeholder {
   }
 
   .button2,
-  .join-text-bottom p {
+  .join-text-bottom h3 {
     font-size: 1.5vw
   }
 
@@ -2769,7 +2769,7 @@ input::placeholder {
     margin: 0 auto
   }
 
-  .join-text-bottom p {
+  .join-text-bottom h3 {
     font-size: 3vw;
     width: 70%;
     margin: 0 auto;
