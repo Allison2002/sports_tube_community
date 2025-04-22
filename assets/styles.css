@@ -823,7 +823,7 @@ nav ul li :hover {
 }
 
 .account-form a,
-.bottom-nav h5,
+.bottom-nav h4,
 .form-buttons a,
 .image-container,
 figcaption {
@@ -1117,7 +1117,7 @@ footer {
   padding: .5em 0 1em
 }
 
-.bottom-nav h5,
+.bottom-nav h4,
 .join-text-bottom p {
   color: #1a1d9e;
   margin: 0;
@@ -1234,7 +1234,7 @@ footer {
   padding: 0 2em
 }
 
-.bottom-nav h5 {
+.bottom-nav h4 {
   font-size: 1vw;
   margin: 0 auto
 }
@@ -1279,7 +1279,7 @@ footer {
 }
 
 .bottom-nav ul li a,
-.footer-col h4,
+.footer-col h3,
 .footer-col ul li a,
 .join h4,
 .join h5 {
@@ -1291,7 +1291,7 @@ footer {
   transition: color .3s, background-color .3s
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 1.3vw;
   text-decoration: underline
 }
@@ -1876,7 +1876,7 @@ input::placeholder {
     flex-wrap: nowrap
   }
 
-  .bottom-nav h5 {
+  .bottom-nav h4 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -1920,7 +1920,7 @@ input::placeholder {
     text-align: center
   }
 
-  .footer-col h4 {
+  .footer-col h3 {
     font-size: 1.7vw
   }
 
@@ -2156,7 +2156,7 @@ input::placeholder {
     padding: 0
   }
 
-  .bottom-nav h5 {
+  .bottom-nav h4 {
     width: 100%;
     font-size: 2vw;
     justify-content: left
@@ -2843,7 +2843,7 @@ input::placeholder {
     padding: 1em
   }
 
-  .footer-col h4 {
+  .footer-col h3 {
     font-size: 3.2vw;
     margin-bottom: .5em;
     color: #1a1d9e
@@ -2888,7 +2888,7 @@ input::placeholder {
     border-radius: .5em
   }
 
-  .bottom-nav h5,
+  .bottom-nav h4,
   .join-bottom .input-text-join p {
     font-size: 3.2vw
   }
@@ -2928,7 +2928,7 @@ input::placeholder {
     justify-content: center
   }
 
-  .bottom-nav h5 {
+  .bottom-nav h4 {
     width: auto
   }
 
