@@ -725,7 +725,7 @@ nav ul li :hover {
 }
 
 .quote-text h3 {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1.2rem, 1.8vw, 3rem);
 }
 
 .quote-text p {
