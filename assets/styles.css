@@ -498,7 +498,7 @@ nav ul li :hover {
 
 .categories-title,
 .feature-title {
-  padding: 6em 0 3em;
+  padding: 2em 0 3em;
   margin: 0 auto;
   width: 100%;
   max-width: 100vw;
@@ -507,11 +507,12 @@ nav ul li :hover {
   text-decoration: underline
 }
 
-.categories-title h2,
+.categories-title h1,
 .feature-title h2 {
   width: 100%;
   height: auto;
-  text-align: center
+  text-align: center;
+  font-size: clamp(3rem, 5vw, 3.5rem);
 }
 
 .categories-box,
@@ -540,11 +541,20 @@ nav ul li :hover {
   margin: 0 auto
 }
 
+.category-box-text {
+  padding: 1em 1em 2em;
+  height: auto;
+  min-height: 1rem;
+  width: 100%;
+  max-width: 100vw;
+  text-align: center;
+}
+
 .category-box-text a h2 {
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
   font-weight: 700;
   color: #1a1d9e;
-  text-align: center
+  text-align: center;
 }
 
 .feature-box-text a h3 {
@@ -636,13 +646,6 @@ nav ul li :hover {
 
 .space {
   height: 5em
-}
-
-.category-box-text {
-  padding: 1em 1em 2em;
-  height: auto;
-  width: 100%;
-  max-width: 100vw
 }
 
 .quote-grid {
@@ -2027,7 +2030,7 @@ input::placeholder {
     min-height: 3rem;
   }
 
-  .categories-title h2,
+  .categories-title h1,
   .feature-title h2,
   .logo-container img,
   .nav-icon-container {
