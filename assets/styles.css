@@ -74,10 +74,6 @@ category-box-text .article-text,
   font-size: clamp(1rem, 1.2vw, 1.25rem);
 }
 
-.quote-text strong {
-  font-weight: 600;
-}
-
 .link a,
 figcaption a {
   transition: transform .3s, opacity .3s
@@ -702,13 +698,45 @@ nav ul li :hover {
 
 .quote h1,
 .quote p {
-  font-size: clamp(1rem, 1.5vw, 1.4rem);
-  padding: 1em 2em;
   width: 100%;
   height: auto;
   max-width: 100vw;
   min-height: 2vh;
+}
 
+.quote h1 {
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  padding: 1em 2em 0.5em;
+}
+
+.quote p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  padding: 0.5em 2em 1em;
+}
+
+.quote-text strong {
+  font-weight: 600;
+}
+
+.box1 h2 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.quote-text h3 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.quote-text p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.quote-text h2,
+.quote-text h3 {
+
+  width: 100%;
+  height: auto;
+  min-height: 1rem;
+  max-width: 100vw;
 }
 
 .article-list {
