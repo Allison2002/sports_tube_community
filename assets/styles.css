@@ -849,9 +849,10 @@ figcaption {
   list-style-type: disc
 }
 
+.article-text h2,
 .article-text h3 {
   padding: 2% 0 0;
-  font-size: 1.5vw;
+  font-size: clamp(2rem, 2.2vw, 3rem);
   color: #1a1d9e
 }
 
@@ -1722,9 +1723,10 @@ input::placeholder {
     padding: .5em 1em
   }
 
+  .article-text h2,
   .article-text h3 {
     padding: 2% 0 0;
-    font-size: 2.3vw;
+    font-size: clamp(2rem, 2vw, 3rem);
     color: #1a1d9e
   }
 
@@ -1771,7 +1773,10 @@ input::placeholder {
   .article-title h1,
   .privacy-page h1 {
     padding: 1.5em 0 0;
-    font-size: 4vw
+    font-size: clamp(1.5rem, 4.2vw, 6rem);
+    width: 100%;
+    height: auto;
+    min-height: 2rem;
   }
 
   .feature-article-grid {
@@ -2148,6 +2153,12 @@ input::placeholder {
     margin: 0 auto;
     object-fit: cover;
     aspect-ratio: 1.80/1
+  }
+
+  .article-title h1,
+  .privacy-page h1 {
+    padding: 1.5em 0 0;
+    font-size: clamp(1rem, 5vw, 6rem);
   }
 
   .bottom-nav ul {
@@ -2672,6 +2683,7 @@ input::placeholder {
     margin-bottom: .75em
   }
 
+  .article-text h2,
   .article-text h3 {
     padding: 2% 0 0;
     font-size: 3.8vw;
