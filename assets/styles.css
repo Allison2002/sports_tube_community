@@ -13,7 +13,7 @@ html {
 }
 
 html {
-  font-size-adjust: 0.5;
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
 body {
