@@ -12,17 +12,33 @@ html {
   padding: 0
 }
 
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 html {
   font-size: clamp(16px, 1.5vw, 20px);
 }
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.fonts-loading .quote p,
+body.fonts-loading h1,
+body.fonts-loading h2,
+body.fonts-loading h3 {
+  visibility: hidden;
 }
 
 h1,
 h2 {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-family: 'Bebas Neue', 'Oswald', 'Impact', sans-serif;
+
 }
 
 h1 {
@@ -127,7 +143,7 @@ p {
 }
 
 @font-face {
-  font-family: "Bebas Neue", Oswald, sans-serif;
+  font-family: 'Bebas Neue', 'Oswald', 'Impact', sans-serif;
   src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -705,6 +721,14 @@ nav ul li :hover {
   max-width: 100vw;
   min-height: 2vh;
 }
+
+section#quotes .quote p,
+section#quotes .quote img {
+  width: auto;
+  height: auto;
+  min-height: 1rem;
+}
+
 
 .quote h1 {
   font-size: clamp(1.2rem, 2.2vw, 2rem);

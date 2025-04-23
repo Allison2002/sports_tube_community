@@ -120,11 +120,11 @@
     </script>
     <style>
       @font-face {
-        font-family: "Bebas Neue", Oswald, sans-serif
+        font-family: 'Bebas Neue', 'Oswald', 'Impact', sans-serif;
         src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
         font-weight: 400;
         font-style: normal;
-        font-display: optional;
+        font-display: swap;
         ascent-override: 90%;
         descent-override: 10%;
         line-gap-override: 0%;
@@ -353,5 +353,12 @@
     </section>
     <div id="footer"></div>
     <script src="/assets/script.js" defer></script>
+    <script>
+      document.body.classList.add("fonts-loading");
+      window.addEventListener("load", () => {
+        document.body.classList.remove("fonts-loading");
+        document.body.classList.add("fonts-loaded");
+      });
+    </script>
   </body>
 </html>
