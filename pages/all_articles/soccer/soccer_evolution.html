@@ -18,9 +18,6 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/assets/bebas-font.css" />
-
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744287088/soccer-evolution-desktop_ei9ywe.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
 
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744287092/soccer-evolution-tablet_srjosj.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" />
@@ -32,13 +29,7 @@
       href="https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
       type="image/webp"
     />
-    <link
-      rel="preload"
-      href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
+
     <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
@@ -67,6 +58,18 @@
         "mainEntityOfPage": "https://www.example.com/articles/soccer-evolution"
       }
     </script>
+    <style>
+      @font-face {
+        font-family: "Bebas Neue", Oswald, sans-serif
+        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        ascent-override: 90%;
+        descent-override: 10%;
+        line-gap-override: 0%;
+      }
+    </style>   
   </head>
   <body>
     <header>
