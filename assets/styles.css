@@ -405,7 +405,7 @@ nav ul li :hover {
   height: auto;
   padding: 0;
   object-position: bottom;
-  object-fit: cover;
+  object-fit: fill;
   aspect-ratio: 2.73 / 1;
 }
 
@@ -1650,7 +1650,7 @@ input::placeholder {
     height: auto;
     aspect-ratio: 2.25/1;
     object-position: center center;
-    object-fit: cover
+    object-fit: fill;
   }
 
   .nav-menu.active {
@@ -1723,7 +1723,7 @@ input::placeholder {
   .feature-article-grid,
   .grid2 {
     min-height: 3rem;
-    height: auto
+    height: auto;
   }
 
   .search-container input::placeholder {
@@ -2314,7 +2314,7 @@ input::placeholder {
   .hero-img img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
     display: block;
     aspect-ratio: 2.28/1
   }
@@ -2439,7 +2439,7 @@ input::placeholder {
   .hero-img img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
     display: block;
     object-position: bottom;
     aspect-ratio: 1.35 / 1;
