@@ -78,11 +78,13 @@ nav ul li :hover {
   color: #1a1d9e;
 }
 
+.key-moments p,
 .category-box-text,
 .article-text,
 .article-text p {
   line-height: 1.6;
   font-size: clamp(1rem, 1.2vw, 1.25rem);
+  min-height: 1rem;
 }
 
 .link a,
@@ -752,6 +754,7 @@ section#quotes .quote img {
 .article-text strong,
 .quote-text strong {
   font-weight: 600;
+  min-height: 1rem;
 }
 
 .box1 h2 {
@@ -874,6 +877,7 @@ figcaption {
   margin-bottom: 1.5em
 }
 
+.key-moments p,
 .article-text p {
   margin-bottom: .75em
 }
@@ -1788,10 +1792,12 @@ input::placeholder {
     color: #1a1d9e
   }
 
+  .key-moments p,
   .article-text p {
     font-size: 2vw;
     line-height: 1.6;
-    margin-bottom: .75em
+    margin-bottom: .75em;
+    min-height: 1rem;
   }
 
   .article-title p,
@@ -2756,10 +2762,12 @@ input::placeholder {
     padding: 1em 0 2em
   }
 
+  .key-moments p,
   .article-text p {
     font-size: clamp(1rem, 1.2vw, 1.25rem);
     line-height: 1.6;
-    margin-bottom: .75em
+    margin-bottom: .75em;
+    min-height: 1rem;
   }
 
   .article-text h2,
