@@ -303,17 +303,16 @@ nav ul li :hover {
   display: flex;
   width: 100%;
   max-width: 17vw;
-  height: clamp(90px, 10vh, 100px);
-  min-height: 2rem;
-  max-height: 90px;
+  height: auto;
+  align-items: center;
 }
 
 .logo-container img {
+  height: clamp(2rem, 5vw, 4.5rem);
   width: auto;
-  height: 10vh;
-  object-fit: cover;
+  object-fit: contain;
   aspect-ratio: 2.618 / 1;
-  display: block
+  display: block;
 }
 
 .nav-icon-container {
