@@ -37,7 +37,7 @@ body.fonts-loading h3 {
 
 h1,
 h2 {
-  font-family: 'Bebas Neue', 'Oswald', 'Impact', sans-serif;
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
 
 }
 
@@ -112,13 +112,6 @@ html {
   background-color: #e1e5e8
 }
 
-main {
-  width: 60%;
-  max-width: 60vw;
-  min-height: 3rem;
-  height: auto
-}
-
 h1 {
   letter-spacing: .1em
 }
@@ -143,7 +136,7 @@ p {
 }
 
 @font-face {
-  font-family: 'Bebas Neue', 'Oswald', 'Impact', sans-serif;
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
   src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -405,7 +398,7 @@ nav ul li :hover {
   height: auto;
   padding: 0;
   object-position: bottom;
-  object-fit: fill;
+  object-fit: cover;
   aspect-ratio: 2.73 / 1;
 }
 
@@ -415,11 +408,12 @@ nav ul li :hover {
   box-shadow: 0 .3125em .9375rem rgba(0, 0, 0, .2);
   border-radius: .5em;
   object-fit: contain;
+  aspect-ratio: 1.80/1
 }
 
 .grid2 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 2fr;
   gap: 1.5em;
   max-width: 60%;
   height: auto;
@@ -481,14 +475,14 @@ nav ul li :hover {
   margin: 0 auto
 }
 
-.categories-grid,
 .feature-article-grid {
   display: grid;
   margin: 2em auto;
   gap: 2em;
   min-width: 50vw;
-  width: 60vw;
-  min-height: 3rem;
+  width: 60%;
+  max-width: 60vw;
+  min-height: 5rem;
   height: auto
 }
 
@@ -497,8 +491,14 @@ nav ul li :hover {
 }
 
 .categories-grid {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 60vw
+  max-width: 80vw;
+  width: 80%;
+  height: auto;
+  min-height: 3rem;
+  margin: 0 auto;
+  gap: 1.5em;
 }
 
 .feature-article-grid {
@@ -507,26 +507,24 @@ nav ul li :hover {
 
 .categories-title,
 .feature-title {
-  padding: 2em 0 3em;
   margin: 0 auto;
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 2rem;
-  text-decoration: underline
+  text-decoration: underline;
+  text-align: center;
 }
 
 .categories-title h1,
 .feature-title h2 {
   width: 100%;
   height: auto;
-  min-height: 3.5rem;
-  text-align: center;
-  font-size: clamp(3rem, 5vw, 3.5rem);
+  min-height: 2rem;
+  font-size: clamp(1rem, 2.3vw, 4rem);
+  padding: 1em 0 1em;
 }
 
-.categories-box,
-.feature-box {
+.categories-box .feature-box {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -535,6 +533,11 @@ nav ul li :hover {
   height: auto;
   text-align: left;
   margin: 0 auto
+}
+
+.categories-box {
+  display: block;
+  overflow: hidden;
 }
 
 .feature-box img {
@@ -547,8 +550,10 @@ nav ul li :hover {
 .categories-box img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  margin: 0 auto
+  aspect-ratio: 1.80 / 1;
+  margin: 0 auto;
+  object-fit: contain;
+  display: block;
 }
 
 .category-box-text {
@@ -561,7 +566,7 @@ nav ul li :hover {
 }
 
 .category-box-text a h2 {
-  font-size: clamp(1.5rem, 2.2vw, 3rem);
+  font-size: clamp(1rem, 1.5vw, 2.8rem);
   font-weight: 700;
   color: #1a1d9e;
   text-align: center;
@@ -632,12 +637,15 @@ nav ul li :hover {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  gap: 1.5em;
+  gap: 1em;
   width: 60%;
   max-width: 60vw;
   height: auto;
   min-height: 2rem;
+  justify-content: center;
+  text-align: center;
 }
+
 
 .category-buttons1 .button,
 .category-buttons2 .button {
@@ -656,7 +664,7 @@ nav ul li :hover {
 
 .categories-buttons h2 {
   padding: .5em 0;
-  text-align: center
+  text-align: center;
 }
 
 .space {
@@ -802,7 +810,7 @@ section#quotes .quote img {
 .article-title h1,
 .privacy-page h1 {
   padding: 1.5em 0 0;
-  font-size: clamp(1.5rem, 4vw, 6rem);
+  font-size: clamp(1.5rem, 2.5vw, 5rem);
   width: 100%;
   height: auto;
   min-height: 3rem;
@@ -1650,7 +1658,7 @@ input::placeholder {
     height: auto;
     aspect-ratio: 2.25/1;
     object-position: center center;
-    object-fit: fill;
+    object-fit: cover
   }
 
   .nav-menu.active {
@@ -1719,11 +1727,16 @@ input::placeholder {
     background-color: translucent
   }
 
+  .categories-title h1 {
+    font-size: clamp(1.5rem, 4.5vw, 6rem);
+    padding: 2em 0 1em;
+  }
+
   .categories-box,
   .feature-article-grid,
   .grid2 {
-    min-height: 3rem;
-    height: auto;
+    min-height: 2rem;
+    height: auto
   }
 
   .search-container input::placeholder {
@@ -1740,8 +1753,6 @@ input::placeholder {
   .categories-box {
     width: 100%;
     max-width: 100vw;
-    min-height: 3rem;
-    height: auto;
     margin: 1em auto 2em
   }
 
@@ -1750,7 +1761,7 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    height: auto
+    height: auto;
   }
 
   .category-buttons1 .button,
@@ -1791,7 +1802,7 @@ input::placeholder {
 
   .grid2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     gap: 1.5em;
     max-width: 80vw;
     width: 80%;
@@ -1970,6 +1981,13 @@ input::placeholder {
     max-width: 100vw;
     width: 100%;
     height: auto
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+    padding-bottom: 1em;
   }
 
   .social-media img {
@@ -2171,8 +2189,8 @@ input::placeholder {
 
   .categories {
     margin: 0 auto;
-    width: 90%;
-    max-width: 90vw;
+    width: 80%;
+    max-width: 80vw;
     min-height: 2rem;
   }
 
@@ -2187,6 +2205,16 @@ input::placeholder {
   .feature-article,
   .join-section {
     min-height: 3rem;
+  }
+
+  .categories-grid {
+    padding: 1.5em 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    width: 90%;
+    max-width: 90vw;
+    margin: 0 auto 4em
   }
 
   .categories-grid {
@@ -2206,11 +2234,16 @@ input::placeholder {
     min-height: 2rem;
   }
 
+  .categories-title h1 {
+    font-size: clamp(1.5rem, 4.5vw, 6rem);
+    padding: 3em 0 0;
+  }
+
   .categories-box img {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: contain;
     aspect-ratio: 1.80/1
   }
 
@@ -2314,7 +2347,7 @@ input::placeholder {
   .hero-img img {
     width: 100%;
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
     display: block;
     aspect-ratio: 2.28/1
   }
@@ -2439,7 +2472,7 @@ input::placeholder {
   .hero-img img {
     width: 100%;
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
     display: block;
     object-position: bottom;
     aspect-ratio: 1.35 / 1;
@@ -2538,24 +2571,6 @@ input::placeholder {
     min-width: 10vw
   }
 
-  .categories-grid,
-  .feature-article-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em
-  }
-
-  .categories-grid,
-  .feature-article-grid {
-    display: grid;
-    margin: 2em auto;
-    gap: 2em;
-    min-width: 5vw;
-    width: 90%;
-    max-width: 90vw;
-    min-height: 3rem;
-    height: auto
-  }
-
   .button2,
   .quote h1,
   .quote p {
@@ -2582,7 +2597,8 @@ input::placeholder {
 
   .categories-title h1,
   .feature-title h2 {
-    font-size: 5.5vw;
+    font-size: clamp(2rem, 3vw, 5rem);
+    padding: 2em 0 0;
     width: 100%;
     height: auto;
     text-align: center;
@@ -2608,6 +2624,14 @@ input::placeholder {
   .feature-article-grid {
     width: 100%;
     max-width: 100vw;
+    height: auto;
+    min-height: 2rem;
+  }
+
+  .categories-grid {
+    margin: 0 auto;
+    max-width: 60vw;
+    width: 60%;
     height: auto;
     min-height: 2rem;
   }
@@ -2668,11 +2692,10 @@ input::placeholder {
   }
 
   .categories-box {
-    margin: 1em auto;
+    margin: 3em auto;
     max-width: 100vw;
     width: 100%;
     height: auto;
-    min-height: 5rem;
     padding: 0
   }
 
@@ -2680,8 +2703,8 @@ input::placeholder {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    object-fit: cover;
-    aspect-ratio: 1.80/1
+    object-fit: contain;
+    aspect-ratio: 1.80/1;
   }
 
   .home-btn {
