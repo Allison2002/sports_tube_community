@@ -301,16 +301,16 @@ nav ul li :hover {
 
 .logo-container {
   display: flex;
-  width: 17vw;
+  width: 100%;
   max-width: 17vw;
-  height: clamp(90px, 9vh, 90px);
+  height: clamp(90px, 10vh, 100px);
   min-height: 2rem;
-  max-height: 6.25rem;
+  max-height: 90px;
 }
 
 .logo-container img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 10vh;
   object-fit: cover;
   aspect-ratio: 2.618 / 1;
   display: block
