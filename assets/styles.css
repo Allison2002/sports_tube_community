@@ -976,7 +976,7 @@ figcaption a:hover {
 .privacy ol li,
 .privacy-ul h3,
 .works ol li {
-  padding: .5em 0
+  padding: .5em 1em;
 }
 
 .privacy-ul {
@@ -1500,6 +1500,7 @@ form h1 {
   margin-bottom: 1.5em
 }
 
+.form-inputs select,
 .form-inputs input,
 .form-inputs textarea,
 .form-sect input,
