@@ -15,7 +15,6 @@ html {
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 html {
@@ -26,6 +25,7 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body.fonts-loading .quote p,
@@ -809,7 +809,7 @@ section#quotes .quote img {
 .article-title h1,
 .privacy-page h1 {
   padding: 1.5em 0 0;
-  font-size: clamp(1.5rem, 1.3vw + 1rem, 4.5rem);
+  font-size: clamp(1.5rem, 1vw + 1rem, 4.5rem);
   width: 100%;
   height: auto;
   min-height: 3rem;
@@ -817,10 +817,11 @@ section#quotes .quote img {
 
 .article-title p {
   font-size: clamp(1rem, 1.2vw, 1.25rem);
-  padding: 0 0 3em;
+  padding: 1em 0 4em;
   width: 100%;
   height: auto;
   min-height: 2rem;
+  text-decoration: underline;
 }
 
 .guidelines-bottom p {
@@ -873,10 +874,6 @@ figcaption {
   margin-bottom: 1.5em
 }
 
-.article-text p {
-  margin-bottom: .75em
-}
-
 .article-text u {
   text-decoration: none;
   list-style-type: disc
@@ -885,8 +882,12 @@ figcaption {
 .article-text h2,
 .article-text h3 {
   padding: 2% 0 0;
-  font-size: clamp(2rem, 2.2vw, 3rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
   color: #1a1d9e
+}
+
+.iconic-soccer ol li {
+  padding: 0 0 2em;
 }
 
 .image-container {
@@ -1793,6 +1794,10 @@ input::placeholder {
     line-height: 1.6;
     margin-bottom: .75em;
     min-height: 1rem;
+  }
+
+  .iconic-soccer ol li {
+    padding: 0 0 1em;
   }
 
   .article-title p,
