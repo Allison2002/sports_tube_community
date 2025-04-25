@@ -159,7 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section); // Observe the join section
   });
 
-    document.fonts.ready.then(() => {
-    document.body.classList.add('fonts-loaded');
-  });
+    if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      document.body.classList.add('fonts-loaded');
+    });
+  }
+
 });

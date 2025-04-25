@@ -28,12 +28,18 @@ body {
   overflow-x: hidden;
 }
 
-body.fonts-loading .quote p,
 body.fonts-loading h1,
 body.fonts-loading h2,
-body.fonts-loading h3 {
+body.fonts-loading p.article-info {
   visibility: hidden;
 }
+
+body.fonts-loaded h1,
+body.fonts-loaded h2,
+body.fonts-loaded p.article-info {
+  visibility: visible;
+}
+
 
 h1,
 h2 {
