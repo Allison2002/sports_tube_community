@@ -33,14 +33,15 @@ main.fonts-loading h1,
 main.fonts-loading h2,
 main.fonts-loading p.article-info {
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 main.fonts-loaded h1,
 main.fonts-loaded h2,
 main.fonts-loaded p.article-info {
   opacity: 1;
+  transition: opacity 0.3s ease;
 }
-
 
 h1,
 h2 {
