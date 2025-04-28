@@ -28,16 +28,16 @@ body {
   overflow-x: hidden;
 }
 
-body.fonts-loading h1,
-body.fonts-loading h2,
-body.fonts-loading p.article-info {
-  visibility: hidden;
+main.fonts-loading h1,
+main.fonts-loading h2,
+main.fonts-loading p.article-info {
+  opacity: 0;
 }
 
-body.fonts-loaded h1,
-body.fonts-loaded h2,
-body.fonts-loaded p.article-info {
-  visibility: visible;
+main.fonts-loaded h1,
+main.fonts-loaded h2,
+main.fonts-loaded p.article-info {
+  opacity: 1;
 }
 
 
@@ -337,7 +337,7 @@ nav ul li :hover {
 .grid2,
 .hero-img,
 .join-text-bottom {
-  min-height: 2rem;
+  min-height: 5rem;
 }
 
 .search-container {
@@ -386,7 +386,7 @@ nav ul li :hover {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 3rem;
+  min-height: 5rem;
   display: block;
   overflow: hidden
 }
