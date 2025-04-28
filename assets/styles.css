@@ -164,7 +164,7 @@ p {
 
 @font-face {
   font-family: 'Roboto';
-  src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff2') format('woff2');
+  src: url('/fonts//Roboto/Roboto-Regular.woff2') format('woff2');
   font-display: swap;
 }
 
