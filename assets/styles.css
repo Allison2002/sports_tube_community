@@ -34,6 +34,11 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
 body:not(.fonts-loaded) {
   visibility: hidden;
 }
