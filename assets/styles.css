@@ -460,6 +460,7 @@ nav ul li :hover {
   gap: 1.5em;
   max-width: 60%;
   height: auto;
+  min-height: 5rem;
   margin: 5em auto
 }
 
@@ -469,7 +470,8 @@ nav ul li :hover {
   display: flex;
   width: 100%;
   max-width: 100vw;
-  height: auto
+  height: auto;
+  min-height: 5rem;
 }
 
 .grid2-section1 h1 {
@@ -502,7 +504,8 @@ nav ul li :hover {
 
 .grid2-section2 {
   justify-content: center;
-  align-items: center
+  align-items: center;
+  min-height: 10rem;
 }
 
 .grid2-section2 img {
@@ -514,7 +517,7 @@ nav ul li :hover {
 
 .article {
   height: auto;
-  min-height: 5rem;
+  min-height: 10rem;
 }
 
 .categories,
@@ -559,6 +562,7 @@ nav ul li :hover {
   width: 100%;
   max-width: 100vw;
   height: auto;
+  min-height: 3rem;
   text-decoration: underline;
   text-align: center;
 }
@@ -572,7 +576,8 @@ nav ul li :hover {
   padding: 1em 0 1em;
 }
 
-.categories-box .feature-box {
+.categories-box,
+.feature-box {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -586,12 +591,13 @@ nav ul li :hover {
 .categories-box {
   display: block;
   overflow: hidden;
+  min-height: 3rem;
 }
 
 .feature-box {
-  aspect-ratio: 5/4;
   display: block;
   overflow: hidden;
+  min-height: 3rem;
 }
 
 .feature-box img {
@@ -634,27 +640,31 @@ nav ul li :hover {
   padding: 1em .5em 0;
   font-size: 1vw;
   font-weight: 700;
-  color: #1a1d9e
+  color: #1a1d9e;
+  min-height: 1rem;
 }
 
 .feature-box-text a p {
   font-size: 1.2vw;
   height: 10vh;
-  padding: .5em
+  padding: .5em;
+  min-height: 1rem;
 }
 
 .feature-box-text p {
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   height: 10vh;
   padding: 1em .5em;
-  text-align: left
+  text-align: left;
+  min-height: 1rem;
 }
 
 .categories {
   padding: 1em 0 10em;
   margin: 5em auto 1em;
   width: 100%;
-  max-width: 100vw
+  max-width: 100vw;
+  min-height: 5rem;
 }
 
 .categories-box {
@@ -713,7 +723,7 @@ nav ul li :hover {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding-top: 1em
+  padding-top: 1em;
 }
 
 .categories-buttons h2 {
@@ -722,15 +732,16 @@ nav ul li :hover {
 }
 
 .space {
-  height: 5em
+  height: 5em;
 }
 
 .quote-grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   width: 100%;
+  min-height: 3rem;
   padding: 4.54em 2.5em 1.5em;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .quotation-l {
@@ -744,6 +755,7 @@ nav ul li :hover {
 .quotation-l img {
   width: clamp(1rem, 3vw, 4rem);
   height: auto;
+  min-height: 2rem;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -758,6 +770,7 @@ nav ul li :hover {
 .quotation-r img {
   width: clamp(1rem, 3vw, 4rem);
   height: auto;
+  min-height: 2rem;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -796,36 +809,41 @@ section#quotes .quote img {
 .quote h1 {
   font-size: clamp(1rem, 1.10vw, 1.5rem);
   padding: 1em 2em 0.5em;
+  min-height: 2rem;
 }
 
 .quote p {
   font-size: clamp(1rem, 1.10vw, 1.5rem);
   padding: 0.5em 2em 1em;
+  min-height: 2rem;
 }
 
 .article-text strong,
 .quote-text strong {
   font-weight: 600;
+  min-height: 1rem;
 }
 
 .box1 h2 {
   font-size: clamp(2rem, 3.5vw, 4rem);
+  min-height: 2rem;
 }
 
 .box2 h3 {
   font-size: clamp(1rem, 1.3vw, 2rem);
+  min-height: 2rem;
 }
 
 .box2 p {
   font-size: clamp(1rem, 1vw, 2rem);
+  min-height: 1rem;
 }
 
 .quote-text h2,
 .quote-text h3 {
-
   width: 100%;
   height: auto;
-  min-height: 1rem;
+  min-height: 2rem;
   max-width: 100vw;
 }
 
@@ -915,14 +933,14 @@ section#quotes .quote img {
 .account-form a,
 .bottom-nav h4,
 .form-buttons a,
-.image-container,
-figcaption {
+.image-container {
   text-align: center
 }
 
 .box1 h2,
 .box2 h3 {
-  padding: .75em 0
+  padding: .75em 0;
+  min-height: 3rem;
 }
 
 .article-text {
@@ -947,6 +965,7 @@ figcaption {
 
 .iconic-soccer ol li {
   padding: 0 0 2em;
+  min-height: 2rem;
 }
 
 .image-container {
@@ -979,7 +998,8 @@ figcaption {
 .privacy ol li,
 .works ol li {
   font-size: 1.2rem;
-  line-height: 1.4
+  line-height: 1.4;
+  min-height: 1rem;
 }
 
 .privacy ul li,
@@ -987,20 +1007,21 @@ figcaption {
 .works ul li {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1em
+  margin-bottom: 1em;
+  min-height: 1rem;
 }
 
 .privacy ul li {
-  list-style-type: circle
+  list-style-type: circle;
 }
 
 .intro-sct {
-  padding: 0 0 .5em
+  padding: 0 0 .5em;
 }
 
 .privacy ol,
 .works ol {
-  padding: 1em 2em
+  padding: 1em 2em;
 }
 
 #article-form input,
@@ -1020,7 +1041,7 @@ figcaption {
 
 .privacy-ul ul P,
 .privacy-ul ul li {
-  padding: 0
+  padding: 0;
 }
 
 .guidelines ul {
@@ -1031,7 +1052,7 @@ figcaption {
   width: 80%;
   max-width: 80vw;
   height: auto;
-  min-height: 3rem;
+  min-height: 5rem;
   margin: 0 auto;
   padding: .5em 0 1.5em
 }
