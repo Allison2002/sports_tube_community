@@ -412,7 +412,6 @@ nav ul li :hover {
   min-height: 5rem;
   display: block;
   overflow: hidden;
-  aspect-ratio: 2.73 / 1;
 }
 
 .hero-img img {
@@ -421,7 +420,6 @@ nav ul li :hover {
   padding: 0;
   object-position: bottom;
   object-fit: cover;
-  aspect-ratio: 2.73 / 1;
 }
 
 .blog-hero-section,
