@@ -154,7 +154,7 @@ p {
 }
 
 @font-face {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue';
   src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -164,13 +164,13 @@ p {
   line-gap-override: 0%;
 }
 
-
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts//Roboto/Roboto-Regular.woff2') format('woff2');
+  src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
   font-display: optional;
 }
-
 
 .toggle-btn {
   position: absolute;
