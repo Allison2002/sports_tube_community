@@ -415,6 +415,7 @@ nav ul li :hover {
   display: block;
   overflow: hidden;
   aspect-ratio: 2.73 / 1;
+  min-height: calc(100vw / 2.73);
 }
 
 .hero-img img {
