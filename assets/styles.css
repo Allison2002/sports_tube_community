@@ -42,8 +42,9 @@ body {
 }
 
 body:not(.fonts-loaded) {
-  visibility: hidden;
+  opacity: 0;
 }
+
 
 body.fonts-loaded {
   visibility: visible;
