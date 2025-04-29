@@ -35,23 +35,20 @@ body {
 }
 
 body {
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 10rem;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
-}
-
-body:not(.fonts-loaded) {
   visibility: hidden;
-}
-
-body.fonts-loading {
-  visibility: hidden;
-  opacity: 0;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 
 body.fonts-loaded {
-  visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  visibility: visible;
 }
 
 h1,
