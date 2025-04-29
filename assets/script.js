@@ -159,13 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section); // Observe the join section
   });
 
-    document.fonts.ready.then(function () {
-    document.querySelector('main').classList.add('fonts-loaded');
-  });
-
-  document.fonts.ready.then(function() {
+  document.fonts.ready.then(function () {
     document.body.classList.remove('fonts-loading');
     document.body.classList.add('fonts-loaded');
+    document.querySelector('main').classList.add('fonts-loaded');
   });
 
 });

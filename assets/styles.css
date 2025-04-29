@@ -52,6 +52,7 @@ h1,
 h2 {
   font-family: 'Bebas Neue', sans-serif;
   min-height: 3rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
 }
 
 h3,
