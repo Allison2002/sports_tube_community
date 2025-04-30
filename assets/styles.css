@@ -36,19 +36,13 @@ body {
 }
 
 body {
-  opacity: 1;
-  transition: none;
+  opacity: 1 !important;
+  transition: none !important;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 body:not(.fonts-loaded) {
-  opacity: 1;
-}
-
-
-body.fonts-loaded {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s ease-in;
+  opacity: 1 !important;
 }
 
 h1,
