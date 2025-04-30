@@ -39,17 +39,21 @@ body {
 
 html {
   font-size: clamp(16px, 1.5vw, 20px);
-  overflow-x: hidden
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-family: 'Roboto', system-ui, sans-serif;
   height: auto;
   margin: 0;
   padding: 0;
   min-height: 10rem;
   opacity: 1 !important;
   transition: none !important;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 body:not(.fonts-loaded) {
@@ -72,12 +76,6 @@ h2 {
   font-kerning: normal;
   font-feature-settings: 'kern';
 }
-
-body.fonts-loading h1,
-body.fonts-loading h2 {
-  font-family: 'Impact', 'Arial Narrow', sans-serif !important;
-}
-
 
 body.fonts-loaded h1,
 body.fonts-loaded h2 {
@@ -217,7 +215,7 @@ p {
   src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
