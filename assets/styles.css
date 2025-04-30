@@ -1069,7 +1069,8 @@ section#quotes .quote img {
   padding: .5em 0 1.5em
 }
 
-.key-moments ul li {
+
+.key-moments test li {
   padding: .5em 0;
   line-height: 1.6;
   font-size: clamp(1rem, 1.2vw, 1.25rem);
