@@ -8,7 +8,21 @@ main {
 main {
   min-height: 90vh;
   height: auto;
+  margin: 0 auto;
+  transition: none;
+  /* prevent animation shift */
 }
+
+.main-60 {
+  width: 60%;
+  max-width: 60vw;
+}
+
+.main-80 {
+  width: 80%;
+  max-width: 80vw;
+}
+
 
 *,
 body,
@@ -1712,7 +1726,7 @@ input::placeholder {
   main {
     width: 90%;
     max-width: 90vw;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .bottom-hr,
