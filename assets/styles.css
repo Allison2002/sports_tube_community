@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   height: auto;
   margin: 0;
   padding: 0;
@@ -54,6 +54,13 @@ body {
 
 body:not(.fonts-loaded) {
   opacity: 1 !important;
+}
+
+body.fonts-loaded h1,
+body.fonts-loaded h2 {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in;
 }
 
 h1,
