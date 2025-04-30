@@ -2809,7 +2809,8 @@ input::placeholder {
     width: 80%;
     max-width: 80vw;
     min-height: 2rem;
-    height: auto
+    height: auto;
+    padding: 1em 0 2em;
   }
 
   .search-container {
@@ -2881,6 +2882,11 @@ input::placeholder {
   .article-page {
     width: 95%;
     padding: 2em
+  }
+
+  .article-title h1 {
+    font-size: 2rem;
+    padding: 1em 0 0;
   }
 
   .article-text {
