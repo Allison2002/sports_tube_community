@@ -160,14 +160,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   if (document.fonts) {
-      Promise.all([
-        document.fonts.load('1em "Bebas Neue"'),
-        document.fonts.load('1em "Origin"')
-      ]).then(() => {
-        document.body.classList.remove('fonts-loading');
-        document.body.classList.add('fonts-loaded');
-      });
-    } else {
+    Promise.all([
+      document.fonts.load('1em "Bebas Neue"'),
+      document.fonts.load('1em "Origin"'),
+      document.fonts.load('1em "Roboto"') // Add this line
+    ]).then(() => {
+      document.body.classList.remove('fonts-loading');
       document.body.classList.add('fonts-loaded');
-    }
+    });
+  } else {
+    document.body.classList.add('fonts-loaded');
+  }
+
+
 });
