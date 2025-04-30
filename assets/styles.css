@@ -6,6 +6,7 @@ main {
 }
 
 main {
+  padding-top: 2rem;
   min-height: 90vh;
   height: auto;
   margin: 0 auto;
@@ -933,7 +934,7 @@ section#quotes .quote img {
   font-size: clamp(1.5rem, 1vw + 1rem, 4.5rem);
   width: 100%;
   height: auto;
-  min-height: 2rem;
+  min-height: 6rem;
 }
 
 .article-title p {
