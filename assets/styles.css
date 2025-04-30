@@ -170,7 +170,7 @@ p {
   src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -181,15 +181,22 @@ p {
   src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: 'Origin';
   src: url('/fonts/origin/Origin-Regular.woff2') format('woff2'),
     url('/fonts/origin/Origin-Regular.woff2') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
 }
 
 
