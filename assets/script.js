@@ -159,10 +159,15 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section); // Observe the join section
   });
 
-  document.fonts.ready.then(function () {
-    document.body.classList.add('fonts-loaded');
-    document.body.classList.remove('fonts-loading');
-  });
-
-
+  if (document.fonts) {
+      Promise.all([
+        document.fonts.load('1em "Bebas Neue"'),
+        document.fonts.load('1em "Origin"')
+      ]).then(() => {
+        document.body.classList.remove('fonts-loading');
+        document.body.classList.add('fonts-loaded');
+      });
+    } else {
+      document.body.classList.add('fonts-loaded');
+    }
 });

@@ -69,12 +69,16 @@ h2 {
 body.fonts-loading h1,
 body.fonts-loading h2 {
   opacity: 0;
+  visibility: hidden;
 }
 
 body.fonts-loaded h1,
 body.fonts-loaded h2 {
+  opacity: 1;
   visibility: visible;
+  transition: opacity 0.3s ease-in;
 }
+
 
 h3,
 h4 {
@@ -179,7 +183,7 @@ p {
   src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
