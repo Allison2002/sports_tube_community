@@ -172,5 +172,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add('fonts-loaded');
   }
 
-
+    Promise.all([
+      document.fonts.load('1rem Roboto'),
+      document.fonts.load('1rem Bebas Neue'),
+      document.fonts.load('1rem Origin')
+    ]).then(() => {
+      document.body.classList.add('fonts-loaded');
+    });
 });
