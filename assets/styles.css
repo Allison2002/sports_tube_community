@@ -36,12 +36,12 @@ body {
 }
 
 body {
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
+  opacity: 1;
+  transition: none;
 }
 
 body:not(.fonts-loaded) {
-  opacity: 0;
+  opacity: 1;
 }
 
 
@@ -1069,8 +1069,14 @@ section#quotes .quote img {
   padding: .5em 0 1.5em
 }
 
+.key-moments ol,
+.key-moments ul {
+  min-height: 3rem;
+  height: auto;
+}
 
-.key-moments test li {
+.key-moments ol li,
+.key-moments ul li {
   padding: .5em 0;
   line-height: 1.6;
   font-size: clamp(1rem, 1.2vw, 1.25rem);
