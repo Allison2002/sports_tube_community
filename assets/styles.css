@@ -2252,10 +2252,12 @@ input::placeholder {
     font-size: 2.5vw
   }
 
-  main {
+  .main-80,
+  .main-60 {
     width: 90%;
     max-width: 90vw;
-    min-height: 3rem;
+    height: auto;
+    min-height: 5rem;
   }
 
   .categories-title h1,
@@ -2475,7 +2477,9 @@ input::placeholder {
 }
 
 @media (max-width:480px) {
-  main {
+
+  .main-80,
+  .main-60 {
     width: 90%;
     max-width: 90vw;
     height: auto;
