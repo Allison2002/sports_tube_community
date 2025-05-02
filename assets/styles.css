@@ -1356,12 +1356,13 @@ footer {
   border-bottom: .0625em solid #1a1d9e;
   margin: 0 auto;
   gap: 3em;
-  align-items: center
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo {
-  width: 35vw;
-  height: 100%
+  width: 50vw;
+  height: auto;
 }
 
 .bottom-logo {
