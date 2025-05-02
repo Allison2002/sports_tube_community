@@ -51,8 +51,6 @@ body {
   min-height: 10rem;
   opacity: 1 !important;
   transition: none !important;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 h1,
@@ -88,6 +86,13 @@ p {
   min-height: 1rem;
 }
 
+.hero-join p,
+.hero-btn a,
+.hero-intro p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
 .link a,
 .sct-btn .link a {
   position: relative;
@@ -121,7 +126,6 @@ nav ul li :hover {
   color: #1a1d9e;
 }
 
-.category-box-text,
 .article-text {
   line-height: 1.6;
   font-size: clamp(1rem, 1.2vw, 1.25rem);
@@ -227,7 +231,11 @@ nav {
 }
 
 .hero-btn a {
-  font-weight: 700
+  font-weight: 700;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 1.5rem;
+  line-height: 1.4;
 }
 
 .button,
@@ -509,6 +517,10 @@ nav ul li :hover {
   min-height: 5rem;
 }
 
+.feature-article {
+  padding: 2rem 0;
+}
+
 .grid2-section1 h1 {
   color: #000;
   font-size: clamp(2rem, 3.5vw, 3rem);
@@ -563,21 +575,12 @@ nav ul li :hover {
 
 .feature-article-grid {
   display: grid;
-  margin: 2em auto;
-  gap: 2em;
-  min-width: 50vw;
-  width: 60%;
-  max-width: 60vw;
-  min-height: 5rem;
-  height: auto
-}
-
-.feature-article-grid {
   grid-template-columns: repeat(5, 1fr);
-  height: auto;
-  min-height: 5rem;
-  width: 80%;
-  max-width: 80vw
+  gap: 2rem;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .categories-grid {
@@ -602,7 +605,7 @@ nav ul li :hover {
   text-align: center;
 }
 
-.categories-title h1,
+.categories-title h2,
 .feature-title h2 {
   width: 100%;
   height: auto;
@@ -623,13 +626,8 @@ nav ul li :hover {
   margin: 0 auto
 }
 
+.feature-box,
 .categories-box {
-  display: block;
-  overflow: hidden;
-  min-height: 3rem;
-}
-
-.feature-box {
   display: block;
   overflow: hidden;
   min-height: 3rem;
@@ -639,7 +637,23 @@ nav ul li :hover {
   width: 100%;
   aspect-ratio: 5/4;
   height: auto;
-  margin: 0 auto
+  margin: 0 auto;
+  object-fit: contain;
+  display: block;
+}
+
+.categories-box,
+.feature-box {
+  background-color: #f2f7fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.categories-box,
+.feature-box:hover {
+  transform: scale(1.02);
 }
 
 .categories-box img {
@@ -651,17 +665,27 @@ nav ul li :hover {
   display: block;
 }
 
+.feature-box-text,
 .category-box-text {
-  padding: 1em;
+  padding: 0.5em;
   height: auto;
   min-height: 2rem;
   width: 100%;
   max-width: 100vw;
   text-align: center;
+  line-height: 1.4;
+}
+
+.feature-box-text a p {
+  font-size: clamp(1rem, 1.3vw, 2rem);
 }
 
 .category-box-text a h2 {
   font-size: clamp(1rem, 1.5vw, 2.8rem);
+}
+
+.feature-box-text a p,
+.category-box-text a h2 {
   font-weight: 700;
   color: #1a1d9e;
   text-align: center;
@@ -669,29 +693,7 @@ nav ul li :hover {
   width: 100%;
   max-width: 100vw;
   height: auto;
-}
 
-.feature-box-text a h3 {
-  padding: 1em .5em 0;
-  font-size: 1vw;
-  font-weight: 700;
-  color: #1a1d9e;
-  min-height: 1rem;
-}
-
-.feature-box-text a p {
-  font-size: 1.2vw;
-  height: 10vh;
-  padding: .5em;
-  min-height: 1rem;
-}
-
-.feature-box-text p {
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
-  height: 10vh;
-  padding: 1em .5em;
-  text-align: left;
-  min-height: 1rem;
 }
 
 .categories {
@@ -702,6 +704,7 @@ nav ul li :hover {
   min-height: 5rem;
 }
 
+.feature-box,
 .categories-box {
   width: 100%;
   max-width: 100vw;
@@ -709,11 +712,6 @@ nav ul li :hover {
   min-height: 3rem;
   box-shadow: 0 .25em .625em rgba(0, 0, 0, .2);
   margin-bottom: 2em
-}
-
-.categories-box:hover {
-  transform: scale(1.05);
-  transition: transform .3s
 }
 
 .article-color1,
@@ -1399,7 +1397,8 @@ footer {
   flex-direction: row;
   gap: 3vw;
   width: 100%;
-  height: auto
+  height: auto;
+  margin: 0 auto;
 }
 
 .bottom-nav {
@@ -1838,11 +1837,12 @@ input::placeholder {
     background-color: transparent;
   }
 
-  .categories-title h1 {
+  .categories-title h2 {
     font-size: clamp(1.5rem, 4.5vw, 6rem);
     padding: 2em 0 1em;
   }
 
+  .feature-box,
   .categories-box,
   .feature-article-grid,
   .grid2 {
@@ -1861,6 +1861,7 @@ input::placeholder {
     padding: 0 0 5em
   }
 
+  .feature-box,
   .categories-box {
     width: 100%;
     max-width: 100vw;
@@ -1961,6 +1962,12 @@ input::placeholder {
     max-width: 80vw
   }
 
+  .feature-box-text,
+  .category-box-text {
+    line-height: 1.3;
+    padding: 0.2em;
+  }
+
   .feature-box-text a p {
     font-size: clamp(0.95rem, 1.2vw, 1.25rem);
     height: auto;
@@ -1975,7 +1982,7 @@ input::placeholder {
 
   .categories-title,
   .feature-title {
-    padding: 2em 0 1em;
+    padding: 1em 0 0;
     margin: 0 auto;
     width: 80%;
     max-width: 80vw;
@@ -2174,10 +2181,6 @@ input::placeholder {
     transition: color .3s
   }
 
-  .feature-title {
-    padding: 3em 0 1.5em
-  }
-
   .categories-grid {
     min-width: 5vw;
     gap: 1em
@@ -2189,6 +2192,21 @@ input::placeholder {
 
   .category-box-text a h2 {
     font-size: clamp(1.2rem, 2.2vw, 3rem);
+    text-align: center;
+    min-height: 2rem;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .feature-box-text a,
+  .feature-box-text a p {
+    font-size: clamp(1rem, 1.1vw, 1.8rem);
+    text-align: center;
+    min-height: 2rem;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
   }
 
   .input-text input {
@@ -2239,12 +2257,15 @@ input::placeholder {
 
 @media (max-width:768px) {
 
+  .feature-box-text p,
   .category-box-text a h2,
   .feature-box-text a p {
-    font-size: 2.5vw;
-    padding: 1vw .5vw .5vw;
-    height: auto
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+    padding: 0.2em;
   }
+
 
   .category-box-text,
   main,
@@ -2274,7 +2295,7 @@ input::placeholder {
     min-height: 5rem;
   }
 
-  .categories-title h1,
+  .categories-title h2,
   .feature-title h2,
   .logo-container img,
   .nav-icon-container {
@@ -2282,6 +2303,11 @@ input::placeholder {
     max-width: 100vw;
     min-height: 2rem;
     height: auto
+  }
+
+  .feature-title h2 {
+    font-size: clamp(1rem, 4vw, 5rem);
+    padding: 0;
   }
 
   .nav-icon-container {
@@ -2313,6 +2339,8 @@ input::placeholder {
     min-height: 2rem;
   }
 
+  .feature-article-grid,
+  .feature-box,
   .categories-box,
   .categories-grid,
   .category-box-text,
@@ -2326,22 +2354,49 @@ input::placeholder {
     min-height: 3rem;
   }
 
+  .feature-article-grid {
+    padding: 0;
+  }
+
   .categories-grid {
-    padding: 1.5em 0 0;
-    display: grid;
+    padding: 1.5rem 0 0;
+  }
+
+  .feature-box img {
+    aspect-ratio: 1.03 / 1;
+    object-fit: cover;
+  }
+
+  .feature-article-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .categories-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-article-grid,
+  .categories-grid {
+    display: grid;
     gap: 1.5em;
     width: 90%;
     max-width: 90vw;
     margin: 0 auto 4em
   }
 
+  .feature-article-grid,
   .categories-grid {
     margin: 1em auto;
     height: auto;
     gap: 1em
   }
 
+  .feature-title,
+  .feature-article {
+    padding: 0;
+  }
+
+  .feature-box,
   .categories-box {
     margin: 1em auto;
     height: auto;
@@ -2353,9 +2408,9 @@ input::placeholder {
     min-height: 2rem;
   }
 
-  .categories-title h1 {
+  .categories-title h2 {
     font-size: clamp(1.5rem, 4.5vw, 6rem);
-    padding: 3em 0 0;
+    padding: 1em 0 0;
   }
 
   .categories-box img {
@@ -2392,43 +2447,6 @@ input::placeholder {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover
-  }
-
-  .feature-article,
-  .feature-article-grid {
-    width: 90%;
-    max-width: 90vw;
-    margin: 0 auto;
-    height: auto
-  }
-
-  .feature-article-grid {
-    display: grid;
-    gap: 1em;
-    min-width: 10vw;
-    min-height: 2rem;
-  }
-
-  .feature-box {
-    padding: 1em 0;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    min-height: 1rem;
-    aspect-ratio: 5/4
-  }
-
-  .feature-box img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 5/4;
-  }
-
-  .feature-box-text p {
-    font-size: 2vw;
-    width: 100%;
-    height: auto;
-    padding: .5vw
   }
 
   .categories-title,
@@ -2469,7 +2487,7 @@ input::placeholder {
     height: auto;
     object-fit: cover;
     display: block;
-    aspect-ratio: 1.25 / 1;
+    aspect-ratio: 2.25 / 1;
   }
 
   .menu-toggle {
@@ -2568,7 +2586,6 @@ input::placeholder {
   }
 
   .category-box-text,
-  .feature-box-text,
   .grid2-section1,
   .hero-intro p,
   .join-text,
@@ -2720,14 +2737,14 @@ input::placeholder {
     height: auto
   }
 
-  .categories-title h1,
+  .categories-title h2,
   .feature-title h2 {
     font-size: 2rem;
-    padding: 2em 0 0;
     width: 100%;
     height: auto;
     text-align: center;
-    align-items: center
+    align-items: center;
+    padding: 0;
   }
 
   .hero-btn {
@@ -2743,14 +2760,25 @@ input::placeholder {
     max-width: 80vw;
     height: auto;
     min-height: 2rem;
-    padding-bottom: 2.5em
+    padding: 0 0 2.5em;
   }
 
-  .feature-article-grid {
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    min-height: 2rem;
+  .feature-box-text {
+    padding: 0.75rem;
+  }
+
+  .feature-box-text a p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .feature-box-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .feature-box img {
+    aspect-ratio: 5 / 4;
   }
 
   .categories-grid {
@@ -2761,15 +2789,6 @@ input::placeholder {
     min-height: 2rem;
   }
 
-  .feature-box {
-    padding: 1em 0;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    min-height: 1rem;
-    aspect-ratio: 5/4;
-  }
-
   .article-list-grid,
   .join-section,
   .join-text {
@@ -2777,15 +2796,7 @@ input::placeholder {
     max-width: 100vw
   }
 
-  .feature-box img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 5/4;
-    object-fit: cover
-  }
-
-  .category-box-text a h2,
-  .feature-box-text p {
+  .category-box-text a h2 {
     width: 100%;
     max-width: 100vw;
     font-size: 1.3rem;
