@@ -682,7 +682,7 @@ nav ul li :hover {
 .category-box-text {
   padding: 0.5em;
   height: auto;
-  min-height: 2rem;
+  min-height: 1rem;
   width: 100%;
   max-width: 100vw;
   text-align: center;
@@ -702,7 +702,7 @@ nav ul li :hover {
   font-weight: 700;
   color: #1a1d9e;
   text-align: center;
-  min-height: 2rem;
+  min-height: 1rem;
   width: 100%;
   max-width: 100vw;
   height: auto;
@@ -872,12 +872,12 @@ section#quotes .quote img {
 
 .box1 h2 {
   font-size: clamp(2rem, 3.5vw, 4rem);
-  min-height: 2rem;
+  min-height: 1rem;
 }
 
-.box2 h3 {
+.box2 a h3 {
   font-size: clamp(1rem, 1.3vw, 2rem);
-  min-height: 2rem;
+  min-height: 1rem;
 }
 
 .box2 p {
@@ -885,12 +885,19 @@ section#quotes .quote img {
   min-height: 1rem;
 }
 
-.quote-text h2,
-.quote-text h3 {
+.box1 h2,
+.box2 a h3 {
   width: 100%;
   height: auto;
-  min-height: 2rem;
   max-width: 100vw;
+}
+
+.box1 h2 {
+  min-height: 2rem;
+}
+
+.box2 a h3 {
+  min-height: 1rem;
 }
 
 .article-list {
@@ -948,7 +955,7 @@ section#quotes .quote img {
   padding: 1em 0;
   width: 100%;
   height: auto;
-  min-height: 2rem;
+  min-height: 1rem;
 }
 
 .article-list-grid {
@@ -965,9 +972,8 @@ section#quotes .quote img {
 .box1,
 .box1 h2,
 .box2,
-.box2 h3 {
+.box2 a h3 {
   width: 100%;
-  min-height: 2rem;
   height: auto;
   max-width: 100vw
 }
@@ -980,13 +986,13 @@ section#quotes .quote img {
 .bottom-nav h4,
 .form-buttons a,
 .image-container {
-  text-align: center
+  text-align: center;
+  min-height: 1rem;
 }
 
 .box1 h2,
-.box2 h3 {
+.box2 a h3 {
   padding: .75em 0;
-  min-height: 3rem;
 }
 
 .article-text {
@@ -2958,7 +2964,7 @@ input::placeholder {
     font-size: .8vw
   }
 
-  .quote-text h3 {
+  .box2 a h3 {
     font-size: 4vw
   }
 
