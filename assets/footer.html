@@ -16,15 +16,19 @@
       crossorigin="anonymous"
     />
     <style>
-      @font-face {
-        font-family: "Bebas Neue", Oswald, sans-serif
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) h1,
+      body:not(.fonts-loaded) h2,
+      body:not(.fonts-loaded) p,
+      body:not(.fonts-loaded) a {
+        opacity: 0;
+        transition: opacity 0.1s ease-in;
+      }
+
+      body.fonts-loaded h1,
+      body.fonts-loaded h2,
+      body.fonts-loaded p,
+      body.fonts-loaded a {
+        opacity: 1;
       }
     </style>   
   </head>
