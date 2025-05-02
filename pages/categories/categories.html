@@ -10,6 +10,14 @@
     <title>Explore Sports Categories: Football, Basketball, Baseball, Soccer, MMA – Sports Tube Community Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -18,9 +26,18 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/sports-tube-categories-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -38,18 +55,40 @@
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
+        "@id": "https://sports-tube-community.netlify.app/categories",
         "name": "Explore Sports Categories: Football, Basketball, Baseball, Soccer, MMA – Sports Tube Community Blog",
-        "description": "Explore the Sports Tube Community with categories like Football, Basketball, Baseball, Soccer, and MMA. Stay updated on the latest sports news, highlights, and community discussions.",
         "url": "https://sports-tube-community.netlify.app/categories",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_4098,fl_lossy,c_fill/v1743711781/sports_community_categories_desktop_a8mpnl.avif",
-        "mainEntityOfPage": "https://sports-tube-community.netlify.app/categories",
+        "description": "Explore the Sports Tube Community with categories like Football, Basketball, Baseball, Soccer, and MMA. Stay updated on the latest sports news, highlights, and community discussions.",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/v1743711781/sports_community_categories_desktop_a8mpnl.avif",
+          "https://sports-tube-community.netlify.app/img/sports-tube-categories-mobile.avif"
+        ],
+        "keywords": [
+          "Sports Blog",
+          "Football News",
+          "Basketball Articles",
+          "Baseball Highlights",
+          "Soccer Coverage",
+          "MMA News",
+          "Sports Tube Community",
+          "Athlete Stories"
+        ],
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
           "name": "Sports Tube",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube-community.netlify.app/categories"
         },
         "breadcrumb": {
           "@type": "BreadcrumbList",
@@ -73,63 +112,58 @@
             "@type": "WebPage",
             "name": "News",
             "url": "https://sports-tube-community.netlify.app/pages/categories/news.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/news-category-thumbnail_ialq6d.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/news-category-thumbnail_ialq6d.avif"
           },
           {
             "@type": "WebPage",
             "name": "Community",
             "url": "https://sports-tube-community.netlify.app/pages/categories/community.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/community-category-thumbnail_b6grzb.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/community-category-thumbnail_b6grzb.avif"
           },
           {
             "@type": "WebPage",
             "name": "Baseball",
             "url": "https://sports-tube-community.netlify.app/pages/categories/baseball.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719869/baseball-category_pakweo.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719869/baseball-category_pakweo.avif"
           },
           {
             "@type": "WebPage",
             "name": "Basketball",
             "url": "https://sports-tube-community.netlify.app/pages/categories/basketball.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/basketball-category-thumbnail_mmf6ut.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/basketball-category-thumbnail_mmf6ut.avif"
           },
           {
             "@type": "WebPage",
             "name": "Football",
             "url": "https://sports-tube-community.netlify.app/pages/categories/football.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/football-category-thumbnail_bxfwwo.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/football-category-thumbnail_bxfwwo.avif"
           },
           {
             "@type": "WebPage",
             "name": "Hockey",
             "url": "https://sports-tube-community.netlify.app/pages/categories/hockey.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/hockey-category-thumbnail_t26vbe.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/hockey-category-thumbnail_t26vbe.avif"
           },
           {
             "@type": "WebPage",
             "name": "MMA",
             "url": "https://sports-tube-community.netlify.app/pages/categories/mma.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/mma-category-thumbnail_g2sfmj.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/mma-category-thumbnail_g2sfmj.avif"
           },
           {
             "@type": "WebPage",
             "name": "Soccer",
             "url": "https://sports-tube-community.netlify.app/pages/categories/soccer.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1743719868/soccer-category-thumbnail_vqvunk.avif"
+            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743719868/soccer-category-thumbnail_vqvunk.avif"
           }
         ]
       }
     </script>
+
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -140,18 +174,17 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1743711781/sports_community_categories_desktop_a8mpnl.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
-              type="image/avif"
             />
             <img
               src="/img/sports-tube-categories-mobile.avif"
@@ -161,6 +194,7 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>

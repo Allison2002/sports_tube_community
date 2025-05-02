@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -17,9 +25,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744670660/account-desktop_fpzor0.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744670658/account-tablet_dzm1dm.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744670660/account-desktop_fpzor0.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744670658/account-tablet_dzm1dm.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/account-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -37,40 +53,49 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Create Your Sports Tube Account",
-        "description": "Create your free Sports Tube account to unlock exclusive content, sports highlights, and join a passionate community of fans across football, soccer, basketball, and more.",
+        "@id": "https://sports-tube-community.netlify.app/pages/account.html",
         "url": "https://sports-tube-community.netlify.app/pages/account.html",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744670660/account-desktop_fpzor0.avif",
+        "name": "Join the Sports Tube Community: Sign Up for Sports News, Highlights, and Exclusive Content",
+        "description": "Create your free Sports Tube account to unlock exclusive sports articles, highlights, and community features. Stay updated on football, soccer, basketball, and more. Join passionate fans today!",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/v1744670660/account-desktop_fpzor0.avif",
+          "https://sports-tube-community.netlify.app/img/account-mobile.avif"
+        ],
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
           "name": "Sports Tube Community",
+          "url": "https://sports-tube-community.netlify.app",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
         "mainEntity": {
           "@type": "RegisterAction",
-          "name": "Sign Up Form",
+          "name": "Create Account Form",
           "target": {
             "@type": "EntryPoint",
             "urlTemplate": "https://sports-tube-community.netlify.app/create-account",
-            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ],
+            "encodingType": "application/x-www-form-urlencoded",
+            "contentType": "text/html"
           }
         }
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }      
+      body:not(.fonts-loaded) {
+        visibility: hidden;
+      }
     </style>
   </head>
   <body class="fonts-loading">
@@ -80,26 +105,27 @@
           <section class="hero-img">
             <picture>
               <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744670660/account-desktop_fpzor0.avif 100w"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload//fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744670660/account-desktop_fpzor0.avif"
                 type="image/avif"
-                media="(min-width: 1200px)"
-                sizes="100vw"
-                fetchpriority="high"
+              media="(min-width: 1200px)"
+              sizes="100vw"
+              fetchpriority="high"
               />
               <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744670658/account-tablet_dzm1dm.avif 100w"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744670658/account-tablet_dzm1dm.avif"
                 type="image/avif"
-                media="(min-width: 481px) and (max-width: 1199px)"
-                sizes="100vw"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              sizes="100vw"
               />
               <img
                 src="/img/account-mobile.avif"
-                  alt="Join the Sports Tube Community – Get in the game with live sports updates, highlights, and fan engagement for soccer, basketball, and football."
+                alt="Join the Sports Tube Community – Get in the game with live sports updates, highlights, and fan engagement for soccer, basketball, and football."
                 width="480"
                 height="355"
                 loading="eager"
                 fetchpriority="high"
                 style="object-fit: cover;"
+                decoding="async"
               />
             </picture>
           </section>

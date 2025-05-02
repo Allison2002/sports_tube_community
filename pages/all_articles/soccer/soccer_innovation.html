@@ -10,6 +10,14 @@
     <title>Tactical Innovations in Soccer: Evolution of Strategies and Formations in Modern Football</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -18,9 +26,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287104/soccer-innovation-desktop_ugmar4.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287106/soccer-innovation-tablet_klorti.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744287104/soccer-innovation-desktop_ugmar4.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744287106/soccer-innovation-tablet_klorti.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/soccer-innovation-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -36,47 +52,58 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Tactical Innovations in Soccer: How Strategies Have Evolved",
-        "description": "Explore the tactical innovations that shaped soccer, from classic formations like 4-4-2 to modern strategies like tiki-taka and gegenpressing. Learn how technology and flexible playstyles are revolutionizing the beautiful game.",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744287104/soccer-innovation-desktop_ugmar4.avif",
+        "@type": "NewsArticle",
+        "headline": "Tactical Innovations in Soccer: Evolution of Strategies and Formations in Modern Football",
+        "description": "Explore the evolution of soccer tactics, from classic formations like 4-4-2 to modern strategies such as tiki-taka and gegenpressing. Learn how technology, positional play, and flexible formations are shaping the future of football.",
         "author": {
           "@type": "Person",
           "name": "Genny Allison"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Sports Community Blog",
+          "name": "Sports Tube",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
         "datePublished": "2025-03-15",
         "dateModified": "2025-03-15",
-        "mainEntityOfPage": "https://www.fifa.com/worldcup/",
-        "keywords": "soccer tactics, modern soccer strategies, positional play, counter-pressing, formations, tiki-taka, gegenpressing, soccer evolution",
-        "articleBody": "Soccer, or football as it is known in most parts of the world, has undergone significant tactical evolution over the years. From the early days of simple, attacking formations to the highly sophisticated and strategically complex systems employed today, soccer continues to adapt to the needs of modern play. This article takes a deep dive into how soccer tactics have transformed over time, exploring the roles of managers, players, and the impact of technological advancements in shaping the game we know and love today. For a more in-depth analysis of soccer tactics, check out this insightful article from [FIFA’s official website](https://www.fifa.com/)."
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube.netlify.app/pages/all_articles/soccer/soccer_innovation.html"
+        },
+        "url": "https://sports-tube.netlify.app/pages/all_articles/soccer/soccer_innovation.html",
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_3600,fl_lossy/v1744287104/soccer-innovation-desktop_ugmar4.avif",
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_2400,fl_lossy/v1744287106/soccer-innovation-tablet_klorti.avif",
+          "https://sports-tube.netlify.app/img/soccer-innovation-mobile.avif"
+        ],
+        "articleSection": "Soccer",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "keywords": [
+          "soccer tactics",
+          "modern soccer strategies",
+          "tactical innovation",
+          "4-4-2 formation",
+          "tiki-taka",
+          "gegenpressing",
+          "formation flexibility",
+          "soccer analytics",
+          "positional play",
+          "football coaching"
+        ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style>  
   </head>
   <body class="fonts-loading">
     <header>
@@ -85,14 +112,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287104/soccer-innovation-desktop_ugmar4.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744287104/soccer-innovation-desktop_ugmar4.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287106/soccer-innovation-tablet_klorti.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744287106/soccer-innovation-tablet_klorti.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -105,12 +132,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color2" id="feature">
           <div class="home-btn">

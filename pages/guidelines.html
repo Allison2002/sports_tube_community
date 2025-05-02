@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -17,9 +25,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-desktop_fcyky8.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-tablet_p22exm.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-desktop_fcyky8.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-tablet_p22exm.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
 
     <link rel="preload" href="/img/guidelines-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -36,49 +52,48 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Sports Tube Community Guidelines",
-        "description": "Review the Sports Tube guidelines for respectful communication, quality content, and safe engagement in our sports fan community. Learn how to contribute, comment, and interact responsibly.",
+        "@id": "https://sports-tube-community.netlify.app/pages/guidelines.html",
         "url": "https://sports-tube-community.netlify.app/pages/guidelines.html",
+        "name": "Sports Tube Community Guidelines: Join, Contribute, and Engage with Sports Enthusiasts",
+        "description": "Join the Sports Tube Community and engage with sports enthusiasts. Follow our community guidelines for respectful interactions, quality content, and positive discussions on soccer, basketball, football, and more.",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/v1744672394/guidelines-desktop_fcyky8.avif",
+          "https://sports-tube-community.netlify.app/img/guidelines-mobile.avif"
+        ],
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
           "name": "Sports Tube Community",
+          "url": "https://sports-tube-community.netlify.app",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
         "mainEntity": {
           "@type": "CreativeWork",
           "name": "Community Guidelines",
+          "headline": "Community Guidelines",
           "about": [
-            "Respectful interactions",
-            "User-generated sports content",
-            "Fan engagement policies",
-            "Youth sports community",
-            "No spam or self-promotion"
+            "Respectful communication",
+            "User-generated content policies",
+            "Safe and inclusive environment",
+            "Submission rules",
+            "No spam or self-promotion",
+            "Privacy and personal boundaries"
           ]
         }
       }
     </script>
-    <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
 
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
+    <style>
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      
     </style>
   </head>
   <body class="fonts-loading">
@@ -88,14 +103,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-desktop_fcyky8.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-desktop_fcyky8.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-tablet_p22exm.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744672394/guidelines-tablet_p22exm.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -108,12 +123,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page box-color1" id="feature">
           <div class="home-btn">

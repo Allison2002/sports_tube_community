@@ -10,6 +10,14 @@
     <title>Sports Community Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -18,9 +26,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-desktop_gry6eg.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-tablet_c6k7zh.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-desktop_gry6eg.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-tablet_c6k7zh.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/soccer-iconic-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -35,10 +51,10 @@
     <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
     <script type="application/ld+json">
       {
-        "@context": "http://schema.org",
-        "@type": "Article",
-        "headline": "Top 10 Most Iconic Soccer Matches in History: A Journey Through Unforgettable Moments",
-        "description": "Relive the top 10 most iconic soccer matches in history, featuring unforgettable moments like the Miracle of Istanbul, the 1970 World Cup Final, and Maradona's 'Hand of God.' Explore the matches that shaped soccer's legacy.",
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "The Heart of Soccer: Exploring the Passionate Fan Culture and Traditions",
+        "description": "Dive into soccer's vibrant fan culture, from passionate supporter groups and unique traditions to the impact of community engagement and social media. Discover how fans shape the beautiful game.",
         "author": {
           "@type": "Person",
           "name": "Genny Allison"
@@ -48,32 +64,43 @@
           "name": "Sports Tube",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
         "datePublished": "2025-03-15",
         "dateModified": "2025-03-15",
-        "mainEntityOfPage": "https://sports-tube.netlify.app/pages/all_articles/soccer/soccer-iconic-matches.html",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744287096/soccer-iconic-desktop_gry6eg.avif",
-        "url": "https://sports-tube.netlify.app/pages/all_articles/soccer/soccer-iconic-matches.html"
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube.netlify.app/pages/all_articles/soccer/soccer_fan_culture.html"
+        },
+        "url": "https://sports-tube.netlify.app/pages/all_articles/soccer/soccer_fan_culture.html",
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_3600,fl_lossy/v1744287093/soccer-fan-culture-desktop_e5zg89.avif",
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_2400,fl_lossy/v1744287095/soccer-fan-culture-tablet_qv92q7.avif",
+          "https://sports-tube.netlify.app/img/soccer-fan-culture-mobile.avif"
+        ],
+        "articleSection": "Soccer",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "keywords": [
+          "soccer fan culture",
+          "supporter groups",
+          "soccer chants",
+          "football traditions",
+          "soccer community engagement",
+          "soccer rituals",
+          "football fan loyalty",
+          "matchday experience",
+          "ultras soccer"
+        ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>   
   </head>
@@ -84,14 +111,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-desktop_gry6eg.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-desktop_gry6eg.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-tablet_c6k7zh.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744287096/soccer-iconic-tablet_c6k7zh.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -104,12 +131,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color2" id="feature">
           <div class="home-btn">

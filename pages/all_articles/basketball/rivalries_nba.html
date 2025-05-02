@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -16,10 +24,19 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-desktop_gyajw6.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-desktop_gyajw6.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
 
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-tablet_mky1gg.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-tablet_mky1gg.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/nba-rivalries-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -32,10 +49,11 @@
     <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "NewsArticle",
+        "@type": "Article",
         "headline": "Iconic NBA Rivalries: Celtics vs. Lakers, Bulls vs. Pistons, Cavaliers vs. Warriors & More",
         "description": "Dive into the most iconic NBA rivalries, from Celtics vs. Lakers to Cavaliers vs. Warriors. Relive legendary matchups and unforgettable moments that shaped basketball history.",
         "author": {
@@ -67,38 +85,27 @@
           "@type": "ImageObject",
           "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_5600/v1745513645/nba-rivalries-desktop_gyajw6.avif",
           "width": 5600,
-          "height": 355
+          "height": 3150
         },
         "keywords": [
           "NBA rivalries",
           "Celtics vs Lakers",
           "Bulls vs Pistons",
           "Cavaliers vs Warriors",
-          "NBA history",
-          "basketball rivalries"
+          "basketball rivalries",
+          "NBA history"
         ],
         "articleSection": "Basketball",
-        "wordCount": 1300
+        "wordCount": 1300,
+        "articleBody": "Explore legendary NBA rivalries like Celtics vs. Lakers, Bulls vs. Pistons, and Cavaliers vs. Warriors. This article covers the drama, iconic matchups, and pivotal moments that defined basketball history."
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style>
   </head>
   <body class="fonts-loading">
     <header>
@@ -107,14 +114,17 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-desktop_gyajw6.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-desktop_gyajw6.avif"
               type="image/avif"
+              media="(min-width: 1200px)"
+              sizes="100vw"
+              fetchpriority="high"type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-tablet_mky1gg.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1745513645/nba-rivalries-tablet_mky1gg.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -127,12 +137,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page box-color3" id="feature">
           <div class="home-btn">

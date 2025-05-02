@@ -11,6 +11,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,9 +27,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_5600,dpr_auto,fl_lossy,fl_force_strip/v1744286484/baseball-evolution-desktop_tejkeu.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744286485/baseball-evolution-tablet_qxzyjd.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744286484/baseball-evolution-desktop_tejkeu.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744286485/baseball-evolution-tablet_qxzyjd.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/baseball-evolution-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -31,18 +47,18 @@
       type="image/webp"
     />
 
-    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+     <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "NewsArticle",
+        "@type": "Article",
         "headline": "The Evolution of Baseball: From Sandlots to Superstars",
         "description": "Explore the evolution of baseball from its humble sandlot beginnings to a modern game powered by analytics and technology. Discover its impact on culture, communities, and generations of fans.",
         "author": {
-          "@type": "Person",
-          "name": "Allison Stock",
+          "@type": "Organization",
+          "name": "Allison Stock Inc",
           "url": "https://sports-tube-community.netlify.app"
         },
         "publisher": {
@@ -81,27 +97,16 @@
           "evolution of sports"
         ],
         "articleSection": "Baseball",
-        "wordCount": 1350
+        "wordCount": 1350,
+        "articleBody": "From sandlots and early clubs to analytics and global superstars, this article explores how baseball has evolved over time, shaped communities, and produced legendary players."
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style>  
   </head>
   <body class="fonts-loading">
     <header>

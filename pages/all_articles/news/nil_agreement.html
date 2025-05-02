@@ -10,6 +10,14 @@
     <title>The Impact of NIL Agreements on College Sports: How Student-Athletes are Monetizing Their Brands</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -18,9 +26,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286589/news-nil-desktop_gsrq8s.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286590/news-nil-tablet_a9b52a.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744286589/news-nil-desktop_gsrq8s.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744286590/news-nil-tablet_a9b52a.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/news-nil-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -36,45 +52,55 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "NewsArticle",
         "headline": "The Impact of NIL Agreements on College Sports: How Student-Athletes are Monetizing Their Brands",
         "description": "Explore the transformation of college sports through NIL agreements. Discover how student-athletes are now able to monetize their personal brands, reshaping recruitment strategies, and the dynamics of college athletics.",
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy/v1744286589/news-nil-desktop_gsrq8s.avif",
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1744286590/news-nil-tablet_a9b52a.avif",
+          "https://sports-tube.netlify.app/img/news-nil-mobile.avif"
+        ],
         "author": {
-          "@type": "Organization",
-          "name": "Allison Stock Inc"
+          "@type": "Person",
+          "name": "Genny Allison"
         },
-        "datePublished": "2024-04-10",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy/v1744286589/news-nil-desktop_gsrq8s.avif",
         "publisher": {
           "@type": "Organization",
-          "name": "Sports Tube",
+          "name": "Allison Stock Inc",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
-        "mainEntityOfPage": "https://sports-tube.netlify.app/pages/all_articles/news/nil_agreement.html",
-        "articleBody": "The landscape of college sports has undergone a significant transformation with the introduction of Name, Image, and Likeness (NIL) agreements. This shift allows student-athletes to monetize their personal brand and earn income while maintaining their college status. As NIL agreements continue to evolve, it's essential to explore their implications on recruitment, player decisions, and the overall dynamics of college athletics."
+        "datePublished": "2024-04-10",
+        "dateModified": "2024-04-10",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube.netlify.app/pages/all_articles/news/nil_agreement.html"
+        },
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "articleSection": "News",
+        "keywords": [
+          "NIL agreements",
+          "college sports",
+          "student-athletes",
+          "college athlete branding",
+          "NCAA NIL policy",
+          "monetizing personal brand",
+          "sports recruitment",
+          "college athletics",
+          "name image likeness"
+        ]
       }
     </script>
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style>
   </head>
   <body class="fonts-loading">
     <header>
@@ -83,14 +109,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286589/news-nil-desktop_gsrq8s.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744286589/news-nil-desktop_gsrq8s.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286590/news-nil-tablet_a9b52a.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744286590/news-nil-tablet_a9b52a.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -103,12 +129,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color1" id="feature">
           <div class="home-btn">

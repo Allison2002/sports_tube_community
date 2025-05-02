@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -17,9 +25,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-desktop_aortwz.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-tablet_hybely.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-desktop_aortwz.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-tablet_hybely.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/nba-evolution-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -32,21 +48,16 @@
     <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "NewsArticle",
+        "@type": "Article",
         "headline": "The Evolution of the NBA: From Its Inception to Today",
-        "description": "Learn about the history and evolution of the NBA, key milestones, and the iconic players that shaped the league into a global basketball powerhouse.",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_5600/v1745330162/nba-evolution-desktop_aortwz.avif",
-          "width": 5600,
-          "height": 355
-        },
+        "description": "Explore the rich history of the NBA from its founding in 1946, its rise as a global phenomenon, and the legendary players that shaped its evolution into a basketball powerhouse.",
         "author": {
-          "@type": "Person",
-          "name": "Allison Stock",
+          "@type": "Organization",
+          "name": "Allison Stock Inc",
           "url": "https://sports-tube-community.netlify.app"
         },
         "publisher": {
@@ -69,6 +80,12 @@
         "dateModified": "2024-03-15",
         "url": "https://sports-tube-community.netlify.app/the-evolution-of-the-nba-from-its-inception-to-today",
         "mainEntityOfPage": "https://sports-tube-community.netlify.app/the-evolution-of-the-nba-from-its-inception-to-today",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_5600/v1745330162/nba-evolution-desktop_aortwz.avif",
+          "width": 5600,
+          "height": 3150
+        },
         "keywords": [
           "NBA history",
           "evolution of NBA",
@@ -77,25 +94,14 @@
           "basketball development"
         ],
         "articleSection": "Basketball",
-        "wordCount": 1250
+        "wordCount": 1250,
+        "articleBody": "The NBA has grown from a small American league founded in 1946 to a global basketball empire. This article traces its evolution through the decades—highlighting milestones, superstar eras, rule changes, and technological influence shaping the modern game."
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>   
   </head>
@@ -106,14 +112,17 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-desktop_aortwz.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-desktop_aortwz.avif"
               type="image/avif"
+              media="(min-width: 1200px)"
+              sizes="100vw"
+              fetchpriority="high"type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-tablet_hybely.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1745330162/nba-evolution-tablet_hybely.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -126,12 +135,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page box-color1" id="feature">
           <div class="home-btn">

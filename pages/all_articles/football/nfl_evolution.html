@@ -20,7 +20,7 @@
 
     <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286605/nfl-evolution-desktop_vy34hs.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286607/nfl-evolution-tablet_yveone.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286607/nfl-evolution-tablet_yveone.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/nfl-evolution-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -36,11 +36,7 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://sports-tube-community.netlify.app/the-evolution-of-the-nfl-from-leather-helmets-to-high-tech-gear"
-        },
+        "@type": "NewsArticle",
         "headline": "The Evolution of the NFL: From Leather Helmets to High-Tech Gear",
         "alternativeHeadline": "NFL Gear Evolution: Leather Helmets to Advanced Tech & Player Safety",
         "description": "Explore the evolution of the NFL from leather helmets to high-tech gear. Discover advancements in player safety, equipment design, and the impact of technology on the game.",
@@ -54,6 +50,10 @@
           "@type": "Person",
           "name": "Genny Allison",
           "url": "https://sports-tube-community.netlify.app/pages/about.html"
+        },
+        "editor": {
+          "@type": "Organization",
+          "name": "Allison Stock Inc."
         },
         "publisher": {
           "@type": "Organization",
@@ -72,13 +72,17 @@
             "https://www.youtube.com/SportsTube"
           ]
         },
-        "editor": {
-          "@type": "Organization",
-          "name": "Allison Stock Inc."
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube-community.netlify.app/the-evolution-of-the-nfl-from-leather-helmets-to-high-tech-gear"
         },
+        "url": "https://sports-tube-community.netlify.app/the-evolution-of-the-nfl-from-leather-helmets-to-high-tech-gear",
         "datePublished": "2024-07-10",
         "dateModified": "2025-03-15",
-        "url": "https://sports-tube-community.netlify.app/the-evolution-of-the-nfl-from-leather-helmets-to-high-tech-gear",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "wordCount": 1360,
+        "articleSection": "Football",
         "keywords": [
           "NFL evolution",
           "NFL gear",
@@ -87,30 +91,14 @@
           "NFL technology",
           "football equipment",
           "NFL history"
-        ],
-        "articleSection": "Football",
-        "inLanguage": "en-US",
-        "isAccessibleForFree": true
+        ]
       }
     </script>
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style> 
   </head>
   <body class="fonts-loading">
     <header>
@@ -119,14 +107,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286605/nfl-evolution-desktop_vy34hs.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744286605/nfl-evolution-desktop_vy34hs.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744286607/nfl-evolution-tablet_yveone.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744286607/nfl-evolution-tablet_yveone.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -139,12 +127,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color1" id="feature">
           <div class="home-btn">

@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -17,9 +25,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-soccer-desktop_aarl2v.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-soccer-tablet_gtd14i.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-soccer-desktop_aarl2v.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-soccer-tablet_gtd14i.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/category-soccer-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -41,15 +57,36 @@
         "url": "https://sports-tube-community.netlify.app/pages/categories/soccer.html",
         "name": "Soccer News, Historic Matches & Global Fan Culture | Sports Tube Community",
         "description": "Explore iconic soccer matches, tactical evolution, and vibrant fan traditions. Dive into the rise of women’s soccer, youth academies, and global soccer culture with the Sports Tube Community.",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779769/category-soccer-desktop_aarl2v.avif",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "keywords": [
+          "Soccer News",
+          "Women's Soccer",
+          "Youth Academies",
+          "Soccer Fan Culture",
+          "Historic Soccer Matches",
+          "Soccer Tactics",
+          "Global Soccer"
+        ],
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/v1744779769/category-soccer-desktop_aarl2v.avif",
+          "https://sports-tube-community.netlify.app/img/category-soccer-mobile.avif"
+        ],
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
           "name": "Allison Stock Inc.",
           "url": "https://sports-tube-community.netlify.app",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube-community.netlify.app/pages/categories/soccer.html"
         },
         "hasPart": [
           {
@@ -57,80 +94,50 @@
             "headline": "The Evolution of Soccer: From Grassroots to Global Phenomenon",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/soccer/soccer_evolution.html",
             "datePublished": "2024-11-01",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "Top 10 Most Iconic Soccer Matches in History",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/soccer/soccer_iconic.html",
             "datePublished": "2024-11-02",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "The Rise of Women's Soccer: Breaking Barriers and Making History",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/soccer/soccer_womens.html",
             "datePublished": "2024-11-03",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "Tactical Innovations in Soccer: How Strategies Have Evolved",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/soccer/soccer_innovation.html",
             "datePublished": "2024-11-04",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "The Role of Youth Academies in Developing Future Stars",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/soccer/soccer_youth_academies.html",
             "datePublished": "2024-11-05",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "Soccer Fan Culture: The Heartbeat of the Game",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/soccer/soccer_fan_culture.html",
             "datePublished": "2024-11-06",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           }
         ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -141,14 +148,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_auto,fl_lossy/dpr_auto/v1744779769/category-soccer-desktop_aarl2v.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-soccer-desktop_aarl2v.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_auto,fl_lossy/dpr_auto/v1744779769/category-soccer-tablet_gtd14i.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-soccer-tablet_gtd14i.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -161,12 +168,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section id="quotes">
         <div class="quote-grid">
           <div class="quotation-l">

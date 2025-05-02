@@ -9,6 +9,14 @@
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+      <link 
+        rel="preload" 
+        href="/fonts/Roboto/Roboto-Regular.woff2"
+        as="font" 
+        type="font/woff2" 
+        crossorigin="anonymous"
+      />
+
       <link
         rel="preload"
         href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -17,9 +25,17 @@
         crossorigin="anonymous"
       />
 
-      <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-desktop_pr5rla.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+      <link
+        rel="preload"
+        href="/fonts/origin/Origin-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+      />
 
-      <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-tablet_xxegfd.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+      <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-desktop_pr5rla.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+      <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-tablet_xxegfd.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
       <link rel="preload" href="/img/category-news-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -41,93 +57,102 @@
           "url": "https://sports-tube-community.netlify.app/pages/categories/news.html",
           "name": "Latest Sports News, Trades, NIL Insights & Trends | Sports Tube Community",
           "description": "Stay informed with breaking sports news, major league trades, NIL updates, and analysis of youth sports, women's leagues, and marketing trends. Join the Sports Tube Community for the latest in sports reporting.",
-          "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744779769/category-news-desktop_pr5rla.avif",
+          "inLanguage": "en-US",
+          "isAccessibleForFree": true,
+          "keywords": [
+            "Sports News",
+            "NBA Trades",
+            "NIL Agreements",
+            "Youth Sports",
+            "Women's Sports",
+            "Sports Marketing",
+            "MMA",
+            "Social Media and Sports",
+            "Hockey Analytics"
+          ],
+          "image": [
+            "https://res.cloudinary.com/dnptzisuf/image/upload/v1744779769/category-news-desktop_pr5rla.avif",
+            "https://sports-tube-community.netlify.app/img/category-news-mobile.avif"
+          ],
           "publisher": {
             "@type": "Organization",
+            "@id": "https://sports-tube-community.netlify.app/#organization",
             "name": "Allison Stock Inc.",
             "url": "https://sports-tube-community.netlify.app",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+              "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+              "width": 512,
+              "height": 512
             }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://sports-tube-community.netlify.app/pages/categories/news.html"
           },
           "hasPart": [
             {
               "@type": "Article",
               "headline": "Breaking News: Major Trades in the NBA",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/major_trades_news.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-01"
+              "datePublished": "2024-10-01",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "The Rise of Women in Sports: Breaking Barriers and Setting Records",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/womens_sports.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-02"
+              "datePublished": "2024-10-02",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "Youth Sports Participation: The Benefits of Early Engagement",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/youth_sports.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-03"
+              "datePublished": "2024-10-03",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "The Evolution of Sports Marketing: How Brands Connect with Fans",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/sports_marketing.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-04"
+              "datePublished": "2024-10-04",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "College Sports: The Impact of NIL Agreements on Student Athletes",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/nil_agreement.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-05"
+              "datePublished": "2024-10-05",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "MMA: The Growing Popularity of Women's Fighting Leagues",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/mma_women.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-06"
+              "datePublished": "2024-10-06",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "The Impact of Social Media on Sports",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/social_media.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-07"
+              "datePublished": "2024-10-07",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             },
             {
               "@type": "Article",
               "headline": "NHL: The Role of Analytics in Modern Hockey Strategy",
               "url": "https://sports-tube-community.netlify.app/pages/all_articles/news/nhl_analytics.html",
-              "author": { "@type": "Person", "name": "Genny Allison" },
-              "datePublished": "2024-10-08"
+              "datePublished": "2024-10-08",
+              "author": { "@type": "Person", "name": "Genny Allison" }
             }
           ]
         }
       </script>
       <style>
-        @font-face {
-          font-family: "Bebas Neue", 'Origin', sans-serif;
-          src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-          font-weight: 400;
-          font-style: normal;
-          font-display: swap;
-          ascent-override: 90%;
-          descent-override: 10%;
-          line-gap-override: 0%;
-        }
-
-        main {
-          width: 60%;
-          max-width: 60vw;
-          min-height: 3rem;
-          height: auto
+        body:not(.fonts-loaded) {
+          visibility: hidden;
         }
       </style>
     </head>
@@ -138,14 +163,14 @@
           <section class="hero-img">
             <picture>
               <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-desktop_pr5rla.avif 100w"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-desktop_pr5rla.avif"
                 type="image/avif"
                 media="(min-width: 1200px)"
                 sizes="100vw"
                 fetchpriority="high"
               />
               <source
-                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-tablet_xxegfd.avif 100w"
+                srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744779769/category-news-tablet_xxegfd.avif"
                 type="image/avif"
                 media="(min-width: 481px) and (max-width: 1199px)"
                 sizes="100vw"
@@ -158,45 +183,46 @@
                 loading="eager"
                 fetchpriority="high"
                 style="object-fit: cover;"
+                decoding="async"
               />
             </picture>
           </section>
         </div>
       </header>
-      <main>
-      <section id="quotes">
-        <div class="quote-grid">
-          <div class="quotation-l">
-            <img src="/img/left-quote.avif" 
-              alt=""
-              role="presentation"
-              width="32"
-              height="32"
-              decoding="async"
-              loading="lazy"
-              style="aspect-ratio: 1 / 1; object-fit: contain;"
-            />
+      <main class="main-60">
+        <section id="quotes">
+          <div class="quote-grid">
+            <div class="quotation-l">
+              <img src="/img/left-quote.avif" 
+                alt=""
+                role="presentation"
+                width="32"
+                height="32"
+                decoding="async"
+                loading="lazy"
+                style="aspect-ratio: 1 / 1; object-fit: contain;"
+              />
 
-          </div>
-          <div>
-            <div class="quote">
-              <h1>It’s a great day for a ball game; let’s play two!</h1>
-              <p>– Ernie Banks</p>
+            </div>
+            <div>
+              <div class="quote">
+                <h1>It’s a great day for a ball game; let’s play two!</h1>
+                <p>– Ernie Banks</p>
+              </div>
+            </div>
+            <div class="quotation-r">
+              <img src="/img/right-quote.avif" 
+                alt=""
+                role="presentation"
+                width="32"
+                height="32"
+                decoding="async"
+                loading="lazy"
+                style="aspect-ratio: 1 / 1; object-fit: contain;"
+              />
             </div>
           </div>
-          <div class="quotation-r">
-            <img src="/img/right-quote.avif" 
-              alt=""
-              role="presentation"
-              width="32"
-              height="32"
-              decoding="async"
-              loading="lazy"
-              style="aspect-ratio: 1 / 1; object-fit: contain;"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
         <section class="article-list">
           <div class="article-list-grid box-color1" id="article2">
             <div class="box1"><h2>#1</h2></div>

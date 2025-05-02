@@ -11,6 +11,14 @@
     <title>Benefits of Youth Sports Participation: Physical, Mental, and Social Growth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,10 +27,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744647986/news-youth-sports-desktop_fsgp6l.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744647985/news-youth-sports-tablet_jzn7uu.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744647986/news-youth-sports-desktop_fsgp6l.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
 
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/uploadfl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744647985/news-youth-sports-tablet_jzn7uu.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/news-youth-sports-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -39,47 +54,55 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "NewsArticle",
         "headline": "Benefits of Youth Sports Participation: Physical, Mental, and Social Growth",
         "description": "Discover how youth sports participation fosters physical fitness, mental resilience, and social skills development in children. Explore how community programs support early athletic engagement and contribute to a child's overall success and well-being.",
         "author": {
           "@type": "Person",
-          "name": "Genny Allison",
-          "url": "https://www.yoursite.com/about-author"  // Replace with your actual author's URL if available
+          "name": "Genny Allison"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Sports Tube",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.yoursite.com/path-to-your-logo.png"  // Replace with your actual publisher logo URL
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
         "datePublished": "2025-03-15",
         "dateModified": "2025-03-15",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_640/v1736345507/news_banner3_mohxdw.png",
-        "mainEntityOfPage": "https://www.yoursite.com/articles/youth-sports-participation-benefits",  // Replace with your article URL
-        "keywords": "youth sports, physical fitness, mental resilience, social skills, community sports programs, benefits of youth sports"
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_3600,fl_lossy/v1744647986/news-youth-sports-desktop_fsgp6l.avif",
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_2400,fl_lossy/v1744647985/news-youth-sports-tablet_jzn7uu.avif",
+          "https://sports-tube.netlify.app/img/news-youth-sports-mobile.avif"
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube.netlify.app/pages/all_articles/news/youth_sports.html"
+        },
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "articleSection": "Sports",
+        "keywords": [
+          "youth sports",
+          "physical fitness",
+          "mental resilience",
+          "social skills",
+          "community sports programs",
+          "benefits of youth sports",
+          "child development",
+          "sports education"
+        ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style>  
   </head>
   <body class="fonts-loading">
     <header>
@@ -88,14 +111,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744647986/news-youth-sports-desktop_fsgp6l.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744647986/news-youth-sports-desktop_fsgp6l.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744647985/news-youth-sports-tablet_jzn7uu.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744647985/news-youth-sports-tablet_jzn7uu.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -108,12 +131,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main class="fonts-loading">
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color3" id="feature">
           <div class="home-btn">

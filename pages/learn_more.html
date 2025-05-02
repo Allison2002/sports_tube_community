@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -17,11 +25,19 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744673718/learn-more-desktop_ttzl3a.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744673716/learn-more-tablet_qk2f0l.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744673718/learn-more-desktop_ttzl3a.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
 
-    <link rel="preload" href="/img/learn-more-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744673716/learn-more-tablet_qk2f0l.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+
+    <link rel="preload" href="/img/learn-more-mobile.avif"  as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
@@ -32,20 +48,39 @@
     <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Learn More About Sports Tube Community",
+        "@id": "https://sports-tube-community.netlify.app/pages/learn-more.html",
         "url": "https://sports-tube-community.netlify.app/pages/learn-more.html",
-        "description": "Discover the Sports Tube Community – a hub for sports fans to share content, join discussions, and stay updated on soccer, basketball, football, and more. Learn how to sign up, contribute articles, and contact our team.",
+        "name": "Learn More About Sports Tube Community: Connect, Share, and Explore Sports Together",
+        "description": "Learn more about the Sports Tube Community—your destination for sports insights, fan discussions, and user-generated content. Sign up to share your stories, connect with fellow fans, and stay up to date with the latest in soccer, basketball, football, and more.",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/v1744673718/learn-more-desktop_ttzl3a.avif",
+          "https://sports-tube-community.netlify.app/img/learn-more-mobile.avif"
+        ],
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
           "name": "Sports Tube Community",
           "url": "https://sports-tube.netlify.app",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "Customer Support",
+            "email": "support@sports-tube.com",
+            "areaServed": "US",
+            "availableLanguage": ["English"]
           }
         },
         "mainEntity": {
@@ -87,22 +122,11 @@
         }
       }
     </script>
+
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -113,14 +137,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744673718/learn-more-desktop_ttzl3a.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744673718/learn-more-desktop_ttzl3a.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744673716/learn-more-tablet_qk2f0l.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744673716/learn-more-tablet_qk2f0l.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -133,12 +157,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color2" id="feature">
           <div class="home-btn">

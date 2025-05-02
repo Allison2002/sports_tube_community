@@ -9,6 +9,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -16,10 +24,18 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744814032/category-hockey-desktop_vtr3nb.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-hockey-tablet_ezfdtu.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744814032/category-hockey-desktop_vtr3nb.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-hockey-tablet_ezfdtu.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/category-hockey-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -41,15 +57,37 @@
         "name": "NHL History, Rivalries, Analytics & Draft News | Sports Tube Community",
         "url": "https://sports-tube-community.netlify.app/pages/categories/hockey.html",
         "description": "Explore NHL history, top moments, intense rivalries, and the evolution of goaltending. Learn how analytics and the NHL Draft shape the future of hockey, only on Sports Tube Community.",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744814032/category-hockey-desktop_vtr3nb.avif",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "keywords": [
+          "NHL History",
+          "Hockey Analytics",
+          "NHL Draft",
+          "Goaltending Evolution",
+          "Hockey Rivalries",
+          "Women's Hockey",
+          "Top NHL Moments",
+          "Sports Tube Community"
+        ],
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/v1744814032/category-hockey-desktop_vtr3nb.avif",
+          "https://sports-tube-community.netlify.app/img/category-hockey-mobile.avif"
+        ],
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube-community.netlify.app/#organization",
           "name": "Allison Stock Inc.",
           "url": "https://sports-tube-community.netlify.app",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube-community.netlify.app/pages/categories/hockey.html"
         },
         "hasPart": [
           {
@@ -57,80 +95,50 @@
             "headline": "The Evolution of Goaltending: From Masks to Modern Gear",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/hockey/nhl_goaltending.html",
             "datePublished": "2024-10-01",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "Top 10 NHL Moments of All Time",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/hockey/nhl_top10.html",
             "datePublished": "2024-10-02",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "The Impact of Analytics in Hockey: A New Era of Strategy",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/hockey/nhl_analytics.html",
             "datePublished": "2024-10-03",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "Rivalries on Ice: The Fiercest NHL Matchups",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/hockey/nhl_rivalries.html",
             "datePublished": "2024-10-04",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "The Rise of Women in Hockey: Pioneers and Trailblazers",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/hockey/nhl_women.html",
             "datePublished": "2024-10-05",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           },
           {
             "@type": "Article",
             "headline": "NHL Draft Day: Building the Future of the League",
             "url": "https://sports-tube-community.netlify.app/pages/all_articles/hockey/nhl_draft.html",
             "datePublished": "2024-10-06",
-            "author": {
-              "@type": "Person",
-              "name": "Genny Allison"
-            }
+            "author": { "@type": "Person", "name": "Genny Allison" }
           }
         ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -141,14 +149,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744814032/category-hockey-desktop_vtr3nb.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744814032/category-hockey-desktop_vtr3nb.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-hockey-tablet_ezfdtu.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744779770/category-hockey-tablet_ezfdtu.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -160,14 +168,14 @@
               height="355"
               loading="eager"
               fetchpriority="high"
-              decoding="async"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section id="quotes">
         <div class="quote-grid">
           <div class="quotation-l">

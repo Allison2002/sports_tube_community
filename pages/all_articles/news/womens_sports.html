@@ -11,6 +11,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,9 +27,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-desktop_nv5tdb.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-tablet_h4vxrc.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-desktop_nv5tdb.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-tablet_h4vxrc.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw" imagesizes="100vw">
 
     <link rel="preload" href="/img/news-womens-sports-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -37,8 +53,8 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The Rise of Women in Sports: Breaking Barriers and Setting Records",
+        "@type": "NewsArticle",
+        "headline": "The Empowerment of Women in Sports: Breaking Barriers and Inspiring Change",
         "description": "Explore the empowering journey of women in sports, highlighting their breaking barriers, overcoming challenges, and redefining the athletic landscape. Learn about influential athletes like Serena Williams, Simone Biles, and Megan Rapinoe who are inspiring the next generation of female athletes.",
         "author": {
           "@type": "Person",
@@ -49,36 +65,47 @@
           "name": "Allison Stock Inc",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
         "datePublished": "2025-03-15",
         "dateModified": "2025-03-15",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1744286593/news-womens-sports-desktop_gpfxht.avif",
-        "mainEntityOfPage": "https://example.com/empowerment-of-women-in-sports",
-        "keywords": "women in sports, equality in sports, female athletes, Serena Williams, Simone Biles, Megan Rapinoe, gender equality, women's soccer, women's tennis",
+        "image": [
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy/v1745635207/news-womens-sports-desktop_nv5tdb.avif",
+          "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_2400,fl_lossy/v1745635207/news-womens-sports-tablet_h4vxrc.avif",
+          "https://sports-tube.netlify.app/img/news-womens-sports-mobile.avif"
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube.netlify.app/pages/all_articles/news/womens_sports.html"
+        },
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
         "articleSection": "Sports",
-        "articleBody": "In recent years, female athletes have made significant strides in the world of sports, shattering stereotypes and breaking records that were once thought unbreakable. From the basketball court to the soccer field, women are not just participating but excelling, challenging societal norms and inspiring future generations to pursue their dreams in athletics. These remarkable athletes have showcased unparalleled skill, determination, and resilience, proving that gender is no longer a barrier to success in sports. Female athletes are pushing boundaries, inspiring not only young girls but also audiences worldwide to embrace their potential and never back down from the challenges they face."
+        "keywords": [
+          "women in sports",
+          "female athletes",
+          "Serena Williams",
+          "Simone Biles",
+          "Megan Rapinoe",
+          "gender equality",
+          "women’s soccer",
+          "WNBA",
+          "USWNT",
+          "Olympic athletes",
+          "track and field",
+          "mental health in sports"
+        ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
-      main {
-        width: 60%;
-        max-width: 60vw;
-        min-height: 3rem;
-        height: auto
-      }
-    </style>   
+    </style>
   </head>
   <body class="fonts-loading">
     <header>
@@ -87,14 +114,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-desktop_nv5tdb.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-desktop_nv5tdb.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-tablet_h4vxrc.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1745635207/news-womens-sports-tablet_h4vxrc.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -107,12 +134,13 @@
               loading="eager"
               fetchpriority="high"
               style="object-fit: cover;"
+              decoding="async"
             />
           </picture>
         </section>
       </div>
     </header>
-    <main>
+    <main class="main-60">
       <section class="article">
         <article class="article-page article-color2" id="feature">
           <div class="home-btn">

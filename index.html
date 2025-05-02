@@ -11,6 +11,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link 
+      rel="preload" 
+      href="/fonts/Roboto/Roboto-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
     <link
       rel="preload"
       href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2"
@@ -19,9 +27,18 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-desktop_j2rz09.avif" as="image" type="image/avif" media="(min-width: 1200px)"/>
+    <link
+      rel="preload"
+      href="/fonts/origin/Origin-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-tablet_fbhtej.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-desktop_j2rz09.avif" as="image" type="image/avif" media="(min-width: 1200px)" imagesizes="100vw">
+
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-tablet_fbhtej.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)" sizes="100vw">
+
 
     <link rel="preload" href="/img/hero-sports-tube-mobile.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
@@ -39,63 +56,78 @@
       {
         "@context": "https://schema.org",
         "@type": "Blog",
-        "name": "Sports Community Blog",
+        "@id": "https://sports-tube-community.netlify.app/#blog",
         "url": "https://sports-tube-community.netlify.app",
+        "name": "Sports Tube Community Blog",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
         "description": "Dive into the Sports Community Blog! Stay updated with the latest sports articles, connect with fans, and explore insightful stories on football, basketball, baseball, and more. Join today to share your passion for sports and discover engaging content from the ultimate sports hub!",
         "publisher": {
           "@type": "Organization",
+          "@id": "https://sports-tube.netlify.app/#organization",
           "name": "Allison Stock Inc.",
+          "url": "https://sports-tube.netlify.app",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp"
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1738106888/sports_tube_tab_logo_oajgbj.webp",
+            "width": 512,
+            "height": 512
           }
         },
-        "mainEntityOfPage": "https://sports-tube-community.netlify.app",
-        "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1743803005/sports-tube-hero-desktop_rkvwgn.avif",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_5600,fl_lossy/v1743803005/sports-tube-hero-desktop_rkvwgn.avif",
+          "width": 5600,
+          "height": 3150
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sports-tube-community.netlify.app"
+        },
         "blogPost": [
           {
             "@type": "BlogPosting",
             "headline": "Top 10 Most Memorable Moments in Sports",
             "url": "https://sports-tube-community.netlify.app/top-10-memorable-moments",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1744055583/feature-baseball-thumbnail-desktop_vw0esl.avif",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1744055583/feature-baseball-thumbnail-desktop_vw0esl.avif",
+              "width": 1200,
+              "height": 800
+            },
             "author": {
               "@type": "Person",
               "name": "Allison Stock"
             },
             "datePublished": "2025-04-07T12:00:00Z",
+            "dateModified": "2025-04-07T12:00:00Z",
             "description": "A countdown of the most unforgettable moments in sports history, including iconic plays from the NFL, NBA, and MLB."
           },
           {
             "@type": "BlogPosting",
             "headline": "The Role of Youth Sports in Developing Athletes",
             "url": "https://sports-tube-community.netlify.app/role-of-youth-sport",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1744055241/feature-community-thumbnail-desktop_knr7oz.avif",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,fl_lossy,w_1200/v1744055241/feature-community-thumbnail-desktop_knr7oz.avif",
+              "width": 1200,
+              "height": 800
+            },
             "author": {
               "@type": "Person",
               "name": "Allison Stock"
             },
             "datePublished": "2025-04-07T12:00:00Z",
+            "dateModified": "2025-04-07T12:00:00Z",
             "description": "An exploration of how youth sports programs contribute to athlete development, team-building skills, and community engagement."
           }
         ]
       }
     </script>
+
     <style>
-      @font-face {
-        font-family: "Bebas Neue", 'Origin', sans-serif;
-        src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        ascent-override: 90%;
-        descent-override: 10%;
-        line-gap-override: 0%;
-      }
-      main {
-        width: 80%;
-        max-width: 80vw;
-        min-height: 3rem;
-        height: auto
+      body:not(.fonts-loaded) {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -106,14 +138,14 @@
         <section class="hero-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-desktop_j2rz09.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_3600,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-desktop_j2rz09.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-tablet_fbhtej.avif 100w"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_2400,dpr_auto,fl_lossy,fl_force_strip/v1744731118/hero-sports-tube-tablet_fbhtej.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -184,7 +216,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="main-60">
       <section class="feature-article">
         <div class="feature-title">
           <h2>Explore Top Sports Articles</h2>
