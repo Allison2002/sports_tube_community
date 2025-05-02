@@ -207,7 +207,7 @@ p {
   src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -258,7 +258,8 @@ nav {
 .sct-btn,
 .search-container,
 nav ul {
-  display: flex
+  display: flex;
+  min-height: 1rem;
 }
 
 .button:hover {
@@ -342,35 +343,22 @@ nav {
   z-index: 10
 }
 
-.nav-links {
-  height: auto;
-  min-height: 2rem;
-}
-
 .nav-links li {
-  margin: 0 1em;
-  height: auto;
-  min-height: 2rem;
+  margin: 0 1em
 }
 
-.nav-links li a {
+.nav-links a {
   color: #fff;
-  font-weight: 900;
-  min-height: 2rem;
-  height: auto;
+  font-weight: 900
 }
 
 nav ul {
-  flex-direction: row;
-  min-height: 1rem;
-  height: auto;
+  flex-direction: row
 }
 
 nav ul li {
   list-style-type: none;
-  padding: 0 1em;
-  min-height: 1rem;
-  height: auto;
+  padding: 0 1em
 }
 
 nav ul li a {
@@ -430,7 +418,7 @@ nav ul li :hover {
   margin-right: 0;
   flex: 1;
   height: auto;
-  min-height: 2rem;
+  min-height: 1rem;
   width: 15vw;
   max-width: 15vw;
 }
