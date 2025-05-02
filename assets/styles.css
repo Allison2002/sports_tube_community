@@ -183,7 +183,9 @@ p {
 @font-face {
   font-family: 'Bebas Neue';
   src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2");
-  font-display: block;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -205,7 +207,7 @@ p {
   src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -340,22 +342,35 @@ nav {
   z-index: 10
 }
 
-.nav-links li {
-  margin: 0 1em
+.nav-links {
+  height: auto;
+  min-height: 2rem;
 }
 
-.nav-links a {
+.nav-links li {
+  margin: 0 1em;
+  height: auto;
+  min-height: 2rem;
+}
+
+.nav-links li a {
   color: #fff;
-  font-weight: 900
+  font-weight: 900;
+  min-height: 2rem;
+  height: auto;
 }
 
 nav ul {
-  flex-direction: row
+  flex-direction: row;
+  min-height: 1rem;
+  height: auto;
 }
 
 nav ul li {
   list-style-type: none;
-  padding: 0 1em
+  padding: 0 1em;
+  min-height: 1rem;
+  height: auto;
 }
 
 nav ul li a {
@@ -415,7 +430,7 @@ nav ul li :hover {
   margin-right: 0;
   flex: 1;
   height: auto;
-  min-height: 1rem;
+  min-height: 2rem;
   width: 15vw;
   max-width: 15vw;
 }
