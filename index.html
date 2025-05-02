@@ -126,8 +126,19 @@
     </script>
 
     <style>
-      body:not(.fonts-loaded) {
-        visibility: hidden;
+      body:not(.fonts-loaded) h1,
+      body:not(.fonts-loaded) h2,
+      body:not(.fonts-loaded) p,
+      body:not(.fonts-loaded) a {
+        opacity: 0;
+        transition: opacity 0.1s ease-in;
+      }
+
+      body.fonts-loaded h1,
+      body.fonts-loaded h2,
+      body.fonts-loaded p,
+      body.fonts-loaded a {
+        opacity: 1;
       }
     </style>
   </head>
