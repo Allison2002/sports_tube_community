@@ -75,14 +75,6 @@ body:not(.fonts-loaded) h2 {
   font-family: 'Impact', 'Arial Narrow', sans-serif;
 }
 
-body:not(.fonts-loaded) {
-  opacity: 0;
-  transition: opacity 0.1s ease-in;
-}
-
-body.fonts-loaded {
-  opacity: 1;
-}
 
 h3,
 h4 {
