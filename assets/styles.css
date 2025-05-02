@@ -1314,7 +1314,8 @@ footer {
 .footer-col ul {
   display: flex;
   flex-direction: column;
-  padding: 0
+  padding: 0;
+  justify-content: center;
 }
 
 .footer-col ul li {
@@ -1355,7 +1356,6 @@ footer {
   border-bottom: .0625em solid #1a1d9e;
   margin: 0 auto;
   gap: 3em;
-  justify-content: space-evenly;
   align-items: center
 }
 
