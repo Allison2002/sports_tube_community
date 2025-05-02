@@ -125,19 +125,16 @@
     </script>
 
     <style>
-      body:not(.fonts-loaded) h1,
-      body:not(.fonts-loaded) h2,
-      body:not(.fonts-loaded) p,
-      body:not(.fonts-loaded) a {
-        opacity: 0;
-        transition: opacity 0.1s ease-in;
+      body {
+        animation: fadein 0.25s ease-in;
       }
-
-      body.fonts-loaded h1,
-      body.fonts-loaded h2,
-      body.fonts-loaded p,
-      body.fonts-loaded a {
-        opacity: 1;
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
