@@ -2847,7 +2847,7 @@ input::placeholder {
     height: auto;
     margin: 0 auto;
     object-fit: contain;
-    aspect-ratio: 1.80/1;
+    aspect-ratio: 1.25 / 1;
   }
 
   .home-btn {
