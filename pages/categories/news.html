@@ -151,10 +151,18 @@
         }
       </script>
       <style>
-        body:not(.fonts-loaded) {
-          visibility: hidden;
+      body {
+        animation: fadein 0.25s ease-in;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
         }
-      </style>
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
     </head>
     <body class="fonts-loading">
       <header>
