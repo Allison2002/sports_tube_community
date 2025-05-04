@@ -872,7 +872,7 @@ section#quotes .quote img {
 
 .box1 h2 {
   font-size: clamp(2rem, 3.5vw, 4rem);
-  min-height: 1rem;
+  min-height: 2rem;
 }
 
 .box2 a h3 {
@@ -882,7 +882,7 @@ section#quotes .quote img {
 
 .box2 p {
   font-size: clamp(1rem, 1vw, 2rem);
-  min-height: 1rem;
+  min-height: 2rem;
 }
 
 .box1 h2,
