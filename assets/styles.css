@@ -408,12 +408,6 @@ nav ul li :hover {
   padding: 0;
 }
 
-.grid2,
-.hero-img,
-.join-text-bottom {
-  min-height: 5rem;
-}
-
 .search-container {
   align-items: center;
   justify-content: flex-end;
@@ -460,7 +454,6 @@ nav ul li :hover {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 3rem;
   display: block;
   overflow: hidden;
   aspect-ratio: 2.73 / 1;
