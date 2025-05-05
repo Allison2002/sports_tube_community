@@ -153,6 +153,30 @@ nav ul li :hover {
 .button,
 .button2,
 .join-text h3,
+.sports-tube-logo {
+  animation: logo-animation 2s ease-in-out infinite;
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: scale(1);
+    /* Composited property */
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* Composited property */
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    /* Composited property */
+    opacity: 1;
+  }
+}
+
 .join-text h2,
 .join-text p,
 .nav-links a {
