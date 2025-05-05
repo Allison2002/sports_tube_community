@@ -393,7 +393,7 @@ nav ul li :hover {
   height: auto;
   display: block;
   object-fit: contain;
-  aspect-ratio: 2.618 / 1;
+  aspect-ratio: inherit;
 }
 
 .nav-icon-container {
@@ -441,12 +441,13 @@ nav ul li :hover {
   max-width: 6vw;
   height: auto;
   min-height: 1rem;
+  aspect-ratio: 1 / 1;
 }
 
 .menu-toggle img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: inherit;
   object-fit: cover;
 }
 
@@ -661,7 +662,6 @@ nav ul li :hover {
 .categories-box img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1.80 / 1;
   margin: 0 auto;
   object-fit: contain;
   display: block;
