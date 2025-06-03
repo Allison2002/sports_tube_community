@@ -65,6 +65,22 @@ h2 {
   font-feature-settings: 'kern';
 }
 
+/*Fixing new Depreciation warning "Deprecated APIs will eventually be removed from the browser"*/
+
+h1 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+section h1,
+article h1,
+aside h1,
+nav h1 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+/*end depreciaition warning fix*/
+
+
 body.fonts-loaded h1,
 body.fonts-loaded h2 {
   opacity: 1;
