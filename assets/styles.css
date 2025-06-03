@@ -1956,7 +1956,6 @@ input::placeholder {
     height: auto;
     object-fit: cover;
     display: block;
-    aspect-ratio: 16/9
   }
 
   .article-title h1,
@@ -2677,7 +2676,6 @@ input::placeholder {
   .grid2-section2 img {
     width: 80vw;
     object-fit: cover;
-    aspect-ratio: 16/9;
     margin: 0 auto
   }
 
