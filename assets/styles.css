@@ -535,7 +535,7 @@ nav ul li :hover {
 
 .feature-article {
   padding: 2rem 0;
-  min-height: 3rem;
+  min-height: 100vh;
 }
 
 .welcome-text h1 {
@@ -1772,6 +1772,10 @@ input::placeholder {
     display: none
   }
 
+  .nav-menu {
+    min-height: 2rem;
+  }
+
   .join-container,
   .logo-container,
   .menu-toggle,
@@ -1862,8 +1866,7 @@ input::placeholder {
 
   .feature-box,
   .categories-box,
-  .feature-article-grid,
-  .grid2 {
+  .feature-article-grid {
     min-height: 2rem;
     height: auto
   }
@@ -2157,7 +2160,7 @@ input::placeholder {
     font-weight: 500;
     padding: 1.5em 2em;
     text-transform: capitalize;
-    transition: color .3s ease-in-out
+    transition: color .3s ease-in-out;
   }
 
   .close-btn:hover,
@@ -2296,7 +2299,7 @@ input::placeholder {
     width: 90%;
     max-width: 90vw;
     height: auto;
-    min-height: 5rem;
+    min-height: 100vh;
   }
 
   .categories-title h2,
