@@ -1423,7 +1423,7 @@ footer {
   height: auto;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
 }
 
