@@ -467,6 +467,7 @@ nav ul li :hover {
   object-fit: cover;
 }
 
+.hero-img-article,
 .hero-img {
   padding: 0;
   width: 100%;
@@ -474,11 +475,11 @@ nav ul li :hover {
   height: auto;
   display: block;
   overflow: hidden;
-  aspect-ratio: 2.73 / 1;
   min-height: calc(100vw / 2.73);
   margin: 0 auto;
 }
 
+.hero-img-article img,
 .hero-img img {
   width: 100%;
   height: auto;
@@ -486,7 +487,9 @@ nav ul li :hover {
   object-position: bottom;
   object-fit: cover;
   aspect-ratio: inherit;
+  margin: 0 auto;
 }
+
 
 .blog-hero-section,
 .grid2-section1 {
@@ -500,7 +503,8 @@ nav ul li :hover {
 }
 
 .blog-hero-section {
-  min-height: 15rem;
+  min-height: 10rem;
+  margin: 0 auto;
 }
 
 .categories-box img,
@@ -1030,7 +1034,6 @@ section#quotes .quote img {
 .privacy-page li a:focus,
 .privacy-page li a:hover {
   color: #c30000;
-  transform: scale(1.05);
   opacity: .85
 }
 
@@ -1784,22 +1787,23 @@ input::placeholder {
     display: flex;
   }
 
+  .hero-img-article,
   .hero-img {
     width: 100%;
     height: auto;
-    max-width: 100vw;
-    min-height: 3rem;
+    max-width: 1024px;
+    min-height: 10rem;
     overflow: hidden;
-    aspect-ratio: 2.25 / 1;
+
   }
 
+  .hero-img-article img,
   .hero-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
     display: block;
-    aspect-ratio: 2.25 / 1;
   }
 
   .nav-menu.active {
@@ -2465,21 +2469,22 @@ input::placeholder {
     width: 100%
   }
 
+  .hero-img-article,
   .hero-img {
     width: 100%;
     height: auto;
     max-width: 100vw;
     min-height: 3rem;
     overflow: hidden;
-    aspect-ratio: 2.25 / 1;
+    aspect-ratio: 768 / 460;
   }
 
+  .hero-img-article,
   .hero-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
-    aspect-ratio: 2.25 / 1;
   }
 
   .menu-toggle {
@@ -2581,21 +2586,34 @@ input::placeholder {
   }
 
   .hero-img {
-    overflow: hidden;
     width: 100%;
     height: auto;
-    max-width: 100vw;
-    aspect-ratio: 1.25 / 1;
+    max-width: 480px;
     min-height: 5rem;
+    aspect-ratio: 480 / 288;
+    margin: 0 auto;
   }
 
   .hero-img img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    object-position: center;
     display: block;
-    aspect-ratio: 1.25 / 1;
+    min-height: 10rem;
+  }
+
+  .hero-img-article {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    min-height: 5rem;
+    margin: 0 auto;
+    aspect-ratio: 480 / 385;
+  }
+
+  .hero-img-article img {
+    width: 100%;
+    height: auto;
+    display: block;
     min-height: 5rem;
   }
 
@@ -2858,7 +2876,7 @@ input::placeholder {
 
   .article-page {
     width: 95%;
-    padding: 2em
+    padding: 1em;
   }
 
   .article-title h1 {
