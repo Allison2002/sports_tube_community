@@ -2730,6 +2730,10 @@ input::placeholder {
     height: auto
   }
 
+  .feature-title {
+    min-height: 30px;
+  }
+
   .categories-title h2,
   .feature-title h2 {
     font-size: 2rem;
